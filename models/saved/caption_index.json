@@ -1,0 +1,7850 @@
+[
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#94766C",
+      "#BEAC9F",
+      "#C59F91",
+      "#996C6E",
+      "#6D595A",
+      "#8B534E",
+      "#AC7559"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Mulberry Silk, Chelsea Mauve",
+    "hex": [
+      "#94766C",
+      "#BEAC9F",
+      "#C59F91",
+      "#996C6E",
+      "#6D595A",
+      "#8B534E",
+      "#AC7559"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Mulberry Silk, Chelsea Mauve, Cabbage Rose",
+    "hex": [
+      "#94766C",
+      "#BEAC9F",
+      "#C59F91",
+      "#996C6E",
+      "#6D595A",
+      "#8B534E",
+      "#AC7559"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#8D422F",
+      "#C28E61",
+      "#C19E80",
+      "#CBB99B",
+      "#C19F6E",
+      "#AEB08F",
+      "#8F8666"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Cajun Red, Eastlake Gold",
+    "hex": [
+      "#8D422F",
+      "#C28E61",
+      "#C19E80",
+      "#CBB99B",
+      "#C19F6E",
+      "#AEB08F",
+      "#8F8666"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Cajun Red, Eastlake Gold, Wickerwork",
+    "hex": [
+      "#8D422F",
+      "#C28E61",
+      "#C19E80",
+      "#CBB99B",
+      "#C19F6E",
+      "#AEB08F",
+      "#8F8666"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#708672",
+      "#45584D",
+      "#8CA49C",
+      "#627F7B",
+      "#A0BBB8",
+      "#739694",
+      "#C0B6B4"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Gallery Green, Billiard Green",
+    "hex": [
+      "#708672",
+      "#45584D",
+      "#8CA49C",
+      "#627F7B",
+      "#A0BBB8",
+      "#739694",
+      "#C0B6B4"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Gallery Green, Billiard Green, Calico",
+    "hex": [
+      "#708672",
+      "#45584D",
+      "#8CA49C",
+      "#627F7B",
+      "#A0BBB8",
+      "#739694",
+      "#C0B6B4"
+    ]
+  },
+  {
+    "caption": "neutral soft light monotone palette",
+    "hex": [
+      "#7E696A",
+      "#A39B90",
+      "#988977",
+      "#CC8D84",
+      "#E8B9AE",
+      "#ECCEB9",
+      "#ECD0B1"
+    ]
+  },
+  {
+    "caption": "neutral soft light monotone palette, Patchwork Plum, Pewter Tankard",
+    "hex": [
+      "#7E696A",
+      "#A39B90",
+      "#988977",
+      "#CC8D84",
+      "#E8B9AE",
+      "#ECCEB9",
+      "#ECD0B1"
+    ]
+  },
+  {
+    "caption": "neutral soft light monotone palette, Patchwork Plum, Pewter Tankard, Curio Gray",
+    "hex": [
+      "#7E696A",
+      "#A39B90",
+      "#988977",
+      "#CC8D84",
+      "#E8B9AE",
+      "#ECCEB9",
+      "#ECD0B1"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette",
+    "hex": [
+      "#CDCDB4",
+      "#EFC488",
+      "#9AABAB",
+      "#546670",
+      "#974F49",
+      "#C08F80",
+      "#EEDAC3"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Acanthus, Colonial Yellow",
+    "hex": [
+      "#CDCDB4",
+      "#EFC488",
+      "#9AABAB",
+      "#546670",
+      "#974F49",
+      "#C08F80",
+      "#EEDAC3"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Acanthus, Colonial Yellow, Dutch Tile Blue",
+    "hex": [
+      "#CDCDB4",
+      "#EFC488",
+      "#9AABAB",
+      "#546670",
+      "#974F49",
+      "#C08F80",
+      "#EEDAC3"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#D9C3A6",
+      "#ADA193",
+      "#7F7263",
+      "#C4957A",
+      "#A76251",
+      "#3A4A3F",
+      "#ACA17D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Buckram Binding, Morris Room Grey",
+    "hex": [
+      "#D9C3A6",
+      "#ADA193",
+      "#7F7263",
+      "#C4957A",
+      "#A76251",
+      "#3A4A3F",
+      "#ACA17D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Buckram Binding, Morris Room Grey, Library Pewter",
+    "hex": [
+      "#D9C3A6",
+      "#ADA193",
+      "#7F7263",
+      "#C4957A",
+      "#A76251",
+      "#3A4A3F",
+      "#ACA17D"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette",
+    "hex": [
+      "#AE905E",
+      "#E9BF8C",
+      "#946644",
+      "#F3E5D1",
+      "#6D817B",
+      "#47626F",
+      "#B8B2A2"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Peristyle Brass, Hubbard Squash",
+    "hex": [
+      "#AE905E",
+      "#E9BF8C",
+      "#946644",
+      "#F3E5D1",
+      "#6D817B",
+      "#47626F",
+      "#B8B2A2"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Peristyle Brass, Hubbard Squash, Antiquarian Brown",
+    "hex": [
+      "#AE905E",
+      "#E9BF8C",
+      "#946644",
+      "#F3E5D1",
+      "#6D817B",
+      "#47626F",
+      "#B8B2A2"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette",
+    "hex": [
+      "#F0EADC",
+      "#F2E0C3",
+      "#CBCEC5",
+      "#E9E0D5",
+      "#C8BFB5",
+      "#C2C0BB",
+      "#D6BCAA"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Classic Light Buff, Classic Ivory",
+    "hex": [
+      "#F0EADC",
+      "#F2E0C3",
+      "#CBCEC5",
+      "#E9E0D5",
+      "#C8BFB5",
+      "#C2C0BB",
+      "#D6BCAA"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Classic Light Buff, Classic Ivory, Pearl Gray",
+    "hex": [
+      "#F0EADC",
+      "#F2E0C3",
+      "#CBCEC5",
+      "#E9E0D5",
+      "#C8BFB5",
+      "#C2C0BB",
+      "#D6BCAA"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette",
+    "hex": [
+      "#9E3E33",
+      "#F1BFB1",
+      "#CBD0C2",
+      "#598C74",
+      "#AB7878",
+      "#C6B9B8",
+      "#ABD1C9"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Chinese Red, Jazz Age Coral",
+    "hex": [
+      "#9E3E33",
+      "#F1BFB1",
+      "#CBD0C2",
+      "#598C74",
+      "#AB7878",
+      "#C6B9B8",
+      "#ABD1C9"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Chinese Red, Jazz Age Coral, Frostwork",
+    "hex": [
+      "#9E3E33",
+      "#F1BFB1",
+      "#CBD0C2",
+      "#598C74",
+      "#AB7878",
+      "#C6B9B8",
+      "#ABD1C9"
+    ]
+  },
+  {
+    "caption": "neutral soft mid varied palette",
+    "hex": [
+      "#014E4C",
+      "#4B5645",
+      "#ACB19F",
+      "#F0CDA0",
+      "#C2CCC4",
+      "#CD9C85",
+      "#DEC3B9"
+    ]
+  },
+  {
+    "caption": "neutral soft mid varied palette, Blue Peacock, Vogue Green",
+    "hex": [
+      "#014E4C",
+      "#4B5645",
+      "#ACB19F",
+      "#F0CDA0",
+      "#C2CCC4",
+      "#CD9C85",
+      "#DEC3B9"
+    ]
+  },
+  {
+    "caption": "neutral soft mid varied palette, Blue Peacock, Vogue Green, Cascade Green",
+    "hex": [
+      "#014E4C",
+      "#4B5645",
+      "#ACB19F",
+      "#F0CDA0",
+      "#C2CCC4",
+      "#CD9C85",
+      "#DEC3B9"
+    ]
+  },
+  {
+    "caption": "cool muted mid varied palette",
+    "hex": [
+      "#BC9C9E",
+      "#623F45",
+      "#E1D286",
+      "#A489A0",
+      "#8AC6BD",
+      "#DAB5B4",
+      "#888782"
+    ]
+  },
+  {
+    "caption": "cool muted mid varied palette, Orchid, Deep Maroon",
+    "hex": [
+      "#BC9C9E",
+      "#623F45",
+      "#E1D286",
+      "#A489A0",
+      "#8AC6BD",
+      "#DAB5B4",
+      "#888782"
+    ]
+  },
+  {
+    "caption": "cool muted mid varied palette, Orchid, Deep Maroon, Chartreuse",
+    "hex": [
+      "#BC9C9E",
+      "#623F45",
+      "#E1D286",
+      "#A489A0",
+      "#8AC6BD",
+      "#DAB5B4",
+      "#888782"
+    ]
+  },
+  {
+    "caption": "neutral soft light monotone palette",
+    "hex": [
+      "#F0D39D",
+      "#C9AA98",
+      "#CD717B",
+      "#C6BFB3",
+      "#F6E3A1",
+      "#F4E8B2",
+      "#F2EAC3"
+    ]
+  },
+  {
+    "caption": "neutral soft light monotone palette, Sunbeam Yellow, Pinky Beige",
+    "hex": [
+      "#F0D39D",
+      "#C9AA98",
+      "#CD717B",
+      "#C6BFB3",
+      "#F6E3A1",
+      "#F4E8B2",
+      "#F2EAC3"
+    ]
+  },
+  {
+    "caption": "neutral soft light monotone palette, Sunbeam Yellow, Pinky Beige, Pink Flamingo",
+    "hex": [
+      "#F0D39D",
+      "#C9AA98",
+      "#CD717B",
+      "#C6BFB3",
+      "#F6E3A1",
+      "#F4E8B2",
+      "#F2EAC3"
+    ]
+  },
+  {
+    "caption": "neutral muted dark varied palette",
+    "hex": [
+      "#51323B",
+      "#443735",
+      "#3D4450",
+      "#515763",
+      "#4B2929",
+      "#622F2D",
+      "#975840"
+    ]
+  },
+  {
+    "caption": "neutral muted dark varied palette, Merlot, Rockweed",
+    "hex": [
+      "#51323B",
+      "#443735",
+      "#3D4450",
+      "#515763",
+      "#4B2929",
+      "#622F2D",
+      "#975840"
+    ]
+  },
+  {
+    "caption": "neutral muted dark varied palette, Merlot, Rockweed, Charcoal Blue",
+    "hex": [
+      "#51323B",
+      "#443735",
+      "#3D4450",
+      "#515763",
+      "#4B2929",
+      "#622F2D",
+      "#975840"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette",
+    "hex": [
+      "#AF8871",
+      "#C3B09D",
+      "#7F614A",
+      "#6E5241",
+      "#5F4D43",
+      "#303B39",
+      "#506A67"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Renwick Rose Beige, Renwick Beige",
+    "hex": [
+      "#AF8871",
+      "#C3B09D",
+      "#7F614A",
+      "#6E5241",
+      "#5F4D43",
+      "#303B39",
+      "#506A67"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Renwick Rose Beige, Renwick Beige, Rookwood Brown",
+    "hex": [
+      "#AF8871",
+      "#C3B09D",
+      "#7F614A",
+      "#6E5241",
+      "#5F4D43",
+      "#303B39",
+      "#506A67"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#738478",
+      "#979F7F",
+      "#CAAB7D",
+      "#A58258",
+      "#97896A",
+      "#565C4A",
+      "#C08650"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Rookwood Blue Green, Rookwood Jade",
+    "hex": [
+      "#738478",
+      "#979F7F",
+      "#CAAB7D",
+      "#A58258",
+      "#97896A",
+      "#565C4A",
+      "#C08650"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Rookwood Blue Green, Rookwood Jade, Downing Straw",
+    "hex": [
+      "#738478",
+      "#979F7F",
+      "#CAAB7D",
+      "#A58258",
+      "#97896A",
+      "#565C4A",
+      "#C08650"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#8B7D7B",
+      "#777F86",
+      "#887B67",
+      "#A6A397",
+      "#CBBCA5",
+      "#9A7E64",
+      "#96724C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Renwick Heather, Downing Slate",
+    "hex": [
+      "#8B7D7B",
+      "#777F86",
+      "#887B67",
+      "#A6A397",
+      "#CBBCA5",
+      "#9A7E64",
+      "#96724C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Renwick Heather, Downing Slate, Downing Earth",
+    "hex": [
+      "#8B7D7B",
+      "#777F86",
+      "#887B67",
+      "#A6A397",
+      "#CBBCA5",
+      "#9A7E64",
+      "#96724C"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#A39B7E",
+      "#A7947C",
+      "#D3B699",
+      "#ECE1CB",
+      "#EBB875",
+      "#B4B9B9",
+      "#E8D9BD"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Colonial Revival Green Stone, Colonial Revival Stone",
+    "hex": [
+      "#A39B7E",
+      "#A7947C",
+      "#D3B699",
+      "#ECE1CB",
+      "#EBB875",
+      "#B4B9B9",
+      "#E8D9BD"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Colonial Revival Green Stone, Colonial Revival Stone, Colonial Revival Tan",
+    "hex": [
+      "#A39B7E",
+      "#A7947C",
+      "#D3B699",
+      "#ECE1CB",
+      "#EBB875",
+      "#B4B9B9",
+      "#E8D9BD"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E4C495",
+      "#AE9278",
+      "#85695B",
+      "#6A4238",
+      "#432722",
+      "#7B3728",
+      "#978A7F"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Birdseye Maple, Craftsman Brown",
+    "hex": [
+      "#E4C495",
+      "#AE9278",
+      "#85695B",
+      "#6A4238",
+      "#432722",
+      "#7B3728",
+      "#978A7F"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Birdseye Maple, Craftsman Brown, Quartersawn Oak",
+    "hex": [
+      "#E4C495",
+      "#AE9278",
+      "#85695B",
+      "#6A4238",
+      "#432722",
+      "#7B3728",
+      "#978A7F"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#937F68",
+      "#A79473",
+      "#7A6A51",
+      "#C2BDB1",
+      "#988F7B",
+      "#575449",
+      "#324038"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Weathered Shingle, Roycroft Suede",
+    "hex": [
+      "#937F68",
+      "#A79473",
+      "#7A6A51",
+      "#C2BDB1",
+      "#988F7B",
+      "#575449",
+      "#324038"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Weathered Shingle, Roycroft Suede, Roycroft Brass",
+    "hex": [
+      "#937F68",
+      "#A79473",
+      "#7A6A51",
+      "#C2BDB1",
+      "#988F7B",
+      "#575449",
+      "#324038"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#616564",
+      "#797978",
+      "#B6B7B0",
+      "#73705E",
+      "#D9AD7F",
+      "#BE795E",
+      "#9C8A79"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Roycroft Pewter, Westchester Gray",
+    "hex": [
+      "#616564",
+      "#797978",
+      "#B6B7B0",
+      "#73705E",
+      "#D9AD7F",
+      "#BE795E",
+      "#9C8A79"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Roycroft Pewter, Westchester Gray, Chelsea Gray",
+    "hex": [
+      "#616564",
+      "#797978",
+      "#B6B7B0",
+      "#73705E",
+      "#D9AD7F",
+      "#BE795E",
+      "#9C8A79"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#61463A",
+      "#EECF9E",
+      "#D9A06A",
+      "#DFC8B5",
+      "#B3AE95",
+      "#857C5D",
+      "#89A4AD"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Fairfax Brown, Peace Yellow",
+    "hex": [
+      "#61463A",
+      "#EECF9E",
+      "#D9A06A",
+      "#DFC8B5",
+      "#B3AE95",
+      "#857C5D",
+      "#89A4AD"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Fairfax Brown, Peace Yellow, Harvest Gold",
+    "hex": [
+      "#61463A",
+      "#EECF9E",
+      "#D9A06A",
+      "#DFC8B5",
+      "#B3AE95",
+      "#857C5D",
+      "#89A4AD"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette",
+    "hex": [
+      "#F8D492",
+      "#E0DEDA",
+      "#CFCAC7",
+      "#BCB8B6",
+      "#ADA8A5",
+      "#847B77",
+      "#6D6562"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Classical Yellow, Snowfall",
+    "hex": [
+      "#F8D492",
+      "#E0DEDA",
+      "#CFCAC7",
+      "#BCB8B6",
+      "#ADA8A5",
+      "#847B77",
+      "#6D6562"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Classical Yellow, Snowfall, Grayish",
+    "hex": [
+      "#F8D492",
+      "#E0DEDA",
+      "#CFCAC7",
+      "#BCB8B6",
+      "#ADA8A5",
+      "#847B77",
+      "#6D6562"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#403330",
+      "#E4DBD8",
+      "#D4CDCA",
+      "#C2B6B6",
+      "#B1A3A1",
+      "#867875",
+      "#6E615F"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Black Bean, Smart White",
+    "hex": [
+      "#403330",
+      "#E4DBD8",
+      "#D4CDCA",
+      "#C2B6B6",
+      "#B1A3A1",
+      "#867875",
+      "#6E615F"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Black Bean, Smart White, Individual White",
+    "hex": [
+      "#403330",
+      "#E4DBD8",
+      "#D4CDCA",
+      "#C2B6B6",
+      "#B1A3A1",
+      "#867875",
+      "#6E615F"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#4D3C3C",
+      "#D1C5C4",
+      "#C1B2B3",
+      "#B3A3A5",
+      "#8B7C7E",
+      "#6F5C5F",
+      "#4E3132"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Bitter Chocolate, Vaguely Mauve",
+    "hex": [
+      "#4D3C3C",
+      "#D1C5C4",
+      "#C1B2B3",
+      "#B3A3A5",
+      "#8B7C7E",
+      "#6F5C5F",
+      "#4E3132"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Bitter Chocolate, Vaguely Mauve, Chaise Mauve",
+    "hex": [
+      "#4D3C3C",
+      "#D1C5C4",
+      "#C1B2B3",
+      "#B3A3A5",
+      "#8B7C7E",
+      "#6F5C5F",
+      "#4E3132"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#E3D9D5",
+      "#D6C2BE",
+      "#C9B0AB",
+      "#B89D9A",
+      "#907676",
+      "#76595D",
+      "#5F3D3F"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Dreamy White, Breathless",
+    "hex": [
+      "#E3D9D5",
+      "#D6C2BE",
+      "#C9B0AB",
+      "#B89D9A",
+      "#907676",
+      "#76595D",
+      "#5F3D3F"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Dreamy White, Breathless, Insightful Rose",
+    "hex": [
+      "#E3D9D5",
+      "#D6C2BE",
+      "#C9B0AB",
+      "#B89D9A",
+      "#907676",
+      "#76595D",
+      "#5F3D3F"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E5DCD6",
+      "#D7C8C2",
+      "#C3B1AC",
+      "#B6A09A",
+      "#8C706A",
+      "#7A5F5A",
+      "#5A3532"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Cultured Pearl, White Truffle",
+    "hex": [
+      "#E5DCD6",
+      "#D7C8C2",
+      "#C3B1AC",
+      "#B6A09A",
+      "#8C706A",
+      "#7A5F5A",
+      "#5A3532"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Cultured Pearl, White Truffle, Artistic Taupe",
+    "hex": [
+      "#E5DCD6",
+      "#D7C8C2",
+      "#C3B1AC",
+      "#B6A09A",
+      "#8C706A",
+      "#7A5F5A",
+      "#5A3532"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E3DBD4",
+      "#D1C5BE",
+      "#BFB1AA",
+      "#AC9E97",
+      "#8C7E78",
+      "#756761",
+      "#56433B"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Gauzy White, Angora",
+    "hex": [
+      "#E3DBD4",
+      "#D1C5BE",
+      "#BFB1AA",
+      "#AC9E97",
+      "#8C7E78",
+      "#756761",
+      "#56433B"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Gauzy White, Angora, Temperate Taupe",
+    "hex": [
+      "#E3DBD4",
+      "#D1C5BE",
+      "#BFB1AA",
+      "#AC9E97",
+      "#8C7E78",
+      "#756761",
+      "#56433B"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E5DAD4",
+      "#D6C8C0",
+      "#C6B3A9",
+      "#B8A196",
+      "#947569",
+      "#806257",
+      "#5A382D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Hush White, Unfussy Beige",
+    "hex": [
+      "#E5DAD4",
+      "#D6C8C0",
+      "#C6B3A9",
+      "#B8A196",
+      "#947569",
+      "#806257",
+      "#5A382D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Hush White, Unfussy Beige, Doeskin",
+    "hex": [
+      "#E5DAD4",
+      "#D6C8C0",
+      "#C6B3A9",
+      "#B8A196",
+      "#947569",
+      "#806257",
+      "#5A382D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E7DBD3",
+      "#DBC7BD",
+      "#CFB4A8",
+      "#C3A497",
+      "#9C6E63",
+      "#85594F",
+      "#5D3831"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Gorgeous White, Abalone Shell",
+    "hex": [
+      "#E7DBD3",
+      "#DBC7BD",
+      "#CFB4A8",
+      "#C3A497",
+      "#9C6E63",
+      "#85594F",
+      "#5D3831"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Gorgeous White, Abalone Shell, Sashay Sand",
+    "hex": [
+      "#E7DBD3",
+      "#DBC7BD",
+      "#CFB4A8",
+      "#C3A497",
+      "#9C6E63",
+      "#85594F",
+      "#5D3831"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E9DDD4",
+      "#DECABD",
+      "#D1B7A8",
+      "#C1A392",
+      "#9D7868",
+      "#896656",
+      "#694336"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Polite White, Malted Milk",
+    "hex": [
+      "#E9DDD4",
+      "#DECABD",
+      "#D1B7A8",
+      "#C1A392",
+      "#9D7868",
+      "#896656",
+      "#694336"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Polite White, Malted Milk, Likeable Sand",
+    "hex": [
+      "#E9DDD4",
+      "#DECABD",
+      "#D1B7A8",
+      "#C1A392",
+      "#9D7868",
+      "#896656",
+      "#694336"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E6DDD5",
+      "#D9CDC3",
+      "#CBB9AB",
+      "#BBA595",
+      "#967A6A",
+      "#715243",
+      "#4F3426"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Nice White, Reticence",
+    "hex": [
+      "#E6DDD5",
+      "#D9CDC3",
+      "#CBB9AB",
+      "#BBA595",
+      "#967A6A",
+      "#715243",
+      "#4F3426"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Nice White, Reticence, Bona Fide Beige",
+    "hex": [
+      "#E6DDD5",
+      "#D9CDC3",
+      "#CBB9AB",
+      "#BBA595",
+      "#967A6A",
+      "#715243",
+      "#4F3426"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E5E1D8",
+      "#D4CCC3",
+      "#C1B6AB",
+      "#B7AB9F",
+      "#8D7F75",
+      "#756861",
+      "#4D3930"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Heron Plume, Popular Gray",
+    "hex": [
+      "#E5E1D8",
+      "#D4CCC3",
+      "#C1B6AB",
+      "#B7AB9F",
+      "#8D7F75",
+      "#756861",
+      "#4D3930"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Heron Plume, Popular Gray, Versatile Gray",
+    "hex": [
+      "#E5E1D8",
+      "#D4CCC3",
+      "#C1B6AB",
+      "#B7AB9F",
+      "#8D7F75",
+      "#756861",
+      "#4D3930"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E4DCD4",
+      "#D3C8BD",
+      "#C2B4A7",
+      "#B5A597",
+      "#907865",
+      "#7A6455",
+      "#5F4B3F"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Everyday White, Realist Beige",
+    "hex": [
+      "#E4DCD4",
+      "#D3C8BD",
+      "#C2B4A7",
+      "#B5A597",
+      "#907865",
+      "#7A6455",
+      "#5F4B3F"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Everyday White, Realist Beige, Diverse Beige",
+    "hex": [
+      "#E4DCD4",
+      "#D3C8BD",
+      "#C2B4A7",
+      "#B5A597",
+      "#907865",
+      "#7A6455",
+      "#5F4B3F"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E6DDD4",
+      "#D6C7B9",
+      "#C5B1A2",
+      "#B59F8F",
+      "#8E725F",
+      "#785B47",
+      "#634533"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Modest White, Simplify Beige",
+    "hex": [
+      "#E6DDD4",
+      "#D6C7B9",
+      "#C5B1A2",
+      "#B59F8F",
+      "#8E725F",
+      "#785B47",
+      "#634533"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Modest White, Simplify Beige, Sand Dune",
+    "hex": [
+      "#E6DDD4",
+      "#D6C7B9",
+      "#C5B1A2",
+      "#B59F8F",
+      "#8E725F",
+      "#785B47",
+      "#634533"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E8DED3",
+      "#DAC8B8",
+      "#CAB3A0",
+      "#BFA38D",
+      "#957258",
+      "#815D40",
+      "#69482C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Reliable White, Lightweight Beige",
+    "hex": [
+      "#E8DED3",
+      "#DAC8B8",
+      "#CAB3A0",
+      "#BFA38D",
+      "#957258",
+      "#815D40",
+      "#69482C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Reliable White, Lightweight Beige, Familiar Beige",
+    "hex": [
+      "#E8DED3",
+      "#DAC8B8",
+      "#CAB3A0",
+      "#BFA38D",
+      "#957258",
+      "#815D40",
+      "#69482C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E5DDD0",
+      "#D7C5B3",
+      "#C9B29C",
+      "#BCA38B",
+      "#947A62",
+      "#7D644D",
+      "#65503D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Pacer White, Sand Dollar",
+    "hex": [
+      "#E5DDD0",
+      "#D7C5B3",
+      "#C9B29C",
+      "#BCA38B",
+      "#947A62",
+      "#7D644D",
+      "#65503D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Pacer White, Sand Dollar, Practical Beige",
+    "hex": [
+      "#E5DDD0",
+      "#D7C5B3",
+      "#C9B29C",
+      "#BCA38B",
+      "#947A62",
+      "#7D644D",
+      "#65503D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E6DCCD",
+      "#D7C5AE",
+      "#C7B198",
+      "#BAA185",
+      "#9E8163",
+      "#8A6B4D",
+      "#70573F"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Divine White, Kilim Beige",
+    "hex": [
+      "#E6DCCD",
+      "#D7C5AE",
+      "#C7B198",
+      "#BAA185",
+      "#9E8163",
+      "#8A6B4D",
+      "#70573F"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Divine White, Kilim Beige, Nomadic Desert",
+    "hex": [
+      "#E6DCCD",
+      "#D7C5AE",
+      "#C7B198",
+      "#BAA185",
+      "#9E8163",
+      "#8A6B4D",
+      "#70573F"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#EBDDCB",
+      "#E4CAAD",
+      "#D7B593",
+      "#CCA683",
+      "#BA8C64",
+      "#A57955",
+      "#8D623D"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Biscuit, Interactive Cream",
+    "hex": [
+      "#EBDDCB",
+      "#E4CAAD",
+      "#D7B593",
+      "#CCA683",
+      "#BA8C64",
+      "#A57955",
+      "#8D623D"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Biscuit, Interactive Cream, Bagel",
+    "hex": [
+      "#EBDDCB",
+      "#E4CAAD",
+      "#D7B593",
+      "#CCA683",
+      "#BA8C64",
+      "#A57955",
+      "#8D623D"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#E8DCC6",
+      "#DBC7A8",
+      "#CDB592",
+      "#C5AA85",
+      "#B39167",
+      "#9C7A56",
+      "#8A6645"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Antique White, Believable Buff",
+    "hex": [
+      "#E8DCC6",
+      "#DBC7A8",
+      "#CDB592",
+      "#C5AA85",
+      "#B39167",
+      "#9C7A56",
+      "#8A6645"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Antique White, Believable Buff, Whole Wheat",
+    "hex": [
+      "#E8DCC6",
+      "#DBC7A8",
+      "#CDB592",
+      "#C5AA85",
+      "#B39167",
+      "#9C7A56",
+      "#8A6645"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#E9DCC6",
+      "#E4CEAC",
+      "#DCBD92",
+      "#D2B084",
+      "#C19763",
+      "#AD8451",
+      "#906A3A"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Navajo White, Ivoire",
+    "hex": [
+      "#E9DCC6",
+      "#E4CEAC",
+      "#DCBD92",
+      "#D2B084",
+      "#C19763",
+      "#AD8451",
+      "#906A3A"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Navajo White, Ivoire, Blonde",
+    "hex": [
+      "#E9DCC6",
+      "#E4CEAC",
+      "#DCBD92",
+      "#D2B084",
+      "#C19763",
+      "#AD8451",
+      "#906A3A"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#EADFC9",
+      "#E0CFB0",
+      "#D0BA94",
+      "#C6B08A",
+      "#AC9571",
+      "#9A815E",
+      "#7F6743"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Muslin, Netsuke",
+    "hex": [
+      "#EADFC9",
+      "#E0CFB0",
+      "#D0BA94",
+      "#C6B08A",
+      "#AC9571",
+      "#9A815E",
+      "#7F6743"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Muslin, Netsuke, Ecru",
+    "hex": [
+      "#EADFC9",
+      "#E0CFB0",
+      "#D0BA94",
+      "#C6B08A",
+      "#AC9571",
+      "#9A815E",
+      "#7F6743"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E9DECF",
+      "#DACAB2",
+      "#CCB79B",
+      "#C0A98B",
+      "#947F65",
+      "#867057",
+      "#6E543C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Moderate White, Softer Tan",
+    "hex": [
+      "#E9DECF",
+      "#DACAB2",
+      "#CCB79B",
+      "#C0A98B",
+      "#947F65",
+      "#867057",
+      "#6E543C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Moderate White, Softer Tan, Macadamia",
+    "hex": [
+      "#E9DECF",
+      "#DACAB2",
+      "#CCB79B",
+      "#C0A98B",
+      "#947F65",
+      "#867057",
+      "#6E543C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#EAE2D4",
+      "#D9CFBA",
+      "#C8BBA3",
+      "#B8A992",
+      "#8E7F6A",
+      "#786957",
+      "#66543E"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Panda White, Wool Skein",
+    "hex": [
+      "#EAE2D4",
+      "#D9CFBA",
+      "#C8BBA3",
+      "#B8A992",
+      "#8E7F6A",
+      "#786957",
+      "#66543E"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Panda White, Wool Skein, Relaxed Khaki",
+    "hex": [
+      "#EAE2D4",
+      "#D9CFBA",
+      "#C8BBA3",
+      "#B8A992",
+      "#8E7F6A",
+      "#786957",
+      "#66543E"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E8E2D4",
+      "#DBD0B9",
+      "#CDBDA2",
+      "#C1AE91",
+      "#998970",
+      "#7E6F59",
+      "#5D513E"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Nacre, Rice Grain",
+    "hex": [
+      "#E8E2D4",
+      "#DBD0B9",
+      "#CDBDA2",
+      "#C1AE91",
+      "#998970",
+      "#7E6F59",
+      "#5D513E"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Nacre, Rice Grain, Ramie",
+    "hex": [
+      "#E8E2D4",
+      "#DBD0B9",
+      "#CDBDA2",
+      "#C1AE91",
+      "#998970",
+      "#7E6F59",
+      "#5D513E"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#DEDDD1",
+      "#D1CCB9",
+      "#C1BCA7",
+      "#B2AC96",
+      "#898473",
+      "#6B6757",
+      "#5E5949"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Nonchalant White, Ancient Marble",
+    "hex": [
+      "#DEDDD1",
+      "#D1CCB9",
+      "#C1BCA7",
+      "#B2AC96",
+      "#898473",
+      "#6B6757",
+      "#5E5949"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Nonchalant White, Ancient Marble, Grassland",
+    "hex": [
+      "#DEDDD1",
+      "#D1CCB9",
+      "#C1BCA7",
+      "#B2AC96",
+      "#898473",
+      "#6B6757",
+      "#5E5949"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E2E0D7",
+      "#D1CDBF",
+      "#BFB9AA",
+      "#B0AB9C",
+      "#8B8372",
+      "#726B5B",
+      "#424036"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Moderne White, Sedate Gray",
+    "hex": [
+      "#E2E0D7",
+      "#D1CDBF",
+      "#BFB9AA",
+      "#B0AB9C",
+      "#8B8372",
+      "#726B5B",
+      "#424036"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Moderne White, Sedate Gray, Techno Gray",
+    "hex": [
+      "#E2E0D7",
+      "#D1CDBF",
+      "#BFB9AA",
+      "#B0AB9C",
+      "#8B8372",
+      "#726B5B",
+      "#424036"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#E2E2D1",
+      "#CECEBD",
+      "#BBBCA7",
+      "#ACAD97",
+      "#7F8266",
+      "#65684C",
+      "#4F523A"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Sagey, Liveable Green",
+    "hex": [
+      "#E2E2D1",
+      "#CECEBD",
+      "#BBBCA7",
+      "#ACAD97",
+      "#7F8266",
+      "#65684C",
+      "#4F523A"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Sagey, Liveable Green, Softened Green",
+    "hex": [
+      "#E2E2D1",
+      "#CECEBD",
+      "#BBBCA7",
+      "#ACAD97",
+      "#7F8266",
+      "#65684C",
+      "#4F523A"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#E3E2D9",
+      "#D1D0C6",
+      "#BEBFB2",
+      "#ABAC9F",
+      "#7B8070",
+      "#64695C",
+      "#4E5147"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Ethereal White, Conservative Gray",
+    "hex": [
+      "#E3E2D9",
+      "#D1D0C6",
+      "#BEBFB2",
+      "#ABAC9F",
+      "#7B8070",
+      "#64695C",
+      "#4E5147"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Ethereal White, Conservative Gray, Austere Gray",
+    "hex": [
+      "#E3E2D9",
+      "#D1D0C6",
+      "#BEBFB2",
+      "#ABAC9F",
+      "#7B8070",
+      "#64695C",
+      "#4E5147"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#DCDFD7",
+      "#D1D3C7",
+      "#BDC0B3",
+      "#9FA694",
+      "#7A8775",
+      "#626E60",
+      "#465448"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Opaline, Filmy Green",
+    "hex": [
+      "#DCDFD7",
+      "#D1D3C7",
+      "#BDC0B3",
+      "#9FA694",
+      "#7A8775",
+      "#626E60",
+      "#465448"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Opaline, Filmy Green, Contented",
+    "hex": [
+      "#DCDFD7",
+      "#D1D3C7",
+      "#BDC0B3",
+      "#9FA694",
+      "#7A8775",
+      "#626E60",
+      "#465448"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#DDDDD6",
+      "#C9C9C0",
+      "#B6B5AB",
+      "#A6A69B",
+      "#7F7E72",
+      "#6D6C62",
+      "#64645A"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Frosty White, Aloof Gray",
+    "hex": [
+      "#DDDDD6",
+      "#C9C9C0",
+      "#B6B5AB",
+      "#A6A69B",
+      "#7F7E72",
+      "#6D6C62",
+      "#64645A"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Frosty White, Aloof Gray, Sensible Hue",
+    "hex": [
+      "#DDDDD6",
+      "#C9C9C0",
+      "#B6B5AB",
+      "#A6A69B",
+      "#7F7E72",
+      "#6D6C62",
+      "#64645A"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#E4E4DD",
+      "#CDD2CA",
+      "#BEC3BB",
+      "#AEB3A9",
+      "#7A8076",
+      "#5E6259",
+      "#44483D"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Spare White, Sea Salt",
+    "hex": [
+      "#E4E4DD",
+      "#CDD2CA",
+      "#BEC3BB",
+      "#AEB3A9",
+      "#7A8076",
+      "#5E6259",
+      "#44483D"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Spare White, Sea Salt, Comfort Gray",
+    "hex": [
+      "#E4E4DD",
+      "#CDD2CA",
+      "#BEC3BB",
+      "#AEB3A9",
+      "#7A8076",
+      "#5E6259",
+      "#44483D"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#D7DFD8",
+      "#C2CDC5",
+      "#ADBBB2",
+      "#9BAAA2",
+      "#7C8E87",
+      "#5E706A",
+      "#343B36"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Window Pane, Rainwashed",
+    "hex": [
+      "#D7DFD8",
+      "#C2CDC5",
+      "#ADBBB2",
+      "#9BAAA2",
+      "#7C8E87",
+      "#5E706A",
+      "#343B36"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Window Pane, Rainwashed, Quietude",
+    "hex": [
+      "#D7DFD8",
+      "#C2CDC5",
+      "#ADBBB2",
+      "#9BAAA2",
+      "#7C8E87",
+      "#5E706A",
+      "#343B36"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#DAE2E0",
+      "#C2CFCF",
+      "#ABBEBF",
+      "#9BAFB2",
+      "#7A9192",
+      "#5D7274",
+      "#4A5D5F"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Topsail, Tradewind",
+    "hex": [
+      "#DAE2E0",
+      "#C2CFCF",
+      "#ABBEBF",
+      "#9BAFB2",
+      "#7A9192",
+      "#5D7274",
+      "#4A5D5F"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Topsail, Tradewind, Rain",
+    "hex": [
+      "#DAE2E0",
+      "#C2CFCF",
+      "#ABBEBF",
+      "#9BAFB2",
+      "#7A9192",
+      "#5D7274",
+      "#4A5D5F"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#D8E0DF",
+      "#BCCBCE",
+      "#A4B7BD",
+      "#96AAB0",
+      "#607D84",
+      "#47626A",
+      "#244653"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Mountain Air, Sleepy Blue",
+    "hex": [
+      "#D8E0DF",
+      "#BCCBCE",
+      "#A4B7BD",
+      "#96AAB0",
+      "#607D84",
+      "#47626A",
+      "#244653"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Mountain Air, Sleepy Blue, Languid Blue",
+    "hex": [
+      "#D8E0DF",
+      "#BCCBCE",
+      "#A4B7BD",
+      "#96AAB0",
+      "#607D84",
+      "#47626A",
+      "#244653"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#DEE1DF",
+      "#CDD2D2",
+      "#B8BEBE",
+      "#A9B0B1",
+      "#727C7F",
+      "#596368",
+      "#23383F"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Rock Candy, Misty",
+    "hex": [
+      "#DEE1DF",
+      "#CDD2D2",
+      "#B8BEBE",
+      "#A9B0B1",
+      "#727C7F",
+      "#596368",
+      "#23383F"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Rock Candy, Misty, Samovar Silver",
+    "hex": [
+      "#DEE1DF",
+      "#CDD2D2",
+      "#B8BEBE",
+      "#A9B0B1",
+      "#727C7F",
+      "#596368",
+      "#23383F"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#DBDFE0",
+      "#BFC9D0",
+      "#AABAC6",
+      "#98A9B7",
+      "#768B9A",
+      "#5D6F7F",
+      "#2F3D4C"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Icicle, Upward",
+    "hex": [
+      "#DBDFE0",
+      "#BFC9D0",
+      "#AABAC6",
+      "#98A9B7",
+      "#768B9A",
+      "#5D6F7F",
+      "#2F3D4C"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Icicle, Upward, Windy Blue",
+    "hex": [
+      "#DBDFE0",
+      "#BFC9D0",
+      "#AABAC6",
+      "#98A9B7",
+      "#768B9A",
+      "#5D6F7F",
+      "#2F3D4C"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#DDE2E0",
+      "#CAD0D2",
+      "#B8C0C3",
+      "#ADB5B9",
+      "#7A848D",
+      "#606B75",
+      "#586168"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Quicksilver, North Star",
+    "hex": [
+      "#DDE2E0",
+      "#CAD0D2",
+      "#B8C0C3",
+      "#ADB5B9",
+      "#7A848D",
+      "#606B75",
+      "#586168"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Quicksilver, North Star, Krypton",
+    "hex": [
+      "#DDE2E0",
+      "#CAD0D2",
+      "#B8C0C3",
+      "#ADB5B9",
+      "#7A848D",
+      "#606B75",
+      "#586168"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#E3E4E1",
+      "#D4D8D7",
+      "#BEC1C3",
+      "#A8AEB1",
+      "#7D848B",
+      "#626970",
+      "#2F2F30"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Ice Cube, Olympus White",
+    "hex": [
+      "#E3E4E1",
+      "#D4D8D7",
+      "#BEC1C3",
+      "#A8AEB1",
+      "#7D848B",
+      "#626970",
+      "#2F2F30"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Ice Cube, Olympus White, Lazy Gray",
+    "hex": [
+      "#E3E4E1",
+      "#D4D8D7",
+      "#BEC1C3",
+      "#A8AEB1",
+      "#7D848B",
+      "#626970",
+      "#2F2F30"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#DDDCDB",
+      "#CBC9C9",
+      "#B5B1B5",
+      "#A6A3A9",
+      "#736F78",
+      "#5D5962",
+      "#4A4653"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Spatial White, Unique Gray",
+    "hex": [
+      "#DDDCDB",
+      "#CBC9C9",
+      "#B5B1B5",
+      "#A6A3A9",
+      "#736F78",
+      "#5D5962",
+      "#4A4653"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Spatial White, Unique Gray, Swanky Gray",
+    "hex": [
+      "#DDDCDB",
+      "#CBC9C9",
+      "#B5B1B5",
+      "#A6A3A9",
+      "#736F78",
+      "#5D5962",
+      "#4A4653"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#CEC9CC",
+      "#BDB5B9",
+      "#AFA7AC",
+      "#85777B",
+      "#695C62",
+      "#4E4247",
+      "#CFC9C8"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Sensitive Tint, Veiled Violet",
+    "hex": [
+      "#CEC9CC",
+      "#BDB5B9",
+      "#AFA7AC",
+      "#85777B",
+      "#695C62",
+      "#4E4247",
+      "#CFC9C8"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Sensitive Tint, Veiled Violet, Beguiling Mauve",
+    "hex": [
+      "#CEC9CC",
+      "#BDB5B9",
+      "#AFA7AC",
+      "#85777B",
+      "#695C62",
+      "#4E4247",
+      "#CFC9C8"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#BDB8B8",
+      "#AEA9AA",
+      "#7B787D",
+      "#605E63",
+      "#3A373E",
+      "#DBCFD4",
+      "#CBB8C0"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Fashionable Gray, Mystical Shade",
+    "hex": [
+      "#BDB8B8",
+      "#AEA9AA",
+      "#7B787D",
+      "#605E63",
+      "#3A373E",
+      "#DBCFD4",
+      "#CBB8C0"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Fashionable Gray, Mystical Shade, Special Gray",
+    "hex": [
+      "#BDB8B8",
+      "#AEA9AA",
+      "#7B787D",
+      "#605E63",
+      "#3A373E",
+      "#DBCFD4",
+      "#CBB8C0"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#AA8E9A",
+      "#8B6878",
+      "#7E5A6D",
+      "#5F3F54",
+      "#E0CDD1",
+      "#D2B6BE",
+      "#B995A1"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Thistle, Plum Dandy",
+    "hex": [
+      "#AA8E9A",
+      "#8B6878",
+      "#7E5A6D",
+      "#5F3F54",
+      "#E0CDD1",
+      "#D2B6BE",
+      "#B995A1"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Thistle, Plum Dandy, Grape Harvest",
+    "hex": [
+      "#AA8E9A",
+      "#8B6878",
+      "#7E5A6D",
+      "#5F3F54",
+      "#E0CDD1",
+      "#D2B6BE",
+      "#B995A1"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#9E6D79",
+      "#8D5869",
+      "#6D344F",
+      "#E8D4D5",
+      "#DABDC1",
+      "#C79EA2",
+      "#9E6B75"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Moss Rose, Berry Bush",
+    "hex": [
+      "#9E6D79",
+      "#8D5869",
+      "#6D344F",
+      "#E8D4D5",
+      "#DABDC1",
+      "#C79EA2",
+      "#9E6B75"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Moss Rose, Berry Bush, Fabulous Grape",
+    "hex": [
+      "#9E6D79",
+      "#8D5869",
+      "#6D344F",
+      "#E8D4D5",
+      "#DABDC1",
+      "#C79EA2",
+      "#9E6B75"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#895460",
+      "#63333E",
+      "#EBD1CF",
+      "#DCB6B5",
+      "#C39393",
+      "#995D62",
+      "#864C52"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Aged Wine, Burgundy",
+    "hex": [
+      "#895460",
+      "#63333E",
+      "#EBD1CF",
+      "#DCB6B5",
+      "#C39393",
+      "#995D62",
+      "#864C52"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Aged Wine, Burgundy, Innocence",
+    "hex": [
+      "#895460",
+      "#63333E",
+      "#EBD1CF",
+      "#DCB6B5",
+      "#C39393",
+      "#995D62",
+      "#864C52"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette",
+    "hex": [
+      "#723941",
+      "#EDD3D2",
+      "#E6BDBD",
+      "#CF8A8D",
+      "#AD5E65",
+      "#974953",
+      "#863A42"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Fine Wine, Charming Pink",
+    "hex": [
+      "#723941",
+      "#EDD3D2",
+      "#E6BDBD",
+      "#CF8A8D",
+      "#AD5E65",
+      "#974953",
+      "#863A42"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Fine Wine, Charming Pink, Lotus Flower",
+    "hex": [
+      "#723941",
+      "#EDD3D2",
+      "#E6BDBD",
+      "#CF8A8D",
+      "#AD5E65",
+      "#974953",
+      "#863A42"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#EBCECB",
+      "#E3B7B1",
+      "#CD8E89",
+      "#B56966",
+      "#A0524E",
+      "#8E3738",
+      "#F0E1D8"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Rosy Outlook, Gracious Rose",
+    "hex": [
+      "#EBCECB",
+      "#E3B7B1",
+      "#CD8E89",
+      "#B56966",
+      "#A0524E",
+      "#8E3738",
+      "#F0E1D8"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Rosy Outlook, Gracious Rose, Resounding Rose",
+    "hex": [
+      "#EBCECB",
+      "#E3B7B1",
+      "#CD8E89",
+      "#B56966",
+      "#A0524E",
+      "#8E3738",
+      "#F0E1D8"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#EBCFC3",
+      "#E3B5A8",
+      "#CD8E7F",
+      "#B3675D",
+      "#A0584F",
+      "#7B3730",
+      "#EEDED5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Romance, Mellow Coral",
+    "hex": [
+      "#EBCFC3",
+      "#E3B5A8",
+      "#CD8E7F",
+      "#B3675D",
+      "#A0584F",
+      "#7B3730",
+      "#EEDED5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Romance, Mellow Coral, Constant Coral",
+    "hex": [
+      "#EBCFC3",
+      "#E3B5A8",
+      "#CD8E7F",
+      "#B3675D",
+      "#A0584F",
+      "#7B3730",
+      "#EEDED5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#EACDC1",
+      "#E2B6A7",
+      "#CE9382",
+      "#A85E53",
+      "#8F4438",
+      "#83382A",
+      "#EFDED1"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Quaint Peche, Smoky Salmon",
+    "hex": [
+      "#EACDC1",
+      "#E2B6A7",
+      "#CE9382",
+      "#A85E53",
+      "#8F4438",
+      "#83382A",
+      "#EFDED1"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Quaint Peche, Smoky Salmon, Coral Island",
+    "hex": [
+      "#EACDC1",
+      "#E2B6A7",
+      "#CE9382",
+      "#A85E53",
+      "#8F4438",
+      "#83382A",
+      "#EFDED1"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#EDD2C0",
+      "#E4B9A2",
+      "#D9987C",
+      "#C1785C",
+      "#AD654C",
+      "#994B35",
+      "#EFE1D2"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Spun Sugar, Warming Peach",
+    "hex": [
+      "#EDD2C0",
+      "#E4B9A2",
+      "#D9987C",
+      "#C1785C",
+      "#AD654C",
+      "#994B35",
+      "#EFE1D2"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Spun Sugar, Warming Peach, Persimmon",
+    "hex": [
+      "#EDD2C0",
+      "#E4B9A2",
+      "#D9987C",
+      "#C1785C",
+      "#AD654C",
+      "#994B35",
+      "#EFE1D2"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#ECCFBB",
+      "#E5B99B",
+      "#DB9C7B",
+      "#C47B5B",
+      "#B46848",
+      "#A2583A",
+      "#EDDDCA"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Peach Fuzz, Sumptuous Peach",
+    "hex": [
+      "#ECCFBB",
+      "#E5B99B",
+      "#DB9C7B",
+      "#C47B5B",
+      "#B46848",
+      "#A2583A",
+      "#EDDDCA"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Peach Fuzz, Sumptuous Peach, Fame Orange",
+    "hex": [
+      "#ECCFBB",
+      "#E5B99B",
+      "#DB9C7B",
+      "#C47B5B",
+      "#B46848",
+      "#A2583A",
+      "#EDDDCA"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#EBCCB3",
+      "#E0B392",
+      "#D4966E",
+      "#C38058",
+      "#B46C42",
+      "#A6613C",
+      "#F0E1D0"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Sweet Orange, Soft Apricot",
+    "hex": [
+      "#EBCCB3",
+      "#E0B392",
+      "#D4966E",
+      "#C38058",
+      "#B46C42",
+      "#A6613C",
+      "#F0E1D0"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Sweet Orange, Soft Apricot, Chivalry Copper",
+    "hex": [
+      "#EBCCB3",
+      "#E0B392",
+      "#D4966E",
+      "#C38058",
+      "#B46C42",
+      "#A6613C",
+      "#F0E1D0"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#EDD0B6",
+      "#E8BE9B",
+      "#D69969",
+      "#CD8C5D",
+      "#BB7748",
+      "#B06C3E",
+      "#F3E5D2"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Creamery, Sociable",
+    "hex": [
+      "#EDD0B6",
+      "#E8BE9B",
+      "#D69969",
+      "#CD8C5D",
+      "#BB7748",
+      "#B06C3E",
+      "#F3E5D2"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Creamery, Sociable, Folksy Gold",
+    "hex": [
+      "#EDD0B6",
+      "#E8BE9B",
+      "#D69969",
+      "#CD8C5D",
+      "#BB7748",
+      "#B06C3E",
+      "#F3E5D2"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#F3D9BA",
+      "#F0CB97",
+      "#E3AC72",
+      "#D7995D",
+      "#C6884A",
+      "#B6743B",
+      "#F2E3CA"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Cachet Cream, Ambitious Amber",
+    "hex": [
+      "#F3D9BA",
+      "#F0CB97",
+      "#E3AC72",
+      "#D7995D",
+      "#C6884A",
+      "#B6743B",
+      "#F2E3CA"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Cachet Cream, Ambitious Amber, Viva Gold",
+    "hex": [
+      "#F3D9BA",
+      "#F0CB97",
+      "#E3AC72",
+      "#D7995D",
+      "#C6884A",
+      "#B6743B",
+      "#F2E3CA"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#F2D5B0",
+      "#EDC38E",
+      "#E5AE6B",
+      "#D59858",
+      "#C78538",
+      "#B67D3C",
+      "#F3E6D4"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Inviting Ivory, Harvester",
+    "hex": [
+      "#F2D5B0",
+      "#EDC38E",
+      "#E5AE6B",
+      "#D59858",
+      "#C78538",
+      "#B67D3C",
+      "#F3E6D4"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Inviting Ivory, Harvester, Torchlight",
+    "hex": [
+      "#F2D5B0",
+      "#EDC38E",
+      "#E5AE6B",
+      "#D59858",
+      "#C78538",
+      "#B67D3C",
+      "#F3E6D4"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#F5DEBB",
+      "#EDC796",
+      "#DDAC6D",
+      "#D69E59",
+      "#CC9249",
+      "#BA7F38",
+      "#F0EADC"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Jersey Cream, Humble Gold",
+    "hex": [
+      "#F5DEBB",
+      "#EDC796",
+      "#DDAC6D",
+      "#D69E59",
+      "#CC9249",
+      "#BA7F38",
+      "#F0EADC"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Jersey Cream, Humble Gold, Anjou Pear",
+    "hex": [
+      "#F5DEBB",
+      "#EDC796",
+      "#DDAC6D",
+      "#D69E59",
+      "#CC9249",
+      "#BA7F38",
+      "#F0EADC"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#EFDDC1",
+      "#E8C89E",
+      "#D6AD78",
+      "#CC9B5C",
+      "#C09056",
+      "#A4763C",
+      "#EDE0C5"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Napery, Compatible Cream",
+    "hex": [
+      "#EFDDC1",
+      "#E8C89E",
+      "#D6AD78",
+      "#CC9B5C",
+      "#C09056",
+      "#A4763C",
+      "#EDE0C5"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Napery, Compatible Cream, Golden Fleece",
+    "hex": [
+      "#EFDDC1",
+      "#E8C89E",
+      "#D6AD78",
+      "#CC9B5C",
+      "#C09056",
+      "#A4763C",
+      "#EDE0C5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#E9D6B0",
+      "#E1C28D",
+      "#C99E53",
+      "#BC934D",
+      "#AA803A",
+      "#996F32",
+      "#E9E0C5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Convivial Yellow, Sequin",
+    "hex": [
+      "#E9D6B0",
+      "#E1C28D",
+      "#C99E53",
+      "#BC934D",
+      "#AA803A",
+      "#996F32",
+      "#E9E0C5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Convivial Yellow, Sequin, Alchemy",
+    "hex": [
+      "#E9D6B0",
+      "#E1C28D",
+      "#C99E53",
+      "#BC934D",
+      "#AA803A",
+      "#996F32",
+      "#E9E0C5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#E4D0A5",
+      "#D2BA83",
+      "#C2A462",
+      "#B89B59",
+      "#9C7F41",
+      "#95793D",
+      "#E7DFC5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Lucent Yellow, Independent Gold",
+    "hex": [
+      "#E4D0A5",
+      "#D2BA83",
+      "#C2A462",
+      "#B89B59",
+      "#9C7F41",
+      "#95793D",
+      "#E7DFC5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Lucent Yellow, Independent Gold, Antiquity",
+    "hex": [
+      "#E4D0A5",
+      "#D2BA83",
+      "#C2A462",
+      "#B89B59",
+      "#9C7F41",
+      "#95793D",
+      "#E7DFC5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#DDCDA6",
+      "#CBB584",
+      "#B1975F",
+      "#9D8344",
+      "#8E773F",
+      "#7A6841",
+      "#E9E1CA"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Ancestral Gold, Wheat Grass",
+    "hex": [
+      "#DDCDA6",
+      "#CBB584",
+      "#B1975F",
+      "#9D8344",
+      "#8E773F",
+      "#7A6841",
+      "#E9E1CA"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Ancestral Gold, Wheat Grass, Edgy Gold",
+    "hex": [
+      "#DDCDA6",
+      "#CBB584",
+      "#B1975F",
+      "#9D8344",
+      "#8E773F",
+      "#7A6841",
+      "#E9E1CA"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#DFD4B0",
+      "#CFC291",
+      "#BBA86A",
+      "#9C9152",
+      "#8D844D",
+      "#655F2D",
+      "#ECEAD5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Rice Paddy, Hearts of Palm",
+    "hex": [
+      "#DFD4B0",
+      "#CFC291",
+      "#BBA86A",
+      "#9C9152",
+      "#8D844D",
+      "#655F2D",
+      "#ECEAD5"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Rice Paddy, Hearts of Palm, Sassy Green",
+    "hex": [
+      "#DFD4B0",
+      "#CFC291",
+      "#BBA86A",
+      "#9C9152",
+      "#8D844D",
+      "#655F2D",
+      "#ECEAD5"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#E0DDBD",
+      "#CBC99D",
+      "#AEAC7A",
+      "#95945C",
+      "#71713E",
+      "#5F6033",
+      "#E4E4CE"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Celery, Shagreen",
+    "hex": [
+      "#E0DDBD",
+      "#CBC99D",
+      "#AEAC7A",
+      "#95945C",
+      "#71713E",
+      "#5F6033",
+      "#E4E4CE"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Celery, Shagreen, Ryegrass",
+    "hex": [
+      "#E0DDBD",
+      "#CBC99D",
+      "#AEAC7A",
+      "#95945C",
+      "#71713E",
+      "#5F6033",
+      "#E4E4CE"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#DBDDBD",
+      "#C7CDA8",
+      "#ABB486",
+      "#88915D",
+      "#6D7645",
+      "#576238",
+      "#E4E8DA"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Honeydew, Baize Green",
+    "hex": [
+      "#DBDDBD",
+      "#C7CDA8",
+      "#ABB486",
+      "#88915D",
+      "#6D7645",
+      "#576238",
+      "#E4E8DA"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Honeydew, Baize Green, Great Green",
+    "hex": [
+      "#DBDDBD",
+      "#C7CDA8",
+      "#ABB486",
+      "#88915D",
+      "#6D7645",
+      "#576238",
+      "#E4E8DA"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#DAE2CD",
+      "#C5D1B2",
+      "#A3B48C",
+      "#788D60",
+      "#60724F",
+      "#475842",
+      "#E0E7DA"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Gratifying Green, Bonsai Tint",
+    "hex": [
+      "#DAE2CD",
+      "#C5D1B2",
+      "#A3B48C",
+      "#788D60",
+      "#60724F",
+      "#475842",
+      "#E0E7DA"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Gratifying Green, Bonsai Tint, Haven",
+    "hex": [
+      "#DAE2CD",
+      "#C5D1B2",
+      "#A3B48C",
+      "#788D60",
+      "#60724F",
+      "#475842",
+      "#E0E7DA"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#CFDDC7",
+      "#B3CBAA",
+      "#8BA97F",
+      "#5E7F57",
+      "#42603C",
+      "#405840",
+      "#C8D8C4"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Supreme Green, Relish",
+    "hex": [
+      "#CFDDC7",
+      "#B3CBAA",
+      "#8BA97F",
+      "#5E7F57",
+      "#42603C",
+      "#405840",
+      "#C8D8C4"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Supreme Green, Relish, Lounge Green",
+    "hex": [
+      "#CFDDC7",
+      "#B3CBAA",
+      "#8BA97F",
+      "#5E7F57",
+      "#42603C",
+      "#405840",
+      "#C8D8C4"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#ACC2A8",
+      "#98B092",
+      "#6C8867",
+      "#537150",
+      "#205134",
+      "#D8E2D8",
+      "#C6D5C9"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Easy Green, Nurture Green",
+    "hex": [
+      "#ACC2A8",
+      "#98B092",
+      "#6C8867",
+      "#537150",
+      "#205134",
+      "#D8E2D8",
+      "#C6D5C9"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Easy Green, Nurture Green, Inland",
+    "hex": [
+      "#ACC2A8",
+      "#98B092",
+      "#6C8867",
+      "#537150",
+      "#205134",
+      "#D8E2D8",
+      "#C6D5C9"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#AAC2B3",
+      "#91AF9D",
+      "#61826C",
+      "#4F6A56",
+      "#3D5541",
+      "#D7E4DB",
+      "#C4D9CE"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Kind Green, Restful",
+    "hex": [
+      "#AAC2B3",
+      "#91AF9D",
+      "#61826C",
+      "#4F6A56",
+      "#3D5541",
+      "#D7E4DB",
+      "#C4D9CE"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Kind Green, Restful, Jadite",
+    "hex": [
+      "#AAC2B3",
+      "#91AF9D",
+      "#61826C",
+      "#4F6A56",
+      "#3D5541",
+      "#D7E4DB",
+      "#C4D9CE"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#ACCABC",
+      "#94B5A6",
+      "#6B927F",
+      "#547867",
+      "#2A4F43",
+      "#BFD2C9",
+      "#A8C1B7"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Aloe, Spearmint",
+    "hex": [
+      "#ACCABC",
+      "#94B5A6",
+      "#6B927F",
+      "#547867",
+      "#2A4F43",
+      "#BFD2C9",
+      "#A8C1B7"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Aloe, Spearmint, Grandview",
+    "hex": [
+      "#ACCABC",
+      "#94B5A6",
+      "#6B927F",
+      "#547867",
+      "#2A4F43",
+      "#BFD2C9",
+      "#A8C1B7"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#7EA298",
+      "#5F887D",
+      "#476F65",
+      "#124A42",
+      "#E0E7E2",
+      "#C3D7D3",
+      "#B4CCC9"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Composed, Surf Green",
+    "hex": [
+      "#7EA298",
+      "#5F887D",
+      "#476F65",
+      "#124A42",
+      "#E0E7E2",
+      "#C3D7D3",
+      "#B4CCC9"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Composed, Surf Green, Raging Sea",
+    "hex": [
+      "#7EA298",
+      "#5F887D",
+      "#476F65",
+      "#124A42",
+      "#E0E7E2",
+      "#C3D7D3",
+      "#B4CCC9"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette",
+    "hex": [
+      "#8CAEAB",
+      "#518682",
+      "#2E6864",
+      "#01554F",
+      "#BEDBD8",
+      "#9EC6C6",
+      "#7BB1B2"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Drizzle, Lagoon",
+    "hex": [
+      "#8CAEAB",
+      "#518682",
+      "#2E6864",
+      "#01554F",
+      "#BEDBD8",
+      "#9EC6C6",
+      "#7BB1B2"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Drizzle, Lagoon, Green Bay",
+    "hex": [
+      "#8CAEAB",
+      "#518682",
+      "#2E6864",
+      "#01554F",
+      "#BEDBD8",
+      "#9EC6C6",
+      "#7BB1B2"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette",
+    "hex": [
+      "#5C9598",
+      "#3C797D",
+      "#016367",
+      "#C7DFE0",
+      "#B0D2D6",
+      "#84B4BE",
+      "#5B96A2"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Cloudburst, Grand Canal",
+    "hex": [
+      "#5C9598",
+      "#3C797D",
+      "#016367",
+      "#C7DFE0",
+      "#B0D2D6",
+      "#84B4BE",
+      "#5B96A2"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Cloudburst, Grand Canal, Really Teal",
+    "hex": [
+      "#5C9598",
+      "#3C797D",
+      "#016367",
+      "#C7DFE0",
+      "#B0D2D6",
+      "#84B4BE",
+      "#5B96A2"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette",
+    "hex": [
+      "#217786",
+      "#015A6B",
+      "#D8E7E6",
+      "#C5DCE0",
+      "#ADCCD3",
+      "#83AFBC",
+      "#5B92A2"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Great Falls, Oceanside",
+    "hex": [
+      "#217786",
+      "#015A6B",
+      "#D8E7E6",
+      "#C5DCE0",
+      "#ADCCD3",
+      "#83AFBC",
+      "#5B92A2"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Great Falls, Oceanside, Blue Horizon",
+    "hex": [
+      "#217786",
+      "#015A6B",
+      "#D8E7E6",
+      "#C5DCE0",
+      "#ADCCD3",
+      "#83AFBC",
+      "#5B92A2"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette",
+    "hex": [
+      "#2F778B",
+      "#015D75",
+      "#DCE7E8",
+      "#C2DAE0",
+      "#A9C9D7",
+      "#85B0C4",
+      "#5389A1"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Loch Blue, Bosporus",
+    "hex": [
+      "#2F778B",
+      "#015D75",
+      "#DCE7E8",
+      "#C2DAE0",
+      "#A9C9D7",
+      "#85B0C4",
+      "#5389A1"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Loch Blue, Bosporus, Sky High",
+    "hex": [
+      "#2F778B",
+      "#015D75",
+      "#DCE7E8",
+      "#C2DAE0",
+      "#A9C9D7",
+      "#85B0C4",
+      "#5389A1"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette",
+    "hex": [
+      "#22657F",
+      "#01455E",
+      "#E0E8E7",
+      "#C5D8DE",
+      "#B3C9D3",
+      "#97B4C3",
+      "#6A8EA1"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Georgian Bay, Loyal Blue",
+    "hex": [
+      "#22657F",
+      "#01455E",
+      "#E0E8E7",
+      "#C5D8DE",
+      "#B3C9D3",
+      "#97B4C3",
+      "#6A8EA1"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Georgian Bay, Loyal Blue, Snowdrop",
+    "hex": [
+      "#22657F",
+      "#01455E",
+      "#E0E8E7",
+      "#C5D8DE",
+      "#B3C9D3",
+      "#97B4C3",
+      "#6A8EA1"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#43718B",
+      "#215772",
+      "#CED9DD",
+      "#B2C7D3",
+      "#8BA7BB",
+      "#6A8AA4",
+      "#506B84"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Down Pour, Regatta",
+    "hex": [
+      "#43718B",
+      "#215772",
+      "#CED9DD",
+      "#B2C7D3",
+      "#8BA7BB",
+      "#6A8AA4",
+      "#506B84"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Down Pour, Regatta, Hinting Blue",
+    "hex": [
+      "#43718B",
+      "#215772",
+      "#CED9DD",
+      "#B2C7D3",
+      "#8BA7BB",
+      "#6A8AA4",
+      "#506B84"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#25476A",
+      "#E1E6E6",
+      "#CBD8E1",
+      "#B2C8D8",
+      "#8EA9C2",
+      "#6B8CA9",
+      "#4C6B8A"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Commodore, Rarified Air",
+    "hex": [
+      "#25476A",
+      "#E1E6E6",
+      "#CBD8E1",
+      "#B2C8D8",
+      "#8EA9C2",
+      "#6B8CA9",
+      "#4C6B8A"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Commodore, Rarified Air, Icelandic",
+    "hex": [
+      "#25476A",
+      "#E1E6E6",
+      "#CBD8E1",
+      "#B2C8D8",
+      "#8EA9C2",
+      "#6B8CA9",
+      "#4C6B8A"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#284A70",
+      "#CBD5DB",
+      "#BBC7D2",
+      "#99A7B8",
+      "#6C7F9A",
+      "#516582",
+      "#3B496D"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Indigo, Mild Blue",
+    "hex": [
+      "#284A70",
+      "#CBD5DB",
+      "#BBC7D2",
+      "#99A7B8",
+      "#6C7F9A",
+      "#516582",
+      "#3B496D"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Indigo, Mild Blue, Icy",
+    "hex": [
+      "#284A70",
+      "#CBD5DB",
+      "#BBC7D2",
+      "#99A7B8",
+      "#6C7F9A",
+      "#516582",
+      "#3B496D"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#D6D9DE",
+      "#BDC3CD",
+      "#99A0B2",
+      "#757C91",
+      "#5D657B",
+      "#3B3C5A",
+      "#DAD6DB"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Starry Night, Daydream",
+    "hex": [
+      "#D6D9DE",
+      "#BDC3CD",
+      "#99A0B2",
+      "#757C91",
+      "#5D657B",
+      "#3B3C5A",
+      "#DAD6DB"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Starry Night, Daydream, Vesper Violet",
+    "hex": [
+      "#D6D9DE",
+      "#BDC3CD",
+      "#99A0B2",
+      "#757C91",
+      "#5D657B",
+      "#3B3C5A",
+      "#DAD6DB"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#C5C0C9",
+      "#A29BAA",
+      "#7E778E",
+      "#645E77",
+      "#3E385A",
+      "#E0DADF",
+      "#D1C6D2"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Grape Mist, Ash Violet",
+    "hex": [
+      "#C5C0C9",
+      "#A29BAA",
+      "#7E778E",
+      "#645E77",
+      "#3E385A",
+      "#E0DADF",
+      "#D1C6D2"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Grape Mist, Ash Violet, Mythical",
+    "hex": [
+      "#C5C0C9",
+      "#A29BAA",
+      "#7E778E",
+      "#645E77",
+      "#3E385A",
+      "#E0DADF",
+      "#D1C6D2"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#B0A3B6",
+      "#7A6B85",
+      "#675A75",
+      "#443757",
+      "#EBD1DB",
+      "#E3C0CF",
+      "#CB9AAD"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Obi Lilac, Wood Violet",
+    "hex": [
+      "#B0A3B6",
+      "#7A6B85",
+      "#675A75",
+      "#443757",
+      "#EBD1DB",
+      "#E3C0CF",
+      "#CB9AAD"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Obi Lilac, Wood Violet, Plummy",
+    "hex": [
+      "#B0A3B6",
+      "#7A6B85",
+      "#675A75",
+      "#443757",
+      "#EBD1DB",
+      "#E3C0CF",
+      "#CB9AAD"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#B87E93",
+      "#92576F",
+      "#7C3655",
+      "#EDD5DD",
+      "#E8C0CF",
+      "#D899B1",
+      "#C47B95"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Red Clover, Grandeur Plum",
+    "hex": [
+      "#B87E93",
+      "#92576F",
+      "#7C3655",
+      "#EDD5DD",
+      "#E8C0CF",
+      "#D899B1",
+      "#C47B95"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Red Clover, Grandeur Plum, Framboise",
+    "hex": [
+      "#B87E93",
+      "#92576F",
+      "#7C3655",
+      "#EDD5DD",
+      "#E8C0CF",
+      "#D899B1",
+      "#C47B95"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#A2566F",
+      "#854158",
+      "#F1D3DA",
+      "#EFC0CB",
+      "#E392A1",
+      "#D47C8C",
+      "#B04B63"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Ruby Shade, Juneberry",
+    "hex": [
+      "#A2566F",
+      "#854158",
+      "#F1D3DA",
+      "#EFC0CB",
+      "#E392A1",
+      "#D47C8C",
+      "#B04B63"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Ruby Shade, Juneberry, Priscilla",
+    "hex": [
+      "#A2566F",
+      "#854158",
+      "#F1D3DA",
+      "#EFC0CB",
+      "#E392A1",
+      "#D47C8C",
+      "#B04B63"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#99324E",
+      "#F1D2D7",
+      "#F0BCC9",
+      "#EB92A3",
+      "#DD7788",
+      "#BD4C5F",
+      "#A53A4E"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Cerise, Impatiens Petal",
+    "hex": [
+      "#99324E",
+      "#F1D2D7",
+      "#F0BCC9",
+      "#EB92A3",
+      "#DD7788",
+      "#BD4C5F",
+      "#A53A4E"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Cerise, Impatiens Petal, In the Pink",
+    "hex": [
+      "#99324E",
+      "#F1D2D7",
+      "#F0BCC9",
+      "#EB92A3",
+      "#DD7788",
+      "#BD4C5F",
+      "#A53A4E"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#F2D5D7",
+      "#F0C1C6",
+      "#ED939D",
+      "#D66972",
+      "#BB4B51",
+      "#9D373C",
+      "#F1C6C4"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Alyssum, Loveable",
+    "hex": [
+      "#F2D5D7",
+      "#F0C1C6",
+      "#ED939D",
+      "#D66972",
+      "#BB4B51",
+      "#9D373C",
+      "#F1C6C4"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Alyssum, Loveable, Amaryllis",
+    "hex": [
+      "#F2D5D7",
+      "#F0C1C6",
+      "#ED939D",
+      "#D66972",
+      "#BB4B51",
+      "#9D373C",
+      "#F1C6C4"
+    ]
+  },
+  {
+    "caption": "neutral vivid light monotone palette",
+    "hex": [
+      "#F0B3B2",
+      "#ED9190",
+      "#D76C6E",
+      "#B74E4F",
+      "#A43834",
+      "#F2CCC5",
+      "#F0AFA8"
+    ]
+  },
+  {
+    "caption": "neutral vivid light monotone palette, Hopeful, Dishy Coral",
+    "hex": [
+      "#F0B3B2",
+      "#ED9190",
+      "#D76C6E",
+      "#B74E4F",
+      "#A43834",
+      "#F2CCC5",
+      "#F0AFA8"
+    ]
+  },
+  {
+    "caption": "neutral vivid light monotone palette, Hopeful, Dishy Coral, Begonia",
+    "hex": [
+      "#F0B3B2",
+      "#ED9190",
+      "#D76C6E",
+      "#B74E4F",
+      "#A43834",
+      "#F2CCC5",
+      "#F0AFA8"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#EE9489",
+      "#D9766C",
+      "#B24743",
+      "#A13B34",
+      "#F2D1C3",
+      "#F2B8A7",
+      "#E79580"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Charisma, Coral Reef",
+    "hex": [
+      "#EE9489",
+      "#D9766C",
+      "#B24743",
+      "#A13B34",
+      "#F2D1C3",
+      "#F2B8A7",
+      "#E79580"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Charisma, Coral Reef, Red Tomato",
+    "hex": [
+      "#EE9489",
+      "#D9766C",
+      "#B24743",
+      "#A13B34",
+      "#F2D1C3",
+      "#F2B8A7",
+      "#E79580"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#D87B6A",
+      "#C76356",
+      "#B85444",
+      "#F0D1C3",
+      "#F3C1AB",
+      "#E49780",
+      "#DD7861"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Lei Flower, Quite Coral",
+    "hex": [
+      "#D87B6A",
+      "#C76356",
+      "#B85444",
+      "#F0D1C3",
+      "#F3C1AB",
+      "#E49780",
+      "#DD7861"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Lei Flower, Quite Coral, Peppery",
+    "hex": [
+      "#D87B6A",
+      "#C76356",
+      "#B85444",
+      "#F0D1C3",
+      "#F3C1AB",
+      "#E49780",
+      "#DD7861"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette",
+    "hex": [
+      "#C65F47",
+      "#B44B34",
+      "#F3D0BD",
+      "#F2BDA2",
+      "#E2946F",
+      "#D67C56",
+      "#C4633E"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette, Emotional, Hearty Orange",
+    "hex": [
+      "#C65F47",
+      "#B44B34",
+      "#F3D0BD",
+      "#F2BDA2",
+      "#E2946F",
+      "#D67C56",
+      "#C4633E"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette, Emotional, Hearty Orange, Peach Blossom",
+    "hex": [
+      "#C65F47",
+      "#B44B34",
+      "#F3D0BD",
+      "#F2BDA2",
+      "#E2946F",
+      "#D67C56",
+      "#C4633E"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette",
+    "hex": [
+      "#B1533C",
+      "#F3D3BF",
+      "#F3C1A3",
+      "#E89D6F",
+      "#D57E52",
+      "#C56639",
+      "#BB613E"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette, Jalape\u00f1o, Naive Peach",
+    "hex": [
+      "#B1533C",
+      "#F3D3BF",
+      "#F3C1A3",
+      "#E89D6F",
+      "#D57E52",
+      "#C56639",
+      "#BB613E"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette, Jalape\u00f1o, Naive Peach, Neighborly Peach",
+    "hex": [
+      "#B1533C",
+      "#F3D3BF",
+      "#F3C1A3",
+      "#E89D6F",
+      "#D57E52",
+      "#C56639",
+      "#BB613E"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#F4D3B3",
+      "#F4C69F",
+      "#F2AC78",
+      "#E6955F",
+      "#CB7841",
+      "#C36F3E",
+      "#F2E3CE"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Flattering Peach, Avid Apricot",
+    "hex": [
+      "#F4D3B3",
+      "#F4C69F",
+      "#F2AC78",
+      "#E6955F",
+      "#CB7841",
+      "#C36F3E",
+      "#F2E3CE"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Flattering Peach, Avid Apricot, Tangerine",
+    "hex": [
+      "#F4D3B3",
+      "#F4C69F",
+      "#F2AC78",
+      "#E6955F",
+      "#CB7841",
+      "#C36F3E",
+      "#F2E3CE"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#F4D4AF",
+      "#F5C894",
+      "#EFB57A",
+      "#E69F5F",
+      "#D88B4D",
+      "#D28240",
+      "#F3E3CA"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Flan, Delicious Melon",
+    "hex": [
+      "#F4D4AF",
+      "#F5C894",
+      "#EFB57A",
+      "#E69F5F",
+      "#D88B4D",
+      "#D28240",
+      "#F3E3CA"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Flan, Delicious Melon, Surprise Amber",
+    "hex": [
+      "#F4D4AF",
+      "#F5C894",
+      "#EFB57A",
+      "#E69F5F",
+      "#D88B4D",
+      "#D28240",
+      "#F3E3CA"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#F4D9B1",
+      "#F5CF9B",
+      "#EFB97B",
+      "#EAAA62",
+      "#DF984E",
+      "#D28233",
+      "#F3E2C9"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Captivating Cream, Honey Blush",
+    "hex": [
+      "#F4D9B1",
+      "#F5CF9B",
+      "#EFB97B",
+      "#EAAA62",
+      "#DF984E",
+      "#D28233",
+      "#F3E2C9"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Captivating Cream, Honey Blush, Papaya",
+    "hex": [
+      "#F4D9B1",
+      "#F5CF9B",
+      "#EFB97B",
+      "#EAAA62",
+      "#DF984E",
+      "#D28233",
+      "#F3E2C9"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#F5D6A9",
+      "#F6CD8E",
+      "#F4BF77",
+      "#EBAD5E",
+      "#DF9938",
+      "#D88F32",
+      "#F3E6CE"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Enjoyable Yellow, Afterglow",
+    "hex": [
+      "#F5D6A9",
+      "#F6CD8E",
+      "#F4BF77",
+      "#EBAD5E",
+      "#DF9938",
+      "#D88F32",
+      "#F3E6CE"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Enjoyable Yellow, Afterglow, Sunrise",
+    "hex": [
+      "#F5D6A9",
+      "#F6CD8E",
+      "#F4BF77",
+      "#EBAD5E",
+      "#DF9938",
+      "#D88F32",
+      "#F3E6CE"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#F5DEAF",
+      "#F7D391",
+      "#FBCB78",
+      "#F7BE5B",
+      "#F2AF46",
+      "#E39A33",
+      "#F4E3BC"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Banana Cream, Jonquil",
+    "hex": [
+      "#F5DEAF",
+      "#F7D391",
+      "#FBCB78",
+      "#F7BE5B",
+      "#F2AF46",
+      "#E39A33",
+      "#F4E3BC"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Banana Cream, Jonquil, Afternoon",
+    "hex": [
+      "#F5DEAF",
+      "#F7D391",
+      "#FBCB78",
+      "#F7BE5B",
+      "#F2AF46",
+      "#E39A33",
+      "#F4E3BC"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#F5E0B1",
+      "#F6DDA3",
+      "#F6C973",
+      "#F1BA55",
+      "#EAAE47",
+      "#D69835",
+      "#F5E5BC"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Friendly Yellow, Butter Up",
+    "hex": [
+      "#F5E0B1",
+      "#F6DDA3",
+      "#F6C973",
+      "#F1BA55",
+      "#EAAE47",
+      "#D69835",
+      "#F5E5BC"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Friendly Yellow, Butter Up, June Day",
+    "hex": [
+      "#F5E0B1",
+      "#F6DDA3",
+      "#F6C973",
+      "#F1BA55",
+      "#EAAE47",
+      "#D69835",
+      "#F5E5BC"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#F4E1AE",
+      "#F5D68F",
+      "#EEC25F",
+      "#E1B047",
+      "#D6A02B",
+      "#C48919",
+      "#F3E8C2"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Lantern Light, Solaria",
+    "hex": [
+      "#F4E1AE",
+      "#F5D68F",
+      "#EEC25F",
+      "#E1B047",
+      "#D6A02B",
+      "#C48919",
+      "#F3E8C2"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Lantern Light, Solaria, Overjoy",
+    "hex": [
+      "#F4E1AE",
+      "#F5D68F",
+      "#EEC25F",
+      "#E1B047",
+      "#D6A02B",
+      "#C48919",
+      "#F3E8C2"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#F5E1AC",
+      "#F7D78A",
+      "#EAC365",
+      "#DBB04A",
+      "#D1A436",
+      "#C49832",
+      "#F3EAC6"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Glad Yellow, Midday",
+    "hex": [
+      "#F5E1AC",
+      "#F7D78A",
+      "#EAC365",
+      "#DBB04A",
+      "#D1A436",
+      "#C49832",
+      "#F3EAC6"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Glad Yellow, Midday, Quilt Gold",
+    "hex": [
+      "#F5E1AC",
+      "#F7D78A",
+      "#EAC365",
+      "#DBB04A",
+      "#D1A436",
+      "#C49832",
+      "#F3EAC6"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette",
+    "hex": [
+      "#EEE3B2",
+      "#E6D88E",
+      "#D9C661",
+      "#C4B146",
+      "#AC9825",
+      "#9C8B1F",
+      "#E9E5B3"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette, Moonraker, Lively Yellow",
+    "hex": [
+      "#EEE3B2",
+      "#E6D88E",
+      "#D9C661",
+      "#C4B146",
+      "#AC9825",
+      "#9C8B1F",
+      "#E9E5B3"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette, Moonraker, Lively Yellow, Frolic",
+    "hex": [
+      "#EEE3B2",
+      "#E6D88E",
+      "#D9C661",
+      "#C4B146",
+      "#AC9825",
+      "#9C8B1F",
+      "#E9E5B3"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette",
+    "hex": [
+      "#DAD790",
+      "#C4C476",
+      "#B4B05A",
+      "#989746",
+      "#847E35",
+      "#DCE1B8",
+      "#C5CD8F"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Gleeful, M\u00e9lange Green",
+    "hex": [
+      "#DAD790",
+      "#C4C476",
+      "#B4B05A",
+      "#989746",
+      "#847E35",
+      "#DCE1B8",
+      "#C5CD8F"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Gleeful, M\u00e9lange Green, Parakeet",
+    "hex": [
+      "#DAD790",
+      "#C4C476",
+      "#B4B05A",
+      "#989746",
+      "#847E35",
+      "#DCE1B8",
+      "#C5CD8F"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#AFB96A",
+      "#97A554",
+      "#7A8833",
+      "#6C7B30",
+      "#D3DFC3",
+      "#BDD0AB",
+      "#9DB682"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Lime Rickey, Overt Green",
+    "hex": [
+      "#AFB96A",
+      "#97A554",
+      "#7A8833",
+      "#6C7B30",
+      "#D3DFC3",
+      "#BDD0AB",
+      "#9DB682"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Lime Rickey, Overt Green, Gecko",
+    "hex": [
+      "#AFB96A",
+      "#97A554",
+      "#7A8833",
+      "#6C7B30",
+      "#D3DFC3",
+      "#BDD0AB",
+      "#9DB682"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#85A16A",
+      "#648149",
+      "#58713F",
+      "#D7E3CA",
+      "#C0D2AD",
+      "#99C285",
+      "#7FAC6E"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Pickle, Talipot Palm",
+    "hex": [
+      "#85A16A",
+      "#648149",
+      "#58713F",
+      "#D7E3CA",
+      "#C0D2AD",
+      "#99C285",
+      "#7FAC6E"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Pickle, Talipot Palm, Houseplant",
+    "hex": [
+      "#85A16A",
+      "#648149",
+      "#58713F",
+      "#D7E3CA",
+      "#C0D2AD",
+      "#99C285",
+      "#7FAC6E"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#4F854A",
+      "#2F5F3A",
+      "#CCE2CA",
+      "#AED2B0",
+      "#8EC298",
+      "#68A678",
+      "#498555"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Grasshopper, Espalier",
+    "hex": [
+      "#4F854A",
+      "#2F5F3A",
+      "#CCE2CA",
+      "#AED2B0",
+      "#8EC298",
+      "#68A678",
+      "#498555"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Grasshopper, Espalier, Jocular Green",
+    "hex": [
+      "#4F854A",
+      "#2F5F3A",
+      "#CCE2CA",
+      "#AED2B0",
+      "#8EC298",
+      "#68A678",
+      "#498555"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette",
+    "hex": [
+      "#245E36",
+      "#D1E3D2",
+      "#B7D7BF",
+      "#8AC1A1",
+      "#57AA80",
+      "#348A5D",
+      "#016844"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Derbyshire, Mint Condition",
+    "hex": [
+      "#245E36",
+      "#D1E3D2",
+      "#B7D7BF",
+      "#8AC1A1",
+      "#57AA80",
+      "#348A5D",
+      "#016844"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Derbyshire, Mint Condition, Reclining Green",
+    "hex": [
+      "#245E36",
+      "#D1E3D2",
+      "#B7D7BF",
+      "#8AC1A1",
+      "#57AA80",
+      "#348A5D",
+      "#016844"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette",
+    "hex": [
+      "#D7EBE2",
+      "#C0E3DA",
+      "#A1D4C8",
+      "#70BAA7",
+      "#53A38F",
+      "#368976",
+      "#016C4F"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Embellished Blue, Waterfall",
+    "hex": [
+      "#D7EBE2",
+      "#C0E3DA",
+      "#A1D4C8",
+      "#70BAA7",
+      "#53A38F",
+      "#368976",
+      "#016C4F"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Embellished Blue, Waterfall, Refresh",
+    "hex": [
+      "#D7EBE2",
+      "#C0E3DA",
+      "#A1D4C8",
+      "#70BAA7",
+      "#53A38F",
+      "#368976",
+      "#016C4F"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette",
+    "hex": [
+      "#C1E6DF",
+      "#A1D5CB",
+      "#75B9AE",
+      "#61A89D",
+      "#3B8C80",
+      "#016D60",
+      "#C2E5E5"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Tame Teal, Aqueduct",
+    "hex": [
+      "#C1E6DF",
+      "#A1D5CB",
+      "#75B9AE",
+      "#61A89D",
+      "#3B8C80",
+      "#016D60",
+      "#C2E5E5"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Tame Teal, Aqueduct, Cooled Blue",
+    "hex": [
+      "#C1E6DF",
+      "#A1D5CB",
+      "#75B9AE",
+      "#61A89D",
+      "#3B8C80",
+      "#016D60",
+      "#C2E5E5"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette",
+    "hex": [
+      "#A7DCDC",
+      "#6EC2C4",
+      "#3AA9AE",
+      "#01858B",
+      "#017478",
+      "#C2E0E3",
+      "#A6D0D6"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Spa, Mariner",
+    "hex": [
+      "#A7DCDC",
+      "#6EC2C4",
+      "#3AA9AE",
+      "#01858B",
+      "#017478",
+      "#C2E0E3",
+      "#A6D0D6"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Spa, Mariner, Aquarium",
+    "hex": [
+      "#A7DCDC",
+      "#6EC2C4",
+      "#3AA9AE",
+      "#01858B",
+      "#017478",
+      "#C2E0E3",
+      "#A6D0D6"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette",
+    "hex": [
+      "#7DC1CB",
+      "#4DA6B2",
+      "#08808E",
+      "#01717E",
+      "#C6E3E8",
+      "#A6D4DE",
+      "#71B8C7"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Rapture Blue, Freshwater",
+    "hex": [
+      "#7DC1CB",
+      "#4DA6B2",
+      "#08808E",
+      "#01717E",
+      "#C6E3E8",
+      "#A6D4DE",
+      "#71B8C7"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Rapture Blue, Freshwater, Briny",
+    "hex": [
+      "#7DC1CB",
+      "#4DA6B2",
+      "#08808E",
+      "#01717E",
+      "#C6E3E8",
+      "#A6D4DE",
+      "#71B8C7"
+    ]
+  },
+  {
+    "caption": "cool vivid mid monotone palette",
+    "hex": [
+      "#34A3B6",
+      "#018498",
+      "#016E85",
+      "#D3E7E9",
+      "#B4E0E7",
+      "#8FD0DD",
+      "#56B5CA"
+    ]
+  },
+  {
+    "caption": "cool vivid mid monotone palette, Jamaica Bay, Cruising",
+    "hex": [
+      "#34A3B6",
+      "#018498",
+      "#016E85",
+      "#D3E7E9",
+      "#B4E0E7",
+      "#8FD0DD",
+      "#56B5CA"
+    ]
+  },
+  {
+    "caption": "cool vivid mid monotone palette, Jamaica Bay, Cruising, Amalfi",
+    "hex": [
+      "#34A3B6",
+      "#018498",
+      "#016E85",
+      "#D3E7E9",
+      "#B4E0E7",
+      "#8FD0DD",
+      "#56B5CA"
+    ]
+  },
+  {
+    "caption": "cool vivid mid monotone palette",
+    "hex": [
+      "#01A0B8",
+      "#01819E",
+      "#016081",
+      "#B7DFE8",
+      "#A2D5E7",
+      "#5DB3D4",
+      "#289EC4"
+    ]
+  },
+  {
+    "caption": "cool vivid mid monotone palette, Capri, Blue Mosque",
+    "hex": [
+      "#01A0B8",
+      "#01819E",
+      "#016081",
+      "#B7DFE8",
+      "#A2D5E7",
+      "#5DB3D4",
+      "#289EC4"
+    ]
+  },
+  {
+    "caption": "cool vivid mid monotone palette, Capri, Blue Mosque, Adriatic Sea",
+    "hex": [
+      "#01A0B8",
+      "#01819E",
+      "#016081",
+      "#B7DFE8",
+      "#A2D5E7",
+      "#5DB3D4",
+      "#289EC4"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette",
+    "hex": [
+      "#017CA7",
+      "#015D87",
+      "#D6E4E7",
+      "#C3DFE8",
+      "#B0D6E6",
+      "#7DB5D3",
+      "#5A9EC0"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Blue Plate, Jay Blue",
+    "hex": [
+      "#017CA7",
+      "#015D87",
+      "#D6E4E7",
+      "#C3DFE8",
+      "#B0D6E6",
+      "#7DB5D3",
+      "#5A9EC0"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Blue Plate, Jay Blue, Iceberg",
+    "hex": [
+      "#017CA7",
+      "#015D87",
+      "#D6E4E7",
+      "#C3DFE8",
+      "#B0D6E6",
+      "#7DB5D3",
+      "#5A9EC0"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette",
+    "hex": [
+      "#2377A2",
+      "#094C73",
+      "#CCDBE5",
+      "#B8CDDD",
+      "#97B3D0",
+      "#7498BE",
+      "#4E739F"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Danube, Dignity Blue",
+    "hex": [
+      "#2377A2",
+      "#094C73",
+      "#CCDBE5",
+      "#B8CDDD",
+      "#97B3D0",
+      "#7498BE",
+      "#4E739F"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Danube, Dignity Blue, Rhythmic Blue",
+    "hex": [
+      "#2377A2",
+      "#094C73",
+      "#CCDBE5",
+      "#B8CDDD",
+      "#97B3D0",
+      "#7498BE",
+      "#4E739F"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#164576",
+      "#D8DDE6",
+      "#C7D1E2",
+      "#A7B2D4",
+      "#8B98C4",
+      "#6572A5",
+      "#3E4371"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Honorable Blue, Wishful Blue",
+    "hex": [
+      "#164576",
+      "#D8DDE6",
+      "#C7D1E2",
+      "#A7B2D4",
+      "#8B98C4",
+      "#6572A5",
+      "#3E4371"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Honorable Blue, Wishful Blue, Breathtaking",
+    "hex": [
+      "#164576",
+      "#D8DDE6",
+      "#C7D1E2",
+      "#A7B2D4",
+      "#8B98C4",
+      "#6572A5",
+      "#3E4371"
+    ]
+  },
+  {
+    "caption": "cool muted light monotone palette",
+    "hex": [
+      "#DFD9E4",
+      "#D1CBDF",
+      "#BDB4D4",
+      "#968DB8",
+      "#716998",
+      "#4D426E",
+      "#DFDCE5"
+    ]
+  },
+  {
+    "caption": "cool muted light monotone palette, Inspired Lilac, Potentially Purple",
+    "hex": [
+      "#DFD9E4",
+      "#D1CBDF",
+      "#BDB4D4",
+      "#968DB8",
+      "#716998",
+      "#4D426E",
+      "#DFDCE5"
+    ]
+  },
+  {
+    "caption": "cool muted light monotone palette, Inspired Lilac, Potentially Purple, Wisteria",
+    "hex": [
+      "#DFD9E4",
+      "#D1CBDF",
+      "#BDB4D4",
+      "#968DB8",
+      "#716998",
+      "#4D426E",
+      "#DFDCE5"
+    ]
+  },
+  {
+    "caption": "cool muted light monotone palette",
+    "hex": [
+      "#D2C8DD",
+      "#C0AFD0",
+      "#A18AB7",
+      "#7E6596",
+      "#624977",
+      "#E5DBE5",
+      "#DAC7DA"
+    ]
+  },
+  {
+    "caption": "cool muted light monotone palette, Rhapsody Lilac, Magical",
+    "hex": [
+      "#D2C8DD",
+      "#C0AFD0",
+      "#A18AB7",
+      "#7E6596",
+      "#624977",
+      "#E5DBE5",
+      "#DAC7DA"
+    ]
+  },
+  {
+    "caption": "cool muted light monotone palette, Rhapsody Lilac, Magical, Kismet",
+    "hex": [
+      "#D2C8DD",
+      "#C0AFD0",
+      "#A18AB7",
+      "#7E6596",
+      "#624977",
+      "#E5DBE5",
+      "#DAC7DA"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#C2A4C2",
+      "#A785A7",
+      "#7C5A7E",
+      "#5D395F",
+      "#B54D7F",
+      "#953D68",
+      "#92345B"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Novel Lilac, Baroness",
+    "hex": [
+      "#C2A4C2",
+      "#A785A7",
+      "#7C5A7E",
+      "#5D395F",
+      "#B54D7F",
+      "#953D68",
+      "#92345B"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Novel Lilac, Baroness, Vigorous Violet",
+    "hex": [
+      "#C2A4C2",
+      "#A785A7",
+      "#7C5A7E",
+      "#5D395F",
+      "#B54D7F",
+      "#953D68",
+      "#92345B"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#AC4362",
+      "#CC617F",
+      "#C84F68",
+      "#A42E41",
+      "#AB3C51",
+      "#A82E33",
+      "#BF2D32"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Hot, Dragon Fruit",
+    "hex": [
+      "#AC4362",
+      "#CC617F",
+      "#C84F68",
+      "#A42E41",
+      "#AB3C51",
+      "#A82E33",
+      "#BF2D32"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Hot, Dragon Fruit, Eros Pink",
+    "hex": [
+      "#AC4362",
+      "#CC617F",
+      "#C84F68",
+      "#A42E41",
+      "#AB3C51",
+      "#A82E33",
+      "#BF2D32"
+    ]
+  },
+  {
+    "caption": "neutral vivid mid monotone palette",
+    "hex": [
+      "#C33A36",
+      "#AD2C34",
+      "#F3D1C8",
+      "#C04D35",
+      "#C35530",
+      "#D7552A",
+      "#E16F3E"
+    ]
+  },
+  {
+    "caption": "neutral vivid mid monotone palette, Stop, Positive Red",
+    "hex": [
+      "#C33A36",
+      "#AD2C34",
+      "#F3D1C8",
+      "#C04D35",
+      "#C35530",
+      "#D7552A",
+      "#E16F3E"
+    ]
+  },
+  {
+    "caption": "neutral vivid mid monotone palette, Stop, Positive Red, Comical Coral",
+    "hex": [
+      "#C33A36",
+      "#AD2C34",
+      "#F3D1C8",
+      "#C04D35",
+      "#C35530",
+      "#D7552A",
+      "#E16F3E"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#E47237",
+      "#EC8430",
+      "#F4A045",
+      "#EB882C",
+      "#F7DDA1",
+      "#F5E1A6",
+      "#FAD97A"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Invigorate, Navel",
+    "hex": [
+      "#E47237",
+      "#EC8430",
+      "#F4A045",
+      "#EB882C",
+      "#F7DDA1",
+      "#F5E1A6",
+      "#FAD97A"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Invigorate, Navel, Osage Orange",
+    "hex": [
+      "#E47237",
+      "#EC8430",
+      "#F4A045",
+      "#EB882C",
+      "#F7DDA1",
+      "#F5E1A6",
+      "#FAD97A"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette",
+    "hex": [
+      "#FDCC4E",
+      "#FFC723",
+      "#F8AC1D",
+      "#FDB702",
+      "#FFC801",
+      "#F7E594",
+      "#FED95D"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette, Decisive Yellow, Cheerful",
+    "hex": [
+      "#FDCC4E",
+      "#FFC723",
+      "#F8AC1D",
+      "#FDB702",
+      "#FFC801",
+      "#F7E594",
+      "#FED95D"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette, Decisive Yellow, Cheerful, Gusto Gold",
+    "hex": [
+      "#FDCC4E",
+      "#FFC723",
+      "#F8AC1D",
+      "#FDB702",
+      "#FFC801",
+      "#F7E594",
+      "#FED95D"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette",
+    "hex": [
+      "#FED340",
+      "#FECB01",
+      "#EDD26F",
+      "#DDB835",
+      "#CBA901",
+      "#C6B836",
+      "#B2C216"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette, Daisy, Confident Yellow",
+    "hex": [
+      "#FED340",
+      "#FECB01",
+      "#EDD26F",
+      "#DDB835",
+      "#CBA901",
+      "#C6B836",
+      "#B2C216"
+    ]
+  },
+  {
+    "caption": "warm vivid mid monotone palette, Daisy, Confident Yellow, Funky Yellow",
+    "hex": [
+      "#FED340",
+      "#FECB01",
+      "#EDD26F",
+      "#DDB835",
+      "#CBA901",
+      "#C6B836",
+      "#B2C216"
+    ]
+  },
+  {
+    "caption": "neutral vivid mid monotone palette",
+    "hex": [
+      "#9ABA25",
+      "#3F8A24",
+      "#358C3F",
+      "#238652",
+      "#017244",
+      "#D4E7C3",
+      "#87DCCE"
+    ]
+  },
+  {
+    "caption": "neutral vivid mid monotone palette, Electric Lime, Direct Green",
+    "hex": [
+      "#9ABA25",
+      "#3F8A24",
+      "#358C3F",
+      "#238652",
+      "#017244",
+      "#D4E7C3",
+      "#87DCCE"
+    ]
+  },
+  {
+    "caption": "neutral vivid mid monotone palette, Electric Lime, Direct Green, Envy",
+    "hex": [
+      "#9ABA25",
+      "#3F8A24",
+      "#358C3F",
+      "#238652",
+      "#017244",
+      "#D4E7C3",
+      "#87DCCE"
+    ]
+  },
+  {
+    "caption": "cool vivid mid monotone palette",
+    "hex": [
+      "#019187",
+      "#019196",
+      "#017680",
+      "#01B0BB",
+      "#7FC3E1",
+      "#0192C6",
+      "#016EA7"
+    ]
+  },
+  {
+    "caption": "cool vivid mid monotone palette, Nifty Turquoise, Splashy",
+    "hex": [
+      "#019187",
+      "#019196",
+      "#017680",
+      "#01B0BB",
+      "#7FC3E1",
+      "#0192C6",
+      "#016EA7"
+    ]
+  },
+  {
+    "caption": "cool vivid mid monotone palette, Nifty Turquoise, Splashy, Intense Teal",
+    "hex": [
+      "#019187",
+      "#019196",
+      "#017680",
+      "#01B0BB",
+      "#7FC3E1",
+      "#0192C6",
+      "#016EA7"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette",
+    "hex": [
+      "#015F97",
+      "#015086",
+      "#225288",
+      "#C2CBE0",
+      "#3C4C80",
+      "#CAB2D2",
+      "#795484"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Hyper Blue, Blueblood",
+    "hex": [
+      "#015F97",
+      "#015086",
+      "#225288",
+      "#C2CBE0",
+      "#3C4C80",
+      "#CAB2D2",
+      "#795484"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Hyper Blue, Blueblood, Frank Blue",
+    "hex": [
+      "#015F97",
+      "#015086",
+      "#225288",
+      "#C2CBE0",
+      "#3C4C80",
+      "#CAB2D2",
+      "#795484"
+    ]
+  },
+  {
+    "caption": "cool muted dark monotone palette",
+    "hex": [
+      "#665385",
+      "#514C7E",
+      "#019D6E",
+      "#3B373C",
+      "#353337",
+      "#313031",
+      "#323132"
+    ]
+  },
+  {
+    "caption": "cool muted dark monotone palette, African Violet, Fully Purple",
+    "hex": [
+      "#665385",
+      "#514C7E",
+      "#019D6E",
+      "#3B373C",
+      "#353337",
+      "#313031",
+      "#323132"
+    ]
+  },
+  {
+    "caption": "cool muted dark monotone palette, African Violet, Fully Purple, Jitterbug Jade",
+    "hex": [
+      "#665385",
+      "#514C7E",
+      "#019D6E",
+      "#3B373C",
+      "#353337",
+      "#313031",
+      "#323132"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette",
+    "hex": [
+      "#31363A",
+      "#323639",
+      "#373A3A",
+      "#F2ECE6",
+      "#EEE9E0",
+      "#EFE8DD",
+      "#E7E2DA"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Inkwell, Black of Night",
+    "hex": [
+      "#31363A",
+      "#323639",
+      "#373A3A",
+      "#F2ECE6",
+      "#EEE9E0",
+      "#EFE8DD",
+      "#E7E2DA"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Inkwell, Black of Night, Greenblack",
+    "hex": [
+      "#31363A",
+      "#323639",
+      "#373A3A",
+      "#F2ECE6",
+      "#EEE9E0",
+      "#EFE8DD",
+      "#E7E2DA"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette",
+    "hex": [
+      "#EDEAE5",
+      "#EDECE6",
+      "#EEEFEA",
+      "#E9EBE7",
+      "#EDEAE0",
+      "#E8E3D9",
+      "#E5DFD2"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Snowbound, Pure White",
+    "hex": [
+      "#EDEAE5",
+      "#EDECE6",
+      "#EEEFEA",
+      "#E9EBE7",
+      "#EDEAE0",
+      "#E8E3D9",
+      "#E5DFD2"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Snowbound, Pure White, Extra White",
+    "hex": [
+      "#EDEAE5",
+      "#EDECE6",
+      "#EEEFEA",
+      "#E9EBE7",
+      "#EDEAE0",
+      "#E8E3D9",
+      "#E5DFD2"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette",
+    "hex": [
+      "#E3DED0",
+      "#EFE8DB",
+      "#ECE5D8",
+      "#E2DED8",
+      "#CCC9C0",
+      "#BCB7AD",
+      "#ACA79E"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Natural Choice, Creamy",
+    "hex": [
+      "#E3DED0",
+      "#EFE8DB",
+      "#ECE5D8",
+      "#E2DED8",
+      "#CCC9C0",
+      "#BCB7AD",
+      "#ACA79E"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Natural Choice, Creamy, Ivory Lace",
+    "hex": [
+      "#E3DED0",
+      "#EFE8DB",
+      "#ECE5D8",
+      "#E2DED8",
+      "#CCC9C0",
+      "#BCB7AD",
+      "#ACA79E"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#908A83",
+      "#78736E",
+      "#4F4842",
+      "#DFD9D2",
+      "#CCC5BD",
+      "#B9B2A9",
+      "#ABA39A"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Dovetail, Gauntlet Gray",
+    "hex": [
+      "#908A83",
+      "#78736E",
+      "#4F4842",
+      "#DFD9D2",
+      "#CCC5BD",
+      "#B9B2A9",
+      "#ABA39A"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Dovetail, Gauntlet Gray, Black Fox",
+    "hex": [
+      "#908A83",
+      "#78736E",
+      "#4F4842",
+      "#DFD9D2",
+      "#CCC5BD",
+      "#B9B2A9",
+      "#ABA39A"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#867A6F",
+      "#6F6459",
+      "#564537",
+      "#E3DED7",
+      "#D1CBC1",
+      "#BFB6AA",
+      "#ADA295"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Backdrop, Griffin",
+    "hex": [
+      "#867A6F",
+      "#6F6459",
+      "#564537",
+      "#E3DED7",
+      "#D1CBC1",
+      "#BFB6AA",
+      "#ADA295"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Backdrop, Griffin, Hickory Smoke",
+    "hex": [
+      "#867A6F",
+      "#6F6459",
+      "#564537",
+      "#E3DED7",
+      "#D1CBC1",
+      "#BFB6AA",
+      "#ADA295"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#887B6C",
+      "#74685A",
+      "#5C4D3C",
+      "#E3DDD3",
+      "#D1C7B8",
+      "#C0B2A2",
+      "#B1A290"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Warm Stone, Brainstorm Bronze",
+    "hex": [
+      "#887B6C",
+      "#74685A",
+      "#5C4D3C",
+      "#E3DDD3",
+      "#D1C7B8",
+      "#C0B2A2",
+      "#B1A290"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Warm Stone, Brainstorm Bronze, Status Bronze",
+    "hex": [
+      "#887B6C",
+      "#74685A",
+      "#5C4D3C",
+      "#E3DDD3",
+      "#D1C7B8",
+      "#C0B2A2",
+      "#B1A290"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#8A7A6A",
+      "#716354",
+      "#564536",
+      "#E6DFD3",
+      "#CEC6BB",
+      "#BEB5A9",
+      "#A8A093"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Virtual Taupe, Smokehouse",
+    "hex": [
+      "#8A7A6A",
+      "#716354",
+      "#564536",
+      "#E6DFD3",
+      "#CEC6BB",
+      "#BEB5A9",
+      "#A8A093"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Virtual Taupe, Smokehouse, Van Dyke Brown",
+    "hex": [
+      "#8A7A6A",
+      "#716354",
+      "#564536",
+      "#E6DFD3",
+      "#CEC6BB",
+      "#BEB5A9",
+      "#A8A093"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#817A6E",
+      "#6B645B",
+      "#54504A",
+      "#E2E0D6",
+      "#CFCABD",
+      "#BFB6A7",
+      "#AFA696"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Anonymous, Porpoise",
+    "hex": [
+      "#817A6E",
+      "#6B645B",
+      "#54504A",
+      "#E2E0D6",
+      "#CFCABD",
+      "#BFB6A7",
+      "#AFA696"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Anonymous, Porpoise, Urbane Bronze",
+    "hex": [
+      "#817A6E",
+      "#6B645B",
+      "#54504A",
+      "#E2E0D6",
+      "#CFCABD",
+      "#BFB6A7",
+      "#AFA696"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#867E70",
+      "#645A4B",
+      "#554C3E",
+      "#E0E0D9",
+      "#C8CBC4",
+      "#B2B5AF",
+      "#A3A7A0"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Adaptive Shade, Oak Leaf Brown",
+    "hex": [
+      "#867E70",
+      "#645A4B",
+      "#554C3E",
+      "#E0E0D9",
+      "#C8CBC4",
+      "#B2B5AF",
+      "#A3A7A0"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Adaptive Shade, Oak Leaf Brown, Enduring Bronze",
+    "hex": [
+      "#867E70",
+      "#645A4B",
+      "#554C3E",
+      "#E0E0D9",
+      "#C8CBC4",
+      "#B2B5AF",
+      "#A3A7A0"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#7C7D75",
+      "#63655F",
+      "#484C49",
+      "#DEDFDC",
+      "#CBCCC9",
+      "#BDBDB7",
+      "#A7A8A2"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Attitude Gray, Night Owl",
+    "hex": [
+      "#7C7D75",
+      "#63655F",
+      "#484C49",
+      "#DEDFDC",
+      "#CBCCC9",
+      "#BDBDB7",
+      "#A7A8A2"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Attitude Gray, Night Owl, Rock Bottom",
+    "hex": [
+      "#7C7D75",
+      "#63655F",
+      "#484C49",
+      "#DEDFDC",
+      "#CBCCC9",
+      "#BDBDB7",
+      "#A7A8A2"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#7F817E",
+      "#636562",
+      "#434341",
+      "#DCDEDC",
+      "#C6CACA",
+      "#B0B5B5",
+      "#A0A5A7"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Cityscape, Grizzle Gray",
+    "hex": [
+      "#7F817E",
+      "#636562",
+      "#434341",
+      "#DCDEDC",
+      "#C6CACA",
+      "#B0B5B5",
+      "#A0A5A7"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Cityscape, Grizzle Gray, Iron Ore",
+    "hex": [
+      "#7F817E",
+      "#636562",
+      "#434341",
+      "#DCDEDC",
+      "#C6CACA",
+      "#B0B5B5",
+      "#A0A5A7"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette",
+    "hex": [
+      "#7F8486",
+      "#616669",
+      "#44484D",
+      "#E2DEDB",
+      "#CFC9C8",
+      "#BCB6B6",
+      "#ADA5A5"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Software, Web Gray",
+    "hex": [
+      "#7F8486",
+      "#616669",
+      "#44484D",
+      "#E2DEDB",
+      "#CFC9C8",
+      "#BCB6B6",
+      "#ADA5A5"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Software, Web Gray, Cyberspace",
+    "hex": [
+      "#7F8486",
+      "#616669",
+      "#44484D",
+      "#E2DEDB",
+      "#CFC9C8",
+      "#BCB6B6",
+      "#ADA5A5"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette",
+    "hex": [
+      "#837D7F",
+      "#676064",
+      "#443E40",
+      "#F3EEE7",
+      "#EDE6DB",
+      "#F4EFE5",
+      "#F4EFE4"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette, Sensuous Gray, Stunning Shade",
+    "hex": [
+      "#837D7F",
+      "#676064",
+      "#443E40",
+      "#F3EEE7",
+      "#EDE6DB",
+      "#F4EFE5",
+      "#F4EFE4"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette, Sensuous Gray, Stunning Shade, Darkroom",
+    "hex": [
+      "#837D7F",
+      "#676064",
+      "#443E40",
+      "#F3EEE7",
+      "#EDE6DB",
+      "#F4EFE5",
+      "#F4EFE4"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette",
+    "hex": [
+      "#F7EFE3",
+      "#F7EFDE",
+      "#F8EEDB",
+      "#AC9A8A",
+      "#A18D7D",
+      "#A49689",
+      "#9E9284"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Cotton White, Paperwhite",
+    "hex": [
+      "#F7EFE3",
+      "#F7EFDE",
+      "#F8EEDB",
+      "#AC9A8A",
+      "#A18D7D",
+      "#A49689",
+      "#9E9284"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Cotton White, Paperwhite, Honied White",
+    "hex": [
+      "#F7EFE3",
+      "#F7EFDE",
+      "#F8EEDB",
+      "#AC9A8A",
+      "#A18D7D",
+      "#A49689",
+      "#9E9284"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#665D57",
+      "#C4B7A5",
+      "#B3A491",
+      "#9C8A79",
+      "#826F5E",
+      "#5B4B44",
+      "#CDBFB0"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Manor House, Loggia",
+    "hex": [
+      "#665D57",
+      "#C4B7A5",
+      "#B3A491",
+      "#9C8A79",
+      "#826F5E",
+      "#5B4B44",
+      "#CDBFB0"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Manor House, Loggia, Stone Lion",
+    "hex": [
+      "#665D57",
+      "#C4B7A5",
+      "#B3A491",
+      "#9C8A79",
+      "#826F5E",
+      "#5B4B44",
+      "#CDBFB0"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#C5B6A4",
+      "#A79582",
+      "#827466",
+      "#6E5F53",
+      "#E0D6C8",
+      "#DBCEBD",
+      "#C9B29C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Pavilion Beige, Sanderling",
+    "hex": [
+      "#C5B6A4",
+      "#A79582",
+      "#827466",
+      "#6E5F53",
+      "#E0D6C8",
+      "#DBCEBD",
+      "#C9B29C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Pavilion Beige, Sanderling, Foothills",
+    "hex": [
+      "#C5B6A4",
+      "#A79582",
+      "#827466",
+      "#6E5F53",
+      "#E0D6C8",
+      "#DBCEBD",
+      "#C9B29C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#AF9781",
+      "#6A5143",
+      "#AD947C",
+      "#9F8267",
+      "#7C5C43",
+      "#CABAA8",
+      "#8A7362"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Mexican Sand, Plantation Shutters",
+    "hex": [
+      "#AF9781",
+      "#6A5143",
+      "#AD947C",
+      "#9F8267",
+      "#7C5C43",
+      "#CABAA8",
+      "#8A7362"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Mexican Sand, Plantation Shutters, Dormer Brown",
+    "hex": [
+      "#AF9781",
+      "#6A5143",
+      "#AD947C",
+      "#9F8267",
+      "#7C5C43",
+      "#CABAA8",
+      "#8A7362"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette",
+    "hex": [
+      "#DFD2BF",
+      "#D0BFAA",
+      "#C4B49C",
+      "#D4C5AD",
+      "#C4B39C",
+      "#DCD1BF",
+      "#CFC0AB"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Maison Blanche, Nantucket Dune",
+    "hex": [
+      "#DFD2BF",
+      "#D0BFAA",
+      "#C4B49C",
+      "#D4C5AD",
+      "#C4B39C",
+      "#DCD1BF",
+      "#CFC0AB"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Maison Blanche, Nantucket Dune, Windsor Greige",
+    "hex": [
+      "#DFD2BF",
+      "#D0BFAA",
+      "#C4B49C",
+      "#D4C5AD",
+      "#C4B39C",
+      "#DCD1BF",
+      "#CFC0AB"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette",
+    "hex": [
+      "#C0AF97",
+      "#B7A48B",
+      "#A18E77",
+      "#CBB49A",
+      "#E3D2B8",
+      "#C0A588",
+      "#C1A98A"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Khaki Shade, Outerbanks",
+    "hex": [
+      "#C0AF97",
+      "#B7A48B",
+      "#A18E77",
+      "#CBB49A",
+      "#E3D2B8",
+      "#C0A588",
+      "#C1A98A"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Khaki Shade, Outerbanks, Sandy Ridge",
+    "hex": [
+      "#C0AF97",
+      "#B7A48B",
+      "#A18E77",
+      "#CBB49A",
+      "#E3D2B8",
+      "#C0A588",
+      "#C1A98A"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#B09879",
+      "#D8CFBE",
+      "#CBC0AD",
+      "#BCB099",
+      "#AC9D83",
+      "#63523D",
+      "#B1A38E"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Artisan Tan, Grecian Ivory",
+    "hex": [
+      "#B09879",
+      "#D8CFBE",
+      "#CBC0AD",
+      "#BCB099",
+      "#AC9D83",
+      "#63523D",
+      "#B1A38E"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Artisan Tan, Grecian Ivory, Naturel",
+    "hex": [
+      "#B09879",
+      "#D8CFBE",
+      "#CBC0AD",
+      "#BCB099",
+      "#AC9D83",
+      "#63523D",
+      "#B1A38E"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette",
+    "hex": [
+      "#CBBFAD",
+      "#BBAB95",
+      "#AD9C85",
+      "#907D66",
+      "#F0ECE2",
+      "#E7DBCC",
+      "#E7D7C6"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Sandbar, Portico",
+    "hex": [
+      "#CBBFAD",
+      "#BBAB95",
+      "#AD9C85",
+      "#907D66",
+      "#F0ECE2",
+      "#E7DBCC",
+      "#E7D7C6"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Sandbar, Portico, Studio Taupe",
+    "hex": [
+      "#CBBFAD",
+      "#BBAB95",
+      "#AD9C85",
+      "#907D66",
+      "#F0ECE2",
+      "#E7DBCC",
+      "#E7D7C6"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#ECE1D1",
+      "#E2D3BF",
+      "#F4E8D2",
+      "#F4E9D6",
+      "#F3E9D7",
+      "#F2E5CF",
+      "#F4DEC3"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Steamed Milk, Patience",
+    "hex": [
+      "#ECE1D1",
+      "#E2D3BF",
+      "#F4E8D2",
+      "#F4E9D6",
+      "#F3E9D7",
+      "#F2E5CF",
+      "#F4DEC3"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Steamed Milk, Patience, Cr\u00e8me",
+    "hex": [
+      "#ECE1D1",
+      "#E2D3BF",
+      "#F4E8D2",
+      "#F4E9D6",
+      "#F3E9D7",
+      "#F2E5CF",
+      "#F4DEC3"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#F5EACC",
+      "#F6F0E2",
+      "#EEE8D7",
+      "#E8DFCA",
+      "#DBD0BB",
+      "#F3EEE3",
+      "#DCD2C3"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Lemon Meringue, Roman Column",
+    "hex": [
+      "#F5EACC",
+      "#F6F0E2",
+      "#EEE8D7",
+      "#E8DFCA",
+      "#DBD0BB",
+      "#F3EEE3",
+      "#DCD2C3"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Lemon Meringue, Roman Column, Restful White",
+    "hex": [
+      "#F5EACC",
+      "#F6F0E2",
+      "#EEE8D7",
+      "#E8DFCA",
+      "#DBD0BB",
+      "#F3EEE3",
+      "#DCD2C3"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#E2DACA",
+      "#DCCFBA",
+      "#DFD9CF",
+      "#EDE1CE",
+      "#E7D7C2",
+      "#E9D9C0",
+      "#E7D8BE"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Neutral Ground, Stucco",
+    "hex": [
+      "#E2DACA",
+      "#DCCFBA",
+      "#DFD9CF",
+      "#EDE1CE",
+      "#E7D7C2",
+      "#E9D9C0",
+      "#E7D8BE"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Neutral Ground, Stucco, Egret White",
+    "hex": [
+      "#E2DACA",
+      "#DCCFBA",
+      "#DFD9CF",
+      "#EDE1CE",
+      "#E7D7C2",
+      "#E9D9C0",
+      "#E7D8BE"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#E0D1B8",
+      "#533640",
+      "#72353D",
+      "#81585B",
+      "#573E3E",
+      "#803532",
+      "#7C3239"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Chopsticks, Blackberry",
+    "hex": [
+      "#E0D1B8",
+      "#533640",
+      "#72353D",
+      "#81585B",
+      "#573E3E",
+      "#803532",
+      "#7C3239"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Chopsticks, Blackberry, Borscht",
+    "hex": [
+      "#E0D1B8",
+      "#533640",
+      "#72353D",
+      "#81585B",
+      "#573E3E",
+      "#803532",
+      "#7C3239"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette",
+    "hex": [
+      "#6E3637",
+      "#692B2B",
+      "#813235",
+      "#9F4442",
+      "#A42E37",
+      "#B8473D",
+      "#7C453D"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Red Theatre, Sun Dried Tomato",
+    "hex": [
+      "#6E3637",
+      "#692B2B",
+      "#813235",
+      "#9F4442",
+      "#A42E37",
+      "#B8473D",
+      "#7C453D"
+    ]
+  },
+  {
+    "caption": "neutral soft mid monotone palette, Red Theatre, Sun Dried Tomato, Stolen Kiss",
+    "hex": [
+      "#6E3637",
+      "#692B2B",
+      "#813235",
+      "#9F4442",
+      "#A42E37",
+      "#B8473D",
+      "#7C453D"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#753531",
+      "#703229",
+      "#6E423E",
+      "#5D3736",
+      "#E2D3C4",
+      "#924E3C",
+      "#93402F"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Crabby Apple, Rustic Red",
+    "hex": [
+      "#753531",
+      "#703229",
+      "#6E423E",
+      "#5D3736",
+      "#E2D3C4",
+      "#924E3C",
+      "#93402F"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Crabby Apple, Rustic Red, Carriage Door",
+    "hex": [
+      "#753531",
+      "#703229",
+      "#6E423E",
+      "#5D3736",
+      "#E2D3C4",
+      "#924E3C",
+      "#93402F"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#903934",
+      "#A0B3BC",
+      "#3E5063",
+      "#8095A0",
+      "#596E79",
+      "#35454E",
+      "#6591A8"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Bolero, Dockside Blue",
+    "hex": [
+      "#903934",
+      "#A0B3BC",
+      "#3E5063",
+      "#8095A0",
+      "#596E79",
+      "#35454E",
+      "#6591A8"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Bolero, Dockside Blue, Indigo Batik",
+    "hex": [
+      "#903934",
+      "#A0B3BC",
+      "#3E5063",
+      "#8095A0",
+      "#596E79",
+      "#35454E",
+      "#6591A8"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#416D83",
+      "#87AAB9",
+      "#5B8D9F",
+      "#3E758A",
+      "#7C9AA0",
+      "#679199",
+      "#9CB0B3"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Santorini Blue, Adrift",
+    "hex": [
+      "#416D83",
+      "#87AAB9",
+      "#5B8D9F",
+      "#3E758A",
+      "#7C9AA0",
+      "#679199",
+      "#9CB0B3"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Santorini Blue, Adrift, Georgian Revival Blue",
+    "hex": [
+      "#416D83",
+      "#87AAB9",
+      "#5B8D9F",
+      "#3E758A",
+      "#7C9AA0",
+      "#679199",
+      "#9CB0B3"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#577C88",
+      "#3E4B54",
+      "#A0AEAF",
+      "#60797D",
+      "#376167",
+      "#657B83",
+      "#314D58"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, St. Bart's, Sea Serpent",
+    "hex": [
+      "#577C88",
+      "#3E4B54",
+      "#A0AEAF",
+      "#60797D",
+      "#376167",
+      "#657B83",
+      "#314D58"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, St. Bart's, Sea Serpent, Breezy",
+    "hex": [
+      "#577C88",
+      "#3E4B54",
+      "#A0AEAF",
+      "#60797D",
+      "#376167",
+      "#657B83",
+      "#314D58"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette",
+    "hex": [
+      "#B0B8B2",
+      "#666D69",
+      "#273E3E",
+      "#606E74",
+      "#3D484C",
+      "#E6E1D9",
+      "#E7E1D7"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Silvermist, Homburg Gray",
+    "hex": [
+      "#B0B8B2",
+      "#666D69",
+      "#273E3E",
+      "#606E74",
+      "#3D484C",
+      "#E6E1D9",
+      "#E7E1D7"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Silvermist, Homburg Gray, Cascades",
+    "hex": [
+      "#B0B8B2",
+      "#666D69",
+      "#273E3E",
+      "#606E74",
+      "#3D484C",
+      "#E6E1D9",
+      "#E7E1D7"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette",
+    "hex": [
+      "#DED8CF",
+      "#786E70",
+      "#392B2D",
+      "#DFDAD1",
+      "#D6CEC3",
+      "#ADA090",
+      "#D3CCC4"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette, Windfresh White, Grapy",
+    "hex": [
+      "#DED8CF",
+      "#786E70",
+      "#392B2D",
+      "#DFDAD1",
+      "#D6CEC3",
+      "#ADA090",
+      "#D3CCC4"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette, Windfresh White, Grapy, Raisin",
+    "hex": [
+      "#DED8CF",
+      "#786E70",
+      "#392B2D",
+      "#DFDAD1",
+      "#D6CEC3",
+      "#ADA090",
+      "#D3CCC4"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette",
+    "hex": [
+      "#AA9E95",
+      "#E5E2DA",
+      "#E2DDD0",
+      "#C0B9A9",
+      "#AEA594",
+      "#A7A094",
+      "#C6C0B6"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Palisade, Origami White",
+    "hex": [
+      "#AA9E95",
+      "#E5E2DA",
+      "#E2DDD0",
+      "#C0B9A9",
+      "#AEA594",
+      "#A7A094",
+      "#C6C0B6"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Palisade, Origami White, Oyster White",
+    "hex": [
+      "#AA9E95",
+      "#E5E2DA",
+      "#E2DDD0",
+      "#C0B9A9",
+      "#AEA594",
+      "#A7A094",
+      "#C6C0B6"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette",
+    "hex": [
+      "#A0998F",
+      "#B2ADA4",
+      "#B2AC9C",
+      "#57534C",
+      "#DAD9D4",
+      "#D6D3CC",
+      "#D0CEC9"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Pavestone, Pussywillow",
+    "hex": [
+      "#A0998F",
+      "#B2ADA4",
+      "#B2AC9C",
+      "#57534C",
+      "#DAD9D4",
+      "#D6D3CC",
+      "#D0CEC9"
+    ]
+  },
+  {
+    "caption": "warm muted light monotone palette, Pavestone, Pussywillow, Gateway Gray",
+    "hex": [
+      "#A0998F",
+      "#B2ADA4",
+      "#B2AC9C",
+      "#57534C",
+      "#DAD9D4",
+      "#D6D3CC",
+      "#D0CEC9"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette",
+    "hex": [
+      "#C2C0BA",
+      "#AAA9A4",
+      "#CCCCC5",
+      "#ABB0AC",
+      "#D1D2CB",
+      "#CECEC6",
+      "#A0A09A"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette, Silverplate, Ellie Gray",
+    "hex": [
+      "#C2C0BA",
+      "#AAA9A4",
+      "#CCCCC5",
+      "#ABB0AC",
+      "#D1D2CB",
+      "#CECEC6",
+      "#A0A09A"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette, Silverplate, Ellie Gray, Front Porch",
+    "hex": [
+      "#C2C0BA",
+      "#AAA9A4",
+      "#CCCCC5",
+      "#ABB0AC",
+      "#D1D2CB",
+      "#CECEC6",
+      "#A0A09A"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette",
+    "hex": [
+      "#DEE0DE",
+      "#C5C8C4",
+      "#B7B7B2",
+      "#A5A9A8",
+      "#969A96",
+      "#D3D5D3",
+      "#C9CCCD"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette, Rhinestone, Tinsmith",
+    "hex": [
+      "#DEE0DE",
+      "#C5C8C4",
+      "#B7B7B2",
+      "#A5A9A8",
+      "#969A96",
+      "#D3D5D3",
+      "#C9CCCD"
+    ]
+  },
+  {
+    "caption": "neutral muted light monotone palette, Rhinestone, Tinsmith, Gray Clouds",
+    "hex": [
+      "#DEE0DE",
+      "#C5C8C4",
+      "#B7B7B2",
+      "#A5A9A8",
+      "#969A96",
+      "#D3D5D3",
+      "#C9CCCD"
+    ]
+  },
+  {
+    "caption": "neutral muted light varied palette",
+    "hex": [
+      "#B8BCBB",
+      "#90979B",
+      "#656D73",
+      "#DCDDD8",
+      "#CAC9C6",
+      "#BAB9B6",
+      "#959491"
+    ]
+  },
+  {
+    "caption": "neutral muted light varied palette, Monorail Silver, Steely Gray",
+    "hex": [
+      "#B8BCBB",
+      "#90979B",
+      "#656D73",
+      "#DCDDD8",
+      "#CAC9C6",
+      "#BAB9B6",
+      "#959491"
+    ]
+  },
+  {
+    "caption": "neutral muted light varied palette, Monorail Silver, Steely Gray, Wall Street",
+    "hex": [
+      "#B8BCBB",
+      "#90979B",
+      "#656D73",
+      "#DCDDD8",
+      "#CAC9C6",
+      "#BAB9B6",
+      "#959491"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#949392",
+      "#D0CEC8",
+      "#C3C1BC",
+      "#9B9893",
+      "#585858",
+      "#48423C",
+      "#F2E0C4"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Gray Shingle, On the Rocks",
+    "hex": [
+      "#949392",
+      "#D0CEC8",
+      "#C3C1BC",
+      "#9B9893",
+      "#585858",
+      "#48423C",
+      "#F2E0C4"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Gray Shingle, On the Rocks, Knitting Needles",
+    "hex": [
+      "#949392",
+      "#D0CEC8",
+      "#C3C1BC",
+      "#9B9893",
+      "#585858",
+      "#48423C",
+      "#F2E0C4"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#EABA8A",
+      "#EDDBBD",
+      "#D9AD7F",
+      "#C09972",
+      "#F8E4C2",
+      "#EABF86",
+      "#F1DFC1"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Gold Vessel, Cottage Cream",
+    "hex": [
+      "#EABA8A",
+      "#EDDBBD",
+      "#D9AD7F",
+      "#C09972",
+      "#F8E4C2",
+      "#EABF86",
+      "#F1DFC1"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Gold Vessel, Cottage Cream, Golden Gate",
+    "hex": [
+      "#EABA8A",
+      "#EDDBBD",
+      "#D9AD7F",
+      "#C09972",
+      "#F8E4C2",
+      "#EABF86",
+      "#F1DFC1"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#EDD6B1",
+      "#E5C28B",
+      "#F8DDB7",
+      "#E7C7A0",
+      "#E1CDAE",
+      "#D2BB9D",
+      "#C3AA8C"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Concord Buff, White Raisin",
+    "hex": [
+      "#EDD6B1",
+      "#E5C28B",
+      "#F8DDB7",
+      "#E7C7A0",
+      "#E1CDAE",
+      "#D2BB9D",
+      "#C3AA8C"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Concord Buff, White Raisin, Hinoki",
+    "hex": [
+      "#EDD6B1",
+      "#E5C28B",
+      "#F8DDB7",
+      "#E7C7A0",
+      "#E1CDAE",
+      "#D2BB9D",
+      "#C3AA8C"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#E3C9A1",
+      "#DCBC8E",
+      "#CBA97E",
+      "#CAAD87",
+      "#BD9C77",
+      "#DCC6A6",
+      "#CCB18B"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Pale Yellow, Cupola Yellow",
+    "hex": [
+      "#E3C9A1",
+      "#DCBC8E",
+      "#CBA97E",
+      "#CAAD87",
+      "#BD9C77",
+      "#DCC6A6",
+      "#CCB18B"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Pale Yellow, Cupola Yellow, Stonebriar",
+    "hex": [
+      "#E3C9A1",
+      "#DCBC8E",
+      "#CBA97E",
+      "#CAAD87",
+      "#BD9C77",
+      "#DCC6A6",
+      "#CCB18B"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#DBC8A2",
+      "#BA9A67",
+      "#8F6C3E",
+      "#AC6B53",
+      "#B0785C",
+      "#A85E39",
+      "#D5B59B"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Straw Harvest, Rustic City",
+    "hex": [
+      "#DBC8A2",
+      "#BA9A67",
+      "#8F6C3E",
+      "#AC6B53",
+      "#B0785C",
+      "#A85E39",
+      "#D5B59B"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Straw Harvest, Rustic City, Olde World Gold",
+    "hex": [
+      "#DBC8A2",
+      "#BA9A67",
+      "#8F6C3E",
+      "#AC6B53",
+      "#B0785C",
+      "#A85E39",
+      "#D5B59B"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#976B53",
+      "#C67B57",
+      "#B16A37",
+      "#A56C4A",
+      "#E6D0BD",
+      "#DFC8B5",
+      "#CCB299"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Wheat Penny, Copper Wire",
+    "hex": [
+      "#976B53",
+      "#C67B57",
+      "#B16A37",
+      "#A56C4A",
+      "#E6D0BD",
+      "#DFC8B5",
+      "#CCB299"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Wheat Penny, Copper Wire, Copper Pot",
+    "hex": [
+      "#976B53",
+      "#C67B57",
+      "#B16A37",
+      "#A56C4A",
+      "#E6D0BD",
+      "#DFC8B5",
+      "#CCB299"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#BFA287",
+      "#AA866E",
+      "#DBC5A7",
+      "#D2B18F",
+      "#BB8D6B",
+      "#D8C4AE",
+      "#C7A485"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Oak Barrel, Pottery Urn",
+    "hex": [
+      "#BFA287",
+      "#AA866E",
+      "#DBC5A7",
+      "#D2B18F",
+      "#BB8D6B",
+      "#D8C4AE",
+      "#C7A485"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Oak Barrel, Pottery Urn, Croissant",
+    "hex": [
+      "#BFA287",
+      "#AA866E",
+      "#DBC5A7",
+      "#D2B18F",
+      "#BB8D6B",
+      "#D8C4AE",
+      "#C7A485"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#EDD1B1",
+      "#ECD3B3",
+      "#DDC6AB",
+      "#B7987B",
+      "#AD896A",
+      "#9D986F",
+      "#B9B292"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Crescent Cream, Travertine",
+    "hex": [
+      "#EDD1B1",
+      "#ECD3B3",
+      "#DDC6AB",
+      "#B7987B",
+      "#AD896A",
+      "#9D986F",
+      "#B9B292"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Crescent Cream, Travertine, Colony Buff",
+    "hex": [
+      "#EDD1B1",
+      "#ECD3B3",
+      "#DDC6AB",
+      "#B7987B",
+      "#AD896A",
+      "#9D986F",
+      "#B9B292"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#A29F80",
+      "#827C5A",
+      "#4D5346",
+      "#A69474",
+      "#C8BD98",
+      "#B3A479",
+      "#857C5D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Green Sprout, Edamame",
+    "hex": [
+      "#A29F80",
+      "#827C5A",
+      "#4D5346",
+      "#A69474",
+      "#C8BD98",
+      "#B3A479",
+      "#857C5D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Green Sprout, Edamame, Forestwood",
+    "hex": [
+      "#A29F80",
+      "#827C5A",
+      "#4D5346",
+      "#A69474",
+      "#C8BD98",
+      "#B3A479",
+      "#857C5D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#635936",
+      "#B1A584",
+      "#8D8168",
+      "#CDC4AE",
+      "#A49B82",
+      "#7D745E",
+      "#AAAD9C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Palm Leaf, Garden Sage",
+    "hex": [
+      "#635936",
+      "#B1A584",
+      "#8D8168",
+      "#CDC4AE",
+      "#A49B82",
+      "#7D745E",
+      "#AAAD9C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Palm Leaf, Garden Sage, Meadow Trail",
+    "hex": [
+      "#635936",
+      "#B1A584",
+      "#8D8168",
+      "#CDC4AE",
+      "#A49B82",
+      "#7D745E",
+      "#AAAD9C"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#8EA486",
+      "#868578",
+      "#99907E",
+      "#5A5243",
+      "#A19C8F",
+      "#BDC0A0",
+      "#9A9883"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Agate Green, Mountain Road",
+    "hex": [
+      "#8EA486",
+      "#868578",
+      "#99907E",
+      "#5A5243",
+      "#A19C8F",
+      "#BDC0A0",
+      "#9A9883"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Agate Green, Mountain Road, Zeus",
+    "hex": [
+      "#8EA486",
+      "#868578",
+      "#99907E",
+      "#5A5243",
+      "#A19C8F",
+      "#BDC0A0",
+      "#9A9883"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#44493D",
+      "#424C44",
+      "#F7F7F1",
+      "#F0EBE0",
+      "#AE8087",
+      "#A87376",
+      "#BA7176"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Laurel Woods, Olympic Range",
+    "hex": [
+      "#44493D",
+      "#424C44",
+      "#F7F7F1",
+      "#F0EBE0",
+      "#AE8087",
+      "#A87376",
+      "#BA7176"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Laurel Woods, Olympic Range, High Reflective White",
+    "hex": [
+      "#44493D",
+      "#424C44",
+      "#F7F7F1",
+      "#F0EBE0",
+      "#AE8087",
+      "#A87376",
+      "#BA7176"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette",
+    "hex": [
+      "#C37F7A",
+      "#BF796E",
+      "#B57466",
+      "#F2B88C",
+      "#F5C78E",
+      "#CC896C",
+      "#DBA480"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Coral Rose, Coral Clay",
+    "hex": [
+      "#C37F7A",
+      "#BF796E",
+      "#B57466",
+      "#F2B88C",
+      "#F5C78E",
+      "#CC896C",
+      "#DBA480"
+    ]
+  },
+  {
+    "caption": "warm soft light monotone palette, Coral Rose, Coral Clay, Rojo Dust",
+    "hex": [
+      "#C37F7A",
+      "#BF796E",
+      "#B57466",
+      "#F2B88C",
+      "#F5C78E",
+      "#CC896C",
+      "#DBA480"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#E3AB7B",
+      "#E8B87F",
+      "#EEB76B",
+      "#FBD187",
+      "#FBE4B3",
+      "#FDDFA0",
+      "#FEDF94"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Sun Bleached Ochre, Polvo de Oro",
+    "hex": [
+      "#E3AB7B",
+      "#E8B87F",
+      "#EEB76B",
+      "#FBD187",
+      "#FBE4B3",
+      "#FDDFA0",
+      "#FEDF94"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Sun Bleached Ochre, Polvo de Oro, Olden Amber",
+    "hex": [
+      "#E3AB7B",
+      "#E8B87F",
+      "#EEB76B",
+      "#FBD187",
+      "#FBE4B3",
+      "#FDDFA0",
+      "#FEDF94"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette",
+    "hex": [
+      "#FBD682",
+      "#FBD073",
+      "#F4C454",
+      "#F6D58F",
+      "#F1CD7B",
+      "#E1BD8E",
+      "#CBA576"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Honey Bees, Golden Plumeria",
+    "hex": [
+      "#FBD682",
+      "#FBD073",
+      "#F4C454",
+      "#F6D58F",
+      "#F1CD7B",
+      "#E1BD8E",
+      "#CBA576"
+    ]
+  },
+  {
+    "caption": "warm vivid light monotone palette, Honey Bees, Golden Plumeria, Rayo de Sol",
+    "hex": [
+      "#FBD682",
+      "#FBD073",
+      "#F4C454",
+      "#F6D58F",
+      "#F1CD7B",
+      "#E1BD8E",
+      "#CBA576"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette",
+    "hex": [
+      "#BA9C75",
+      "#D5B176",
+      "#DCC797",
+      "#BEA775",
+      "#C4B47D",
+      "#CEBC55",
+      "#D2D083"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Coriander Powder, Tarnished Trumpet",
+    "hex": [
+      "#BA9C75",
+      "#D5B176",
+      "#DCC797",
+      "#BEA775",
+      "#C4B47D",
+      "#CEBC55",
+      "#D2D083"
+    ]
+  },
+  {
+    "caption": "warm soft mid monotone palette, Coriander Powder, Tarnished Trumpet, Pale Moss",
+    "hex": [
+      "#BA9C75",
+      "#D5B176",
+      "#DCC797",
+      "#BEA775",
+      "#C4B47D",
+      "#CEBC55",
+      "#D2D083"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#9FAC5C",
+      "#ABCA99",
+      "#A9C095",
+      "#78B185",
+      "#9FCDB1",
+      "#BBB98A",
+      "#9BA373"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Stay in Lime, Oh Pistachio",
+    "hex": [
+      "#9FAC5C",
+      "#ABCA99",
+      "#A9C095",
+      "#78B185",
+      "#9FCDB1",
+      "#BBB98A",
+      "#9BA373"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Stay in Lime, Oh Pistachio, Seawashed Glass",
+    "hex": [
+      "#9FAC5C",
+      "#ABCA99",
+      "#A9C095",
+      "#78B185",
+      "#9FCDB1",
+      "#BBB98A",
+      "#9BA373"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#8FA277",
+      "#75946B",
+      "#7D9B89",
+      "#81A595",
+      "#89C6B7",
+      "#8AC5BA",
+      "#92D0D0"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Broccoflower, Reseda Green",
+    "hex": [
+      "#8FA277",
+      "#75946B",
+      "#7D9B89",
+      "#81A595",
+      "#89C6B7",
+      "#8AC5BA",
+      "#92D0D0"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Broccoflower, Reseda Green, Parisian Patina",
+    "hex": [
+      "#8FA277",
+      "#75946B",
+      "#7D9B89",
+      "#81A595",
+      "#89C6B7",
+      "#8AC5BA",
+      "#92D0D0"
+    ]
+  },
+  {
+    "caption": "cool soft light monotone palette",
+    "hex": [
+      "#97CBD2",
+      "#8BC4D1",
+      "#73C0D2",
+      "#89C6DF",
+      "#94B2A6",
+      "#A3C0BD",
+      "#90BDBD"
+    ]
+  },
+  {
+    "caption": "cool soft light monotone palette, Gentle Aquamarine, After the Rain",
+    "hex": [
+      "#97CBD2",
+      "#8BC4D1",
+      "#73C0D2",
+      "#89C6DF",
+      "#94B2A6",
+      "#A3C0BD",
+      "#90BDBD"
+    ]
+  },
+  {
+    "caption": "cool soft light monotone palette, Gentle Aquamarine, After the Rain, Surfin'",
+    "hex": [
+      "#97CBD2",
+      "#8BC4D1",
+      "#73C0D2",
+      "#89C6DF",
+      "#94B2A6",
+      "#A3C0BD",
+      "#90BDBD"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#9FC5CC",
+      "#C7D8DB",
+      "#AFC7CD",
+      "#9FBBC3",
+      "#88ABB4",
+      "#68909D",
+      "#427584"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Agua Fr\u00eda, Little Boy Blu",
+    "hex": [
+      "#9FC5CC",
+      "#C7D8DB",
+      "#AFC7CD",
+      "#9FBBC3",
+      "#88ABB4",
+      "#68909D",
+      "#427584"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Agua Fr\u00eda, Little Boy Blu, Billowy Breeze",
+    "hex": [
+      "#9FC5CC",
+      "#C7D8DB",
+      "#AFC7CD",
+      "#9FBBC3",
+      "#88ABB4",
+      "#68909D",
+      "#427584"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette",
+    "hex": [
+      "#175A6C",
+      "#9BBFC9",
+      "#6F9DB3",
+      "#9BC8DE",
+      "#7C9AB5",
+      "#6487B0",
+      "#BBC5DE"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Connor's Lakefront, Rest Assured",
+    "hex": [
+      "#175A6C",
+      "#9BBFC9",
+      "#6F9DB3",
+      "#9BC8DE",
+      "#7C9AB5",
+      "#6487B0",
+      "#BBC5DE"
+    ]
+  },
+  {
+    "caption": "cool soft mid monotone palette, Connor's Lakefront, Rest Assured, Bluebird Feather",
+    "hex": [
+      "#175A6C",
+      "#9BBFC9",
+      "#6F9DB3",
+      "#9BC8DE",
+      "#7C9AB5",
+      "#6487B0",
+      "#BBC5DE"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#AFA5C7",
+      "#B3A1C6",
+      "#937496",
+      "#83A2B4",
+      "#7B99B0",
+      "#8595AA",
+      "#8990A3"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Forever Lilac, Berry Frapp\u00e9",
+    "hex": [
+      "#AFA5C7",
+      "#B3A1C6",
+      "#937496",
+      "#83A2B4",
+      "#7B99B0",
+      "#8595AA",
+      "#8990A3"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Forever Lilac, Berry Frapp\u00e9, Veri Berri",
+    "hex": [
+      "#AFA5C7",
+      "#B3A1C6",
+      "#937496",
+      "#83A2B4",
+      "#7B99B0",
+      "#8595AA",
+      "#8990A3"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette",
+    "hex": [
+      "#908A9B",
+      "#9A8CA2",
+      "#9B7E8B",
+      "#A38887",
+      "#A08882",
+      "#A2877D",
+      "#A8857A"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Gentle Grape, Berry Cream",
+    "hex": [
+      "#908A9B",
+      "#9A8CA2",
+      "#9B7E8B",
+      "#A38887",
+      "#A08882",
+      "#A2877D",
+      "#A8857A"
+    ]
+  },
+  {
+    "caption": "neutral muted mid monotone palette, Gentle Grape, Berry Cream, Ruby Violet",
+    "hex": [
+      "#908A9B",
+      "#9A8CA2",
+      "#9B7E8B",
+      "#A38887",
+      "#A08882",
+      "#A2877D",
+      "#A8857A"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#AE8E7E",
+      "#A58C7B",
+      "#9C8373",
+      "#A08E7E",
+      "#D5C7BA",
+      "#C6B5A7",
+      "#B9A796"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Redend Point, Chocolate Powder",
+    "hex": [
+      "#AE8E7E",
+      "#A58C7B",
+      "#9C8373",
+      "#A08E7E",
+      "#D5C7BA",
+      "#C6B5A7",
+      "#B9A796"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Redend Point, Chocolate Powder, Dusted Truffle",
+    "hex": [
+      "#AE8E7E",
+      "#A58C7B",
+      "#9C8373",
+      "#A08E7E",
+      "#D5C7BA",
+      "#C6B5A7",
+      "#B9A796"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#A58F7B",
+      "#917864",
+      "#785F4C",
+      "#604C3D",
+      "#A3846C",
+      "#A88E76",
+      "#DCC7B3"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Utaupeia, Llama Wool",
+    "hex": [
+      "#A58F7B",
+      "#917864",
+      "#785F4C",
+      "#604C3D",
+      "#A3846C",
+      "#A88E76",
+      "#DCC7B3"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Utaupeia, Llama Wool, Cara\u00efbe",
+    "hex": [
+      "#A58F7B",
+      "#917864",
+      "#785F4C",
+      "#604C3D",
+      "#A3846C",
+      "#A88E76",
+      "#DCC7B3"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#D2B79E",
+      "#C5A88D",
+      "#B59778",
+      "#89674A",
+      "#725237",
+      "#765138",
+      "#DCC7AD"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Ginger Root, Beige Intenso",
+    "hex": [
+      "#D2B79E",
+      "#C5A88D",
+      "#B59778",
+      "#89674A",
+      "#725237",
+      "#765138",
+      "#DCC7AD"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Ginger Root, Beige Intenso, Soft Fawn",
+    "hex": [
+      "#D2B79E",
+      "#C5A88D",
+      "#B59778",
+      "#89674A",
+      "#725237",
+      "#765138",
+      "#DCC7AD"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#CFB597",
+      "#C1A485",
+      "#B99974",
+      "#A78361",
+      "#946E48",
+      "#7B5838",
+      "#A78C71"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Quinoa, Farro",
+    "hex": [
+      "#CFB597",
+      "#C1A485",
+      "#B99974",
+      "#A78361",
+      "#946E48",
+      "#7B5838",
+      "#A78C71"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Quinoa, Farro, Woven Wicker",
+    "hex": [
+      "#CFB597",
+      "#C1A485",
+      "#B99974",
+      "#A78361",
+      "#946E48",
+      "#7B5838",
+      "#A78C71"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#DFD3C3",
+      "#CFBEA9",
+      "#C0AD96",
+      "#AF987F",
+      "#A08568",
+      "#8F7659",
+      "#695239"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Natural Linen, Malabar",
+    "hex": [
+      "#DFD3C3",
+      "#CFBEA9",
+      "#C0AD96",
+      "#AF987F",
+      "#A08568",
+      "#8F7659",
+      "#695239"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Natural Linen, Malabar, Antler Velvet",
+    "hex": [
+      "#DFD3C3",
+      "#CFBEA9",
+      "#C0AD96",
+      "#AF987F",
+      "#A08568",
+      "#8F7659",
+      "#695239"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#AB9579",
+      "#A4947E",
+      "#B9A47E",
+      "#DDD0B6",
+      "#CDBB9C",
+      "#C3B090",
+      "#B19F80"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Serengeti Grass, Urban Jungle",
+    "hex": [
+      "#AB9579",
+      "#A4947E",
+      "#B9A47E",
+      "#DDD0B6",
+      "#CDBB9C",
+      "#C3B090",
+      "#B19F80"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Serengeti Grass, Urban Jungle, Tarnished Treasure",
+    "hex": [
+      "#AB9579",
+      "#A4947E",
+      "#B9A47E",
+      "#DDD0B6",
+      "#CDBB9C",
+      "#C3B090",
+      "#B19F80"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#9F8E71",
+      "#877459",
+      "#665439",
+      "#9D9887",
+      "#9E9985",
+      "#989A82",
+      "#909886"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Barro Verde, Verde Marr\u00f3n",
+    "hex": [
+      "#9F8E71",
+      "#877459",
+      "#665439",
+      "#9D9887",
+      "#9E9985",
+      "#989A82",
+      "#909886"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Barro Verde, Verde Marr\u00f3n, Oliva Oscuro",
+    "hex": [
+      "#9F8E71",
+      "#877459",
+      "#665439",
+      "#9D9887",
+      "#9E9985",
+      "#989A82",
+      "#909886"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette",
+    "hex": [
+      "#95978A",
+      "#949488",
+      "#969C92",
+      "#8D9E97",
+      "#8B9FA0",
+      "#80969D",
+      "#CBD4D4"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Evergreen Fog, Cornwall Slate",
+    "hex": [
+      "#95978A",
+      "#949488",
+      "#969C92",
+      "#8D9E97",
+      "#8B9FA0",
+      "#80969D",
+      "#CBD4D4"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Evergreen Fog, Cornwall Slate, Acacia Haze",
+    "hex": [
+      "#95978A",
+      "#949488",
+      "#969C92",
+      "#8D9E97",
+      "#8B9FA0",
+      "#80969D",
+      "#CBD4D4"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#B6C3C4",
+      "#A6B2B5",
+      "#90A0A6",
+      "#6F848C",
+      "#536872",
+      "#204652",
+      "#91999C"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Niebla Azul, Stardew",
+    "hex": [
+      "#B6C3C4",
+      "#A6B2B5",
+      "#90A0A6",
+      "#6F848C",
+      "#536872",
+      "#204652",
+      "#91999C"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Niebla Azul, Stardew, Debonair",
+    "hex": [
+      "#B6C3C4",
+      "#A6B2B5",
+      "#90A0A6",
+      "#6F848C",
+      "#536872",
+      "#204652",
+      "#91999C"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette",
+    "hex": [
+      "#C9D9E0",
+      "#B7C9D1",
+      "#9EB4C0",
+      "#8AA3B1",
+      "#708D9E",
+      "#4E7287",
+      "#32586E"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Moonmist, Sleepy Hollow",
+    "hex": [
+      "#C9D9E0",
+      "#B7C9D1",
+      "#9EB4C0",
+      "#8AA3B1",
+      "#708D9E",
+      "#4E7287",
+      "#32586E"
+    ]
+  },
+  {
+    "caption": "cool muted mid monotone palette, Moonmist, Sleepy Hollow, Faded Flaxflower",
+    "hex": [
+      "#C9D9E0",
+      "#B7C9D1",
+      "#9EB4C0",
+      "#8AA3B1",
+      "#708D9E",
+      "#4E7287",
+      "#32586E"
+    ]
+  },
+  {
+    "caption": "cool muted mid varied palette",
+    "hex": [
+      "#899CAA",
+      "#979FA5",
+      "#949194",
+      "#4F4D51",
+      "#989192",
+      "#8F8A91",
+      "#9D9093"
+    ]
+  },
+  {
+    "caption": "cool muted mid varied palette, Daphne, Let it Rain",
+    "hex": [
+      "#899CAA",
+      "#979FA5",
+      "#949194",
+      "#4F4D51",
+      "#989192",
+      "#8F8A91",
+      "#9D9093"
+    ]
+  },
+  {
+    "caption": "cool muted mid varied palette, Daphne, Let it Rain, Moonlit Orchid",
+    "hex": [
+      "#899CAA",
+      "#979FA5",
+      "#949194",
+      "#4F4D51",
+      "#989192",
+      "#8F8A91",
+      "#9D9093"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette",
+    "hex": [
+      "#9D8D8E",
+      "#9F9291",
+      "#9E9089",
+      "#959BA0",
+      "#939899",
+      "#939591",
+      "#92948D"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Coquina, Auger Shell",
+    "hex": [
+      "#9D8D8E",
+      "#9F9291",
+      "#9E9089",
+      "#959BA0",
+      "#939899",
+      "#939591",
+      "#92948D"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Coquina, Auger Shell, Armadillo",
+    "hex": [
+      "#9D8D8E",
+      "#9F9291",
+      "#9E9089",
+      "#959BA0",
+      "#939899",
+      "#939591",
+      "#92948D"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette",
+    "hex": [
+      "#D3CEC4",
+      "#DCD8D0",
+      "#9E9793",
+      "#988F85",
+      "#A09287",
+      "#9E9991",
+      "#979083"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Gossamer Veil, Drift of Mist",
+    "hex": [
+      "#D3CEC4",
+      "#DCD8D0",
+      "#9E9793",
+      "#988F85",
+      "#A09287",
+      "#9E9991",
+      "#979083"
+    ]
+  },
+  {
+    "caption": "warm muted mid monotone palette, Gossamer Veil, Drift of Mist, Polished Concrete",
+    "hex": [
+      "#D3CEC4",
+      "#DCD8D0",
+      "#9E9793",
+      "#988F85",
+      "#A09287",
+      "#9E9991",
+      "#979083"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette",
+    "hex": [
+      "#958D7F",
+      "#C8BCAB",
+      "#A0907F",
+      "#393437",
+      "#2B4360",
+      "#234058",
+      "#283849"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Studio Clay, Shiitake",
+    "hex": [
+      "#958D7F",
+      "#C8BCAB",
+      "#A0907F",
+      "#393437",
+      "#2B4360",
+      "#234058",
+      "#283849"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Studio Clay, Shiitake, Moth Wing",
+    "hex": [
+      "#958D7F",
+      "#C8BCAB",
+      "#A0907F",
+      "#393437",
+      "#2B4360",
+      "#234058",
+      "#283849"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette",
+    "hex": [
+      "#2B3441",
+      "#E8DECD",
+      "#4B3029",
+      "#4C3D31",
+      "#454B40",
+      "#2E5464",
+      "#C29871"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Anchors Aweigh, Aged White",
+    "hex": [
+      "#2B3441",
+      "#E8DECD",
+      "#4B3029",
+      "#4C3D31",
+      "#454B40",
+      "#2E5464",
+      "#C29871"
+    ]
+  },
+  {
+    "caption": "neutral muted mid varied palette, Anchors Aweigh, Aged White, Rojo Marr\u00f3n",
+    "hex": [
+      "#2B3441",
+      "#E8DECD",
+      "#4B3029",
+      "#4C3D31",
+      "#454B40",
+      "#2E5464",
+      "#C29871"
+    ]
+  }
+]

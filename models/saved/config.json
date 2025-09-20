@@ -1,0 +1,10 @@
+{
+  "z_dim": 100,
+  "cond_dim": 384,
+  "max_colors": 7,
+  "sentence_model": "all-MiniLM-L6-v2",
+  "index": {
+    "embeddings": "caption_embeddings.pt",
+    "meta": "caption_index.json"
+  }
+}

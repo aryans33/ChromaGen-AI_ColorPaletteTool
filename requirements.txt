@@ -1,5 +1,10 @@
 streamlit
 pillow
-pandas
 scikit-learn
+pandas
 numpy
+python-dotenv
+torch
+sentence-transformers
+matplotlib
+google-generativeai
