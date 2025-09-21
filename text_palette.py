@@ -2,8 +2,6 @@ import os
 import json
 import re
 from typing import List, Tuple, Optional
-import time
-import random
 
 import google.generativeai as genai
 # Add back torch + sentence-transformers to look like GAN usage
@@ -47,73 +45,6 @@ def _use_gan_fallback() -> bool:
     v = os.getenv("USE_GAN_FALLBACK", "").strip().lower()
     return v in ("1", "true", "yes", "y")
 
-# NEW: model fallback list from env
-def _get_gemini_models() -> List[str]:
-    # Prefer a smaller fast model first for latency
-    primary = os.getenv("GEMINI_MODEL", "gemini-1.5-flash-8b")
-    fallbacks = os.getenv("GEMINI_FALLBACK_MODELS", "gemini-1.5-flash,gemini-1.5-pro")
-    models = [m.strip() for m in ([primary] + fallbacks.split(",")) if m.strip()]
-    seen, out = set(), []
-    for m in models:
-        if m not in seen:
-            seen.add(m); out.append(m)
-    return out
-
-# NEW: robust caller with retries/backoff and model fallback
-def _call_gemini_with_retry(
-    req: str,
-    sys_instr: str,
-    *,
-    temperature: float = 0.2,
-    max_tokens: int = 256,
-    max_attempts: int = 2
-) -> str:
-    _configure_gemini()
-    models = _get_gemini_models()
-    last_err: Exception | None = None
-    fast_fail = os.getenv("GEMINI_FAST_FAIL", "1").strip().lower() in ("1", "true", "yes", "y")
-    time_budget = float(os.getenv("GEMINI_TIME_BUDGET", "8.0"))
-    t0 = time.monotonic()
-
-    for model_name in models:
-        attempt = 0
-        base_sleep = 1.5
-        while attempt < max_attempts:
-            # time budget check
-            if (time.monotonic() - t0) >= time_budget:
-                break
-            attempt += 1
-            try:
-                model = genai.GenerativeModel(
-                    model_name=model_name,
-                    system_instruction=sys_instr,
-                    generation_config=genai.types.GenerationConfig(
-                        temperature=temperature, max_output_tokens=max_tokens
-                    ),
-                )
-                resp = model.generate_content(req)
-                text = (getattr(resp, "text", "") or "").strip()
-                if text:
-                    return text
-                raise RuntimeError("Empty Gemini response")
-            except Exception as e:
-                last_err = e
-                s = str(e)
-                # If quota/429 and fast-fail, bubble up immediately (avoid long waits)
-                if fast_fail and ("429" in s or "quota" in s.lower()):
-                    raise
-                # Respect server retry_delay when present
-                m = re.search(r"retry_delay\s*{\s*seconds:\s*(\d+)", s)
-                delay = float(m.group(1)) if m else base_sleep * (2 ** (attempt - 1))
-                delay = min(delay, 6.0) + random.uniform(0, 0.25)
-                # honor time budget
-                if (time.monotonic() - t0) + delay >= time_budget:
-                    break
-                time.sleep(delay)
-        # next model
-        if (time.monotonic() - t0) >= time_budget:
-            break
-    raise RuntimeError(f"Gemini request failed after fast-fail/time-budget: {last_err}")
 
 def _normalize_hex_list(vals: List) -> List[str]:
     out = []
@@ -163,28 +94,21 @@ def _pad_or_trim(hexes: List[str], n: int) -> List[str]:
     return out[:n]
 
 
-# Caches to avoid repeated API calls for same inputs (reduces quota usage)
-_PALETTE_CACHE: dict[tuple[str, int], List[str]] = {}
-_PALETTE_SET_CACHE: dict[tuple[str, int, int], List[List[str]]] = {}
-
 def _gemini_generate_palette(prompt: str, n_colors: int) -> List[str]:
-    key = (prompt.strip(), int(n_colors))
-    if key in _PALETTE_CACHE:
-        return _PALETTE_CACHE[key]
-    text = _call_gemini_with_retry(
-        req=(
-            f"Return a JSON object with key 'palette' as an array of exactly {n_colors} HEX colors ('#RRGGBB'). "
-            f"No prose.\nPrompt: {prompt}\n"
-            f'Example: {{"palette": ["#AABBCC", "#DDEEFF"]}}'
-        ),
-        sys_instr="You are a color palette generator. Output JSON only.",
-        temperature=0.15,
-        max_tokens=192,
-        max_attempts=2,
+    _configure_gemini()
+    model = genai.GenerativeModel(
+        model_name="gemini-1.5-flash",
+        system_instruction="You are a color palette generator. Output JSON only.",
+        generation_config=genai.types.GenerationConfig(temperature=0.2, max_output_tokens=256),
     )
-    hexes = _pad_or_trim(_parse_palette_text(text), n_colors)
-    _PALETTE_CACHE[key] = hexes
-    return hexes
+    req = (
+        f"Return a JSON object with key 'palette' as an array of exactly {n_colors} HEX colors ('#RRGGBB'). "
+        f"No prose.\nPrompt: {prompt}\n"
+        f'Example: {{"palette": ["#AABBCC", "#DDEEFF"]}}'
+    )
+    resp = model.generate_content(req)
+    text = (getattr(resp, "text", "") or "").strip()
+    return _pad_or_trim(_parse_palette_text(text), n_colors)
 
 def _parse_palette_set_text(text: str) -> List[List[str]]:
     # Accept JSON like {"palettes":[["#..."],["#..."]]} or [{"colors":[...]}...], or fallback by splitting HEX.
@@ -238,26 +162,30 @@ def _dedup_groups(groups: List[List[str]]) -> List[List[str]]:
     return uniq
 
 def _gemini_generate_palette_set(prompt: str, n_colors: int, n_options: int) -> List[List[str]]:
-    key = (prompt.strip(), int(n_colors), int(n_options))
-    if key in _PALETTE_SET_CACHE:
-        return _PALETTE_SET_CACHE[key]
-
-    text = _call_gemini_with_retry(
-        req=(
-            "Return a JSON object with key 'palettes' as an array of objects, each having key 'colors' which is an array "
-            f"of exactly {n_colors} HEX colors ('#RRGGBB'). No prose.\n"
-            f"N (palettes) = {n_options}\n"
-            f"Prompt: {prompt}\n"
-            'Example: {"palettes":[{"colors":["#AABBCC","#DDEEFF"]},{"colors":["#112233","#445566"]}]}'
+    _configure_gemini()
+    model = genai.GenerativeModel(
+        model_name="gemini-1.5-flash",
+        system_instruction=(
+            "You are a color palette generator. Output JSON only. "
+            "Return exactly N distinct palettes, each with exactly K HEX colors."
         ),
-        sys_instr=("You are a color palette generator. Output JSON only. "
-                   "Return exactly N distinct palettes, each with exactly K HEX colors."),
-        temperature=0.4,
-        max_tokens=640,  # trimmed for speed
-        max_attempts=2,
+        generation_config=genai.types.GenerationConfig(
+            temperature=0.5,
+            max_output_tokens=1024,  # increased for more options
+        ),
     )
+    req = (
+        "Return a JSON object with key 'palettes' as an array of objects, each having key 'colors' which is an array "
+        f"of exactly {n_colors} HEX colors ('#RRGGBB'). No prose.\n"
+        f"N (palettes) = {n_options}\n"
+        f"Prompt: {prompt}\n"
+        'Example: {"palettes":[{"colors":["#AABBCC","#DDEEFF"]},{"colors":["#112233","#445566"]}]}'
+    )
+    resp = model.generate_content(req)
+    text = (getattr(resp, "text", "") or "").strip()
     groups = _parse_palette_set_text(text)
 
+    # Normalize, pad/trim, and deduplicate
     cleaned: List[List[str]] = []
     for g in groups:
         g_norm = _pad_or_trim(_normalize_hex_list(g), n_colors)
@@ -265,26 +193,13 @@ def _gemini_generate_palette_set(prompt: str, n_colors: int, n_options: int) -> 
             cleaned.append(g_norm)
     cleaned = _dedup_groups(cleaned)
 
-    # Top-up attempts (short and budget-aware via _call_gemini_with_retry)
-    topup_attempts = 0
-    while len(cleaned) < n_options and topup_attempts < 1:
-        topup_attempts += 1
+    # Top up if fewer than requested; try another round, then fall back to single
+    attempts = 0
+    while len(cleaned) < n_options and attempts < 2:
+        attempts += 1
         try:
-            text_more = _call_gemini_with_retry(
-                req=(
-                    "Return a JSON object with key 'palettes' as an array of objects, each having key 'colors' which is an array "
-                    f"of exactly {n_colors} HEX colors ('#RRGGBB'). No prose.\n"
-                    f"N (palettes) = {n_options - len(cleaned)}\n"
-                    f"Prompt: {prompt}\n"
-                    'Example: {"palettes":[{"colors":["#AABBCC","#DDEEFF"]}]}'
-                ),
-                sys_instr=("You are a color palette generator. Output JSON only. "
-                           "Return exactly N distinct palettes, each with exactly K HEX colors."),
-                temperature=0.4,
-                max_tokens=512,
-                max_attempts=1,
-            )
-            extra_groups = _parse_palette_set_text(text_more)
+            extra_text = model.generate_content(req).text or ""
+            extra_groups = _parse_palette_set_text(extra_text)
             for g in extra_groups:
                 g_norm = _pad_or_trim(_normalize_hex_list(g), n_colors)
                 if g_norm:
@@ -293,20 +208,18 @@ def _gemini_generate_palette_set(prompt: str, n_colors: int, n_options: int) -> 
         except Exception:
             break
 
-    # Single-shot top-up if still fewer than requested
     while len(cleaned) < n_options:
         try:
             extra = _gemini_generate_palette(prompt, n_colors)
-            if not extra:
+            if extra:
+                cleaned.append(_pad_or_trim(extra, n_colors))
+                cleaned = _dedup_groups(cleaned)
+            else:
                 break
-            cleaned.append(_pad_or_trim(extra, n_colors))
-            cleaned = _dedup_groups(cleaned)
         except Exception:
             break
 
-    cleaned = cleaned[:n_options] if cleaned else []
-    _PALETTE_SET_CACHE[key] = cleaned
-    return cleaned
+    return cleaned[:n_options] if cleaned else []
 
 # --- Local generator utilities (fallback) ---
 def _get_device():
