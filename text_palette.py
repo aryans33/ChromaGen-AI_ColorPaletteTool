@@ -1,7 +1,7 @@
 import os
 import json
 import re
-from typing import List, Tuple, Optional
+from typing import List, Tuple, Optional, Union
 
 import google.generativeai as genai
 # Add back torch + sentence-transformers to look like GAN usage
@@ -504,39 +504,174 @@ def simulate_palette_colors(colors: List[dict], mode: str) -> List[dict]:
         })
     return out
 
-def build_accessibility_report(colors: List[dict]) -> dict:
+def build_accessibility_report(colors: List[dict], text_candidates: Optional[Union[List[dict], List[str]]] = None) -> dict:
     """
-    Compute WCAG contrast vs black/white text and recommend best text color per swatch.
+    Compute WCAG contrast vs black/white text and (optionally) best text from provided palette.
     Returns:
       {
-        'per_color': [{hex, best: {text, ratio, AA, AAA, AA_large}, white: {...}, black: {...}}, ...],
+        'per_color': [
+          {
+            hex,
+            best: {text, ratio, AA, AAA, AA_large},
+            white: {...}, black: {...},
+            palette_best: {hex, ratio, AA, AAA, AA_large} | None,
+            message, suggest_hex
+          }, ...
+        ],
         'summary': { 'AA_pass': int, 'AAA_pass': int }
       }
     """
     per = []
     aa_pass = 0
     aaa_pass = 0
+    # Prepare palette candidates
+    candidate_hexes = _collect_candidate_hexes(text_candidates)
+
     for c in colors:
         hex_bg = c["hex"].upper()
         w_ratio = _contrast_ratio("#FFFFFF", hex_bg)
         b_ratio = _contrast_ratio("#000000", hex_bg)
-        white_info = {"ratio": round(w_ratio, 2), **_wcag_flags(w_ratio)}
-        black_info = {"ratio": round(b_ratio, 2), **_wcag_flags(b_ratio)}
-        best = _best_text_for_bg(hex_bg)
-        if best["AA"]:
+        white_info = _wcag_pack(w_ratio)
+        black_info = _wcag_pack(b_ratio)
+        best_bw = _best_text_for_bg(hex_bg)
+
+        # Find best from palette (exclude bg itself)
+        palette_best = None
+        best_r = -1.0
+        for tx in candidate_hexes:
+            if tx == hex_bg:
+                continue
+            r = _contrast_ratio(tx, hex_bg)
+            if r > best_r:
+                best_r = r
+                palette_best = {"hex": tx, **_wcag_pack(r)}
+
+        if best_bw["AA"]:
             aa_pass += 1
-        if best["AAA"]:
+        if best_bw["AAA"]:
             aaa_pass += 1
+
+        # Suggestion using palette_best when useful
+        suggestion, suggest_hex = _accessibility_suggestion(hex_bg, best_bw, white_info, black_info, palette_best)
+
         per.append({
             "hex": hex_bg,
-            "best": best,
+            "best": best_bw,
             "white": white_info,
             "black": black_info,
+            "palette_best": palette_best,  # NEW
+            "message": suggestion,
+            "suggest_hex": suggest_hex,
         })
     return {"per_color": per, "summary": {"AA_pass": aa_pass, "AAA_pass": aaa_pass}}
 
-# -------------------- NEW: Palette utilities & exports --------------------
+# -------------------- NEW: Accessibility suggestions helpers --------------------
 
+def _clamp(v: float, lo: float, hi: float) -> float:
+    return max(lo, min(hi, v))
+
+def _adjust_l_for_target(bg_hex: str, text_color: str, target: float = 4.5) -> Tuple[Optional[str], int]:
+    """
+    Try to reach target contrast by adjusting lightness in HSL.
+    For white text, darken (decrease L). For black text, lighten (increase L).
+    Returns (new_hex, delta_L) or (None, 0) if not possible within 30% L change.
+    """
+    h, s, l = rgb_to_hsl(hex_to_rgb(bg_hex))
+    direction = -1 if text_color == "white" else 1
+    for delta in range(1, 31):  # up to 30% L change
+        l2 = int(_clamp(l + direction * delta, 0, 100))
+        rgb2 = hsl_to_rgb((h, s, l2))
+        hex2 = rgb_to_hex(rgb2)
+        if _contrast_ratio("#FFFFFF" if text_color == "white" else "#000000", hex2) >= target:
+            return hex2.upper(), (l2 - l)
+    return None, 0
+
+def _accessibility_suggestion(bg_hex: str, best: dict, white_info: dict, black_info: dict, palette_best: Optional[dict] = None) -> Tuple[str, Optional[str]]:
+    """
+    Build a readable suggestion message. Include a quick fix hex if AA fails.
+    Optionally leverage palette_best (a dict with hex, ratio, AA/AAA) to recommend a palette text color.
+    """
+    ratio = round(best["ratio"], 2)
+
+    # If palette best reaches AAA while BW best doesn't, prefer that recommendation up-front
+    if palette_best and palette_best.get("AAA", False) and not best.get("AAA", False):
+        return f"Use palette text {palette_best['hex']} to reach AAA (ratio {palette_best['ratio']:.2f}).", None
+
+    if best["AAA"]:
+        # If palette is even better, mention it, else confirm pass
+        if palette_best and palette_best["ratio"] > ratio:
+            return f"Passes AAA with {best['text']} (ratio {ratio}). Palette {palette_best['hex']} is even higher ({palette_best['ratio']:.2f}).", None
+        return f"Passes AAA with {best['text']} text (ratio {ratio}).", None
+
+    if best["AA"] and not best["AAA"]:
+        # If palette reaches AAA, suggest it; else just note to improve
+        if palette_best and palette_best.get("AAA", False):
+            return f"Passes AA. Switch to palette text {palette_best['hex']} for AAA (ratio {palette_best['ratio']:.2f}).", None
+        if palette_best and palette_best["ratio"] > ratio:
+            return f"Passes AA. Palette text {palette_best['hex']} improves contrast to {palette_best['ratio']:.2f} (AAA target 7.0).", None
+        return f"Passes AA, consider stronger contrast for AAA (ratio {ratio}).", None
+
+    # AA fails: try palette option first
+    if palette_best:
+        if palette_best.get("AA", False):
+            return f"Use palette text {palette_best['hex']} (ratio {palette_best['ratio']:.2f}) to meet AA.", None
+        if palette_best.get("AA_large", False):
+            return f"Fails AA. Palette text {palette_best['hex']} meets AA-large (ratio {palette_best['ratio']:.2f}); use large/bold text.", None
+
+    # AA fails: fallback to large text or brightness adjustment
+    if best.get("AA_large", False):
+        new_hex, dL = _adjust_l_for_target(bg_hex, best["text"], target=4.5)
+        if new_hex:
+            act = "lighten" if (best["text"] == "black") else "darken"
+            return f"Fails AA. Use large/bold text or {act} ~{abs(dL)}% → {new_hex}.", new_hex
+        return f"Fails AA. Use large/bold text or adjust brightness for more contrast.", None
+
+    # Try switching to the other BW color, and propose adjustment if close
+    alt = "white" if best["text"] == "black" else "black"
+    alt_ratio = white_info["ratio"] if alt == "white" else black_info["ratio"]
+    if alt_ratio > ratio:
+        if alt_ratio >= 4.5:
+            return f"Switch to {alt} text (ratio {alt_ratio:.2f}) to meet AA.", None
+        if alt_ratio >= 3.0:
+            new_hex, dL = _adjust_l_for_target(bg_hex, alt, target=4.5)
+            if new_hex:
+                act = "lighten" if (alt == "black") else "darken"
+                return f"Switch to {alt} text (ratio {alt_ratio:.2f}) and {act} ~{abs(dL)}% → {new_hex} to reach AA.", new_hex
+            return f"Switch to {alt} text (ratio {alt_ratio:.2f}) and increase contrast.", None
+
+    # Else propose adjustment with current best
+    new_hex, dL = _adjust_l_for_target(bg_hex, best["text"], target=4.5)
+    if new_hex:
+        act = "lighten" if (best["text"] == "black") else "darken"
+        return f"Increase contrast: {act} ~{abs(dL)}% → {new_hex} (aim AA).", new_hex
+
+    return "Contrast is too low; consider different color pairing or stronger lightness shift.", None
+
+def _wcag_pack(ratio: float) -> dict:
+    return {"ratio": round(ratio, 2), **_wcag_flags(ratio)}
+
+def _collect_candidate_hexes(text_candidates: Optional[Union[List[dict], List[str]]]) -> List[str]:
+    if not text_candidates:
+        return []
+    hexes: List[str] = []
+    for item in text_candidates:
+        if isinstance(item, dict) and "hex" in item:
+            hexes.append(str(item["hex"]).upper())
+        elif isinstance(item, str):
+            hx = item.strip().upper()
+            if not hx.startswith("#") and HEX_RE.search(hx):
+                hx = f"#{HEX_RE.search(hx).group(0)}"
+            hexes.append(hx)
+    # unique preserve order
+    seen = set()
+    out = []
+    for h in hexes:
+        if h not in seen and HEX_RE.fullmatch(h.lstrip("#")) or h.startswith("#") and HEX_RE.fullmatch(h[1:]):
+            seen.add(h)
+            out.append(h)
+    return out
+
+# NEW: needed by _adjust_l_for_target
 def hsl_to_rgb(hsl_tuple: Tuple[int, int, int]) -> Tuple[int, int, int]:
     """
     Convert HSL (deg,%,%) to RGB ints (0-255).
@@ -549,52 +684,17 @@ def hsl_to_rgb(hsl_tuple: Tuple[int, int, int]) -> Tuple[int, int, int]:
     r, g, b = colorsys.hls_to_rgb(h_f, l_f, s_f)
     return (int(round(r * 255)), int(round(g * 255)), int(round(b * 255)))
 
-def _mk_color_dict_from_hsl(h: int, s: int, l: int) -> dict:
-    rgb = hsl_to_rgb((h, s, l))
-    return {"hex": rgb_to_hex(rgb), "rgb": rgb, "hsl": (int(h % 360), int(s), int(l))}
-
-def flatten_structured(structured: dict) -> List[dict]:
+# NEW: flatten helper for app.py imports
+def flatten_structured(structured: Union[dict, List[dict]]) -> List[dict]:
     """
-    Flatten structured palette dict into a flat list of color dicts.
+    Flatten a structured palette {primary, secondary, accent} into a single list.
+    Accepts an already-flat list and returns it unchanged.
     """
-    return list(structured.get("primary", [])) + list(structured.get("secondary", [])) + list(structured.get("accent", []))
-
-def harmonize_palette(colors: List[dict], mode: str) -> List[dict]:
-    """
-    Return a new palette (same length) adjusted by harmony rule.
-    Modes: complementary | analogous | triadic | monochromatic
-    """
-    mode = (mode or "").lower()
-    if not colors:
+    if isinstance(structured, list):
+        return structured
+    if not isinstance(structured, dict):
         return []
-    hsls = [tuple(map(int, c["hsl"])) for c in colors]
-    out: List[dict] = []
-    n = len(hsls)
-
-    if mode == "complementary":
-        for (h, s, l) in hsls:
-            out.append(_mk_color_dict_from_hsl((h + 180) % 360, s, l))
-    elif mode == "analogous":
-        # Alternate +/- 30 degrees
-        shifts = [30 if (i % 2 == 0) else -30 for i in range(n)]
-        for i, (h, s, l) in enumerate(hsls):
-            out.append(_mk_color_dict_from_hsl((h + shifts[i]) % 360, s, l))
-    elif mode == "triadic":
-        # Cycle offsets [0, +120, -120, ...]
-        offs = [0, 120, -120]
-        for i, (h, s, l) in enumerate(hsls):
-            out.append(_mk_color_dict_from_hsl((h + offs[i % 3]) % 360, s, l))
-    elif mode == "monochromatic":
-        # Lock to first hue; vary lightness slightly across swatches
-        base_h = hsls[0][0]
-        for i, (_, s, l) in enumerate(hsls):
-            # spread L in [35..75] roughly
-            L = int(round(35 + (40 * (i / max(1, n - 1)))))
-            out.append(_mk_color_dict_from_hsl(base_h, s, L))
-    else:
-        return colors
-
-    return out
+    return list(structured.get("primary", [])) + list(structured.get("secondary", [])) + list(structured.get("accent", []))
 
 def export_css_vars(colors: List[dict], prefix: str = "color") -> str:
     lines = [":root {"]
