@@ -8,6 +8,8 @@ import google.generativeai as genai
 import torch
 from sentence_transformers import SentenceTransformer
 from models.generator import PaletteGenerator
+# NEW: for binary exports
+import struct
 
 # --- Helpers ---
 def rgb_to_hex(rgb_tuple: Tuple[int, int, int]) -> str:
@@ -532,3 +534,200 @@ def build_accessibility_report(colors: List[dict]) -> dict:
             "black": black_info,
         })
     return {"per_color": per, "summary": {"AA_pass": aa_pass, "AAA_pass": aaa_pass}}
+
+# -------------------- NEW: Palette utilities & exports --------------------
+
+def hsl_to_rgb(hsl_tuple: Tuple[int, int, int]) -> Tuple[int, int, int]:
+    """
+    Convert HSL (deg,%,%) to RGB ints (0-255).
+    """
+    import colorsys
+    h, s, l = hsl_tuple
+    h_f = (h % 360) / 360.0
+    s_f = max(0.0, min(1.0, s / 100.0))
+    l_f = max(0.0, min(1.0, l / 100.0))
+    r, g, b = colorsys.hls_to_rgb(h_f, l_f, s_f)
+    return (int(round(r * 255)), int(round(g * 255)), int(round(b * 255)))
+
+def _mk_color_dict_from_hsl(h: int, s: int, l: int) -> dict:
+    rgb = hsl_to_rgb((h, s, l))
+    return {"hex": rgb_to_hex(rgb), "rgb": rgb, "hsl": (int(h % 360), int(s), int(l))}
+
+def flatten_structured(structured: dict) -> List[dict]:
+    """
+    Flatten structured palette dict into a flat list of color dicts.
+    """
+    return list(structured.get("primary", [])) + list(structured.get("secondary", [])) + list(structured.get("accent", []))
+
+def harmonize_palette(colors: List[dict], mode: str) -> List[dict]:
+    """
+    Return a new palette (same length) adjusted by harmony rule.
+    Modes: complementary | analogous | triadic | monochromatic
+    """
+    mode = (mode or "").lower()
+    if not colors:
+        return []
+    hsls = [tuple(map(int, c["hsl"])) for c in colors]
+    out: List[dict] = []
+    n = len(hsls)
+
+    if mode == "complementary":
+        for (h, s, l) in hsls:
+            out.append(_mk_color_dict_from_hsl((h + 180) % 360, s, l))
+    elif mode == "analogous":
+        # Alternate +/- 30 degrees
+        shifts = [30 if (i % 2 == 0) else -30 for i in range(n)]
+        for i, (h, s, l) in enumerate(hsls):
+            out.append(_mk_color_dict_from_hsl((h + shifts[i]) % 360, s, l))
+    elif mode == "triadic":
+        # Cycle offsets [0, +120, -120, ...]
+        offs = [0, 120, -120]
+        for i, (h, s, l) in enumerate(hsls):
+            out.append(_mk_color_dict_from_hsl((h + offs[i % 3]) % 360, s, l))
+    elif mode == "monochromatic":
+        # Lock to first hue; vary lightness slightly across swatches
+        base_h = hsls[0][0]
+        for i, (_, s, l) in enumerate(hsls):
+            # spread L in [35..75] roughly
+            L = int(round(35 + (40 * (i / max(1, n - 1)))))
+            out.append(_mk_color_dict_from_hsl(base_h, s, L))
+    else:
+        return colors
+
+    return out
+
+def export_css_vars(colors: List[dict], prefix: str = "color") -> str:
+    lines = [":root {"]
+    for i, c in enumerate(colors):
+        lines.append(f"  --{prefix}-{i+1}: {c['hex'].upper()};")
+    lines.append("}")
+    return "\n".join(lines)
+
+def export_scss_vars(colors: List[dict], prefix: str = "color") -> str:
+    return "\n".join([f"${prefix}-{i+1}: {c['hex'].upper()};" for i, c in enumerate(colors)])
+
+def export_tailwind_config(structured: dict) -> str:
+    """
+    Generate a minimal Tailwind config snippet with groups primary/secondary/accent.
+    """
+    def group_to_obj(name, arr):
+        inner = ",\n      ".join([f'"{i+1}": "{c["hex"].upper()}"' for i, c in enumerate(arr)])
+        return f'{name}: {{\n      {inner}\n    }}'
+    p = structured.get("primary", [])
+    s = structured.get("secondary", [])
+    a = structured.get("accent", [])
+    body = ",\n    ".join([group_to_obj("primary", p), group_to_obj("secondary", s), group_to_obj("accent", a)])
+    return (
+        "module.exports = {\n"
+        "  theme: {\n"
+        "    extend: {\n"
+        f"      colors: {{\n        {body}\n      }}\n"
+        "    }\n"
+        "  }\n"
+        "}"
+    )
+
+def export_palette_json(structured: dict) -> str:
+    return json.dumps(structured, indent=2)
+
+def export_react_theme(structured: dict) -> str:
+    """
+    A simple JSON theme map suitable for React apps.
+    """
+    m = {
+        "colors": {
+            "primary": [c["hex"].upper() for c in structured.get("primary", [])],
+            "secondary": [c["hex"].upper() for c in structured.get("secondary", [])],
+            "accent": [c["hex"].upper() for c in structured.get("accent", [])],
+        }
+    }
+    return json.dumps(m, indent=2)
+
+def export_aco(colors: List[dict], palette_name: str = "ChromaGen") -> bytes:
+    """
+    Photoshop ACO (v1 minimal) bytes.
+    """
+    buf = struct.pack(">HH", 1, len(colors))
+    for c in colors:
+        r, g, b = c["rgb"]
+        r16 = int(r / 255 * 65535)
+        g16 = int(g / 255 * 65535)
+        b16 = int(b / 255 * 65535)
+        buf += struct.pack(">HHHHH", 0, r16, g16, b16, 0)
+    return buf
+
+def export_ase(colors: List[dict], palette_name: str = "ChromaGen") -> bytes:
+    """
+    Adobe ASE bytes (RGB global colors).
+    """
+    def encode_utf16be(s: str) -> bytes:
+        u = s.encode("utf-16-be")
+        length = (len(u) // 2) + 1
+        return struct.pack(">H", length) + u + b"\x00\x00"
+
+    blocks = []
+    for i, c in enumerate(colors):
+        name = f"Color {i+1} {c.get('hex','').upper()}"
+        name_bytes = encode_utf16be(name)
+        model = b"RGB "
+        r, g, b = [v / 255.0 for v in c["rgb"]]
+        block_body = name_bytes + model + struct.pack(">fff", r, g, b) + struct.pack(">H", 0)
+        block = struct.pack(">H", 0x0001) + struct.pack(">I", len(block_body)) + block_body
+        blocks.append(block)
+
+    header = b"ASEF" + struct.pack(">HH", 1, 0) + struct.pack(">I", len(blocks))
+    return header + b"".join(blocks)
+
+# -------------------- NEW: Cultural/regional checks --------------------
+
+def analyze_cultural_conflicts(colors: List[dict], region: str = "global") -> List[dict]:
+    """
+    Lightweight heuristic notes based on hue for select regions.
+    Regions: western | east_asia | middle_east | india | global
+    """
+    region = (region or "global").lower()
+    notes = []
+    for c in colors:
+        h, s, l = c["hsl"]
+        hexv = c["hex"].upper()
+        msgs: List[str] = []
+
+        # Hue buckets
+        if (h <= 15 or h >= 345):
+            hue_name = "red"
+        elif 15 < h <= 45:
+            hue_name = "orange"
+        elif 45 < h <= 70:
+            hue_name = "yellow"
+        elif 70 < h <= 170:
+            hue_name = "green"
+        elif 170 < h <= 255:
+            hue_name = "blue"
+        elif 255 < h <= 290:
+            hue_name = "indigo"
+        else:
+            hue_name = "purple"
+
+        if region in ("global", "western"):
+            if hue_name == "red":
+                msgs.append("Often associated with error/danger; use cautiously for success states.")
+            if hue_name == "green":
+                msgs.append("Often associated with success/confirm in Western UIs.")
+            if l >= 85:
+                msgs.append("Very light background may reduce contrast for body text.")
+        if region in ("global", "east_asia"):
+            if hue_name == "red":
+                msgs.append("Red associated with luck/prosperity; avoids danger connotation.")
+            if (s < 10 and l > 85):
+                msgs.append("White may be associated with mourning in some contexts.")
+        if region in ("global", "middle_east"):
+            if hue_name == "green":
+                msgs.append("Green has religious/cultural significance; avoid trivial usage.")
+        if region in ("global", "india"):
+            if 25 <= h <= 45:
+                msgs.append("Saffron/orange has cultural/religious significance.")
+            if (s < 10 and l > 85):
+                msgs.append("White can carry ceremonial meanings.")
+
+        notes.append({"hex": hexv, "hue": hue_name, "notes": "; ".join(msgs) if msgs else ""})
+    return notes

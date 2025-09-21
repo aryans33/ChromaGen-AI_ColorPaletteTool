@@ -4,6 +4,7 @@ import os
 from io import BytesIO
 from PIL import Image, ImageEnhance
 import base64
+import streamlit.components.v1 as components  # NEW: render full HTML
 
 # Local imports
 from image_palette import extract_palette_from_image, create_palette_image, palette_payload_from_colors
@@ -12,6 +13,15 @@ from text_palette import (
     text_to_palette_options_structured,
     build_accessibility_report,
     simulate_palette_colors,
+    # NEW imports
+    export_css_vars,
+    export_scss_vars,
+    export_tailwind_config,
+    export_palette_json,
+    export_react_theme,
+    export_aco,
+    export_ase,
+    flatten_structured,
 )
 
 # Load environment variables
@@ -27,6 +37,29 @@ CB_LABELS = {
 # ---- Streamlit UI ----
 st.set_page_config(page_title="ChromaGen – AI Color Palette Generator", layout="wide")
 st.title("ChromaGen – AI Color Palette Generator")
+
+# NEW: Lightweight REST-like API (?api=1&prompt=...&n=6)
+_qp = st.query_params
+api_flag = _qp.get("api", "0")
+if isinstance(api_flag, list):
+	api_flag = api_flag[0]
+if api_flag == "1":
+	prompt = _qp.get("prompt", "")
+	if isinstance(prompt, list):
+		prompt = prompt[0]
+	n_val = _qp.get("n", "6")
+	if isinstance(n_val, list):
+		n_val = n_val[0]
+	try:
+		n = int(n_val)
+	except Exception:
+		n = 6
+	try:
+		payload = text_to_palette_structured_payload(prompt, n_colors=n)
+		st.json(payload["palette"])
+	except Exception as e:
+		st.json({"error": str(e)})
+	st.stop()
 
 def _light_css() -> str:
 	return """
@@ -102,6 +135,27 @@ def _light_css() -> str:
 		border-radius: 8px !important;
 	}
 	[data-testid="stCodeBlock"] pre { padding: 12px 14px !important; }
+
+	/* Buttons: ensure download buttons look like primary buttons */
+	.stDownloadButton > button,
+	[data-testid="stDownloadButton"] button {
+		background-color: #2563eb !important;
+		color: #ffffff !important;
+		border: 1px solid #1d4ed8 !important;
+		border-radius: 8px !important;
+		width: 100% !important;            /* NEW: align width */
+		justify-content: center !important;/* NEW: center text */
+	}
+	.stDownloadButton > button * { color:#ffffff !important; }
+	[data-testid="stDownloadButton"] button:hover { background-color:#1d4ed8 !important; }
+	[data-testid="stDownloadButton"] button:active { background-color:#1e40af !important; }
+
+	/* Small badges for status (contrast) */
+	.badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; margin-right:6px; }
+	.badge-pass { background: #DCFCE7; color:#166534; border:1px solid #86EFAC; }
+	.badge-fail { background: #FEE2E2; color:#991B1B; border:1px solid #FCA5A5; }
+	.preview-card { padding:12px; border:1px solid rgba(0,0,0,0.12); border-radius:12px; margin-bottom:12px; }
+	.preview-bar { height:10px; border-radius:999px; margin-bottom:10px; opacity:0.9; }
 	</style>
 	"""
 
@@ -154,18 +208,25 @@ def _dark_css() -> str:
 		padding: 12px 14px !important;
 	}
 
-	/* Inputs */
-	input, textarea, select, .stTextInput input, .stTextArea textarea, .stSelectbox div[role="combobox"] {
-		background-color: var(--card) !important; color: var(--text) !important; border-color: var(--border) !important;
+	/* Buttons: ensure download buttons look like primary buttons in dark mode */
+	.stDownloadButton > button,
+	[data-testid="stDownloadButton"] button {
+		background: var(--primary) !important;
+		color: #ffffff !important;
+		border: 1px solid transparent !important;
+		border-radius: 8px !important;
+		width: 100% !important;            /* NEW: align width */
+		justify-content: center !important;/* NEW: center text */
 	}
-	/* File uploader */
-	[data-testid="stFileUploaderDropzone"] {
-		background-color: var(--card) !important; border: 1px dashed var(--border) !important; color: var(--text) !important;
-	}
-	[data-testid="stFileUploader"] button {
-		background-color: var(--primary) !important; color: #ffffff !important; border: 1px solid transparent !important; border-radius: 6px !important;
-	}
-	[data-testid="stFileUploader"] button:hover { filter: brightness(0.9); }
+	.stDownloadButton > button * { color:#ffffff !important; }
+	[data-testid="stDownloadButton"] button:hover { filter: brightness(0.9); }
+
+	/* Small badges for status (contrast) */
+	.badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; margin-right:6px; }
+	.badge-pass { background: rgba(34,197,94,0.15); color:#86EFAC; border:1px solid rgba(34,197,94,0.35); }
+	.badge-fail { background: rgba(239,68,68,0.15); color:#FCA5A5; border:1px solid rgba(239,68,68,0.35); }
+	.preview-card { padding:12px; border:1px solid var(--border); border-radius:12px; margin-bottom:12px; }
+	.preview-bar { height:10px; border-radius:999px; margin-bottom:10px; opacity:0.9; }
 	</style>
 	"""
 
@@ -213,6 +274,280 @@ def render_option_card(palette_colors, caption: str, use_key: str):
 		unsafe_allow_html=True,
 	)
 	return st.button(f"Use {caption}", key=use_key)
+
+# ---------------------- NEW: Modular UI helpers ----------------------
+
+def _hex_only(colors):
+	return [c["hex"].upper() for c in colors]
+
+def _contrast_data_for_hex(hex_bg: str):
+	rep = build_accessibility_report([{"hex": hex_bg, "rgb": (0,0,0), "hsl": (0,0,0)}])
+	info = rep["per_color"][0]
+	return {"best": info["best"], "white": info["white"], "black": info["black"]}
+
+def render_contrast_previews(flat_colors, section_key: str):
+	# Controls
+	force = st.selectbox("Text color", ["Auto (best)", "Black", "White"], key=f"force_text_{section_key}")
+	cols_per_row = 3
+	cols = st.columns(cols_per_row if flat_colors else 1)
+	for idx, c in enumerate(flat_colors):
+		hex_bg = c["hex"].upper()
+		data = _contrast_data_for_hex(hex_bg)
+		best = data["best"]["text"]
+		text_choice = {"Auto (best)": best, "Black": "black", "White": "white"}[force]
+		fg = "#FFFFFF" if text_choice == "white" else "#000000"
+		# Ratios for both normal and large
+		ratio = data[text_choice]["ratio"]
+		aa_ok = ratio >= 4.5
+		aa_l_ok = ratio >= 3.0
+		aaa_ok = ratio >= 7.0
+
+		with cols[idx % cols_per_row]:
+			st.markdown(
+				f"<div class='preview-card' style='background:{hex_bg};'>"
+				f"<div class='preview-bar' style='background:{fg};opacity:0.25;'></div>"
+				f"<div style='color:{fg};font-size:32px;font-weight:800;line-height:1.2;'>H1 32px</div>"
+				f"<div style='color:{fg};font-size:20px;opacity:0.95;'>H2 24px equivalent</div>"
+				f"<div style='color:{fg};font-size:16px;margin:8px 0;'>Body 16px – readable paragraph</div>"
+				f"<button style='padding:8px 12px;border:0;border-radius:8px;background:{fg};color:{hex_bg};'>Button</button>"
+				f"<div style='margin-top:10px;'>"
+				f"<span class='badge {'badge-pass' if aa_ok else 'badge-fail'}'>AA normal {ratio:.2f}</span>"
+				f"<span class='badge {'badge-pass' if aa_l_ok else 'badge-fail'}'>AA large {ratio:.2f}</span>"
+				f"<span class='badge {'badge-pass' if aaa_ok else 'badge-fail'}'>AAA {ratio:.2f}</span>"
+				f"</div>"
+				f"</div>",
+				unsafe_allow_html=True,
+			)
+
+def render_dyslexia_previews(flat_colors, section_key: str):
+	# Controls for better readability testing
+	colc = st.columns(4)
+	with colc[0]:
+		font_family = st.radio("Font", ["OpenDyslexic", "System default"], horizontal=True, key=f"dys_font_{section_key}")
+	with colc[1]:
+		base_size = st.slider("Font size (px)", 14, 22, 16, 1, key=f"dys_size_{section_key}")
+	with colc[2]:
+		line_h = st.slider("Line height", 1.2, 2.0, 1.6, 0.1, key=f"dys_lh_{section_key}")
+	with colc[3]:
+		letter_sp = st.slider("Letter spacing (em)", 0.0, 0.1, 0.03, 0.01, key=f"dys_ls_{section_key}")
+
+	# Load OpenDyslexic font via CSS
+	st.markdown("""
+	<style>
+	@font-face {
+		font-family: 'OpenDyslexic';
+		src: url('https://cdn.jsdelivr.net/gh/antijingoist/opendyslexic/phase6/otf/OpenDyslexic3-Regular.otf') format('opentype');
+		font-display: swap;
+	}
+	.dys-block {
+		padding:16px; border-radius:12px; margin-bottom:10px;
+		border:1px solid rgba(0,0,0,0.08);
+	}
+	.dys-h { font-weight:700; margin:0 0 6px 0; }
+	.dys-p { margin:0; opacity:0.95; }
+	</style>
+	""", unsafe_allow_html=True)
+
+	# Sample content
+	heading = "A quick preview heading"
+	para = "The quick brown fox jumps over the lazy dog. 1234567890. Sphinx of black quartz, judge my vow."
+
+	cols_per_row = 3
+	cols = st.columns(cols_per_row if flat_colors else 1)
+	for i, c in enumerate(flat_colors):
+		bg = c["hex"].upper()
+		# pick readable foreground
+		choice = _contrast_data_for_hex(bg)["best"]["text"]
+		fg = "#FFFFFF" if choice == "white" else "#000000"
+
+		ff = "'OpenDyslexic', system-ui, -apple-system, Segoe UI, Roboto, sans-serif" if font_family == "OpenDyslexic" else "system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+		style = f"background:{bg};color:{fg};font-family:{ff};font-size:{base_size}px;line-height:{line_h};letter-spacing:{letter_sp}em;"
+		with cols[i % cols_per_row]:
+			st.markdown(
+				f"<div class='dys-block' style='{style}'>"
+				f"<div class='dys-h'>{heading}</div>"
+				f"<div class='dys-p'>{para}</div>"
+				f"</div>",
+				unsafe_allow_html=True
+			)
+
+def render_export_tools(structured, section_key: str):
+	flat = flatten_structured(structured)
+
+	# Row 1
+	r1c1, r1c2, r1c3 = st.columns(3)
+	with r1c1:
+		css_txt = export_css_vars(flat, prefix="chroma")
+		st.download_button("Download CSS vars", data=css_txt, file_name="palette.css", mime="text/css", key=f"dl_css_{section_key}")
+	with r1c2:
+		scss_txt = export_scss_vars(flat, prefix="chroma")
+		st.download_button("Download SCSS vars", data=scss_txt, file_name="palette.scss", mime="text/x-scss", key=f"dl_scss_{section_key}")
+	with r1c3:
+		tw = export_tailwind_config(structured)
+		st.download_button("Download Tailwind config", data=tw, file_name="tailwind.config.js", mime="application/javascript", key=f"dl_tw_{section_key}")
+
+	# Row 2
+	r2c1, r2c2, r2c3 = st.columns(3)
+	with r2c1:
+		react_json = export_react_theme(structured)
+		st.download_button("Download React theme JSON", data=react_json, file_name="theme.json", mime="application/json", key=f"dl_react_{section_key}")
+	with r2c2:
+		js = export_palette_json(structured)
+		st.download_button("Download JSON", data=js, file_name="palette.json", mime="application/json", key=f"dl_json_{section_key}")
+	with r2c3:
+		# Put ACO/ASE side-by-side but still aligned in the last cell
+		cc1, cc2 = st.columns(2)
+		with cc1:
+			aco_bytes = export_aco(flat, "ChromaGen")
+			st.download_button("Adobe ACO", data=aco_bytes, file_name="palette.aco", mime="application/octet-stream", key=f"dl_aco_{section_key}")
+		with cc2:
+			ase_bytes = export_ase(flat, "ChromaGen")
+			st.download_button("Adobe ASE", data=ase_bytes, file_name="palette.ase", mime="application/octet-stream", key=f"dl_ase_{section_key}")
+
+def render_moodboard(flat_colors, section_key: str):
+	hexes = _hex_only(flat_colors)
+	if not hexes:
+		return
+	# Choose colors from palette
+	bg_grad = f"linear-gradient(135deg, {hexes[0]}, {hexes[min(1,len(hexes)-1)]})"
+	card_bg = hexes[min(2, len(hexes)-1)]
+	# Compute readable text for the accent card
+	card_fg_choice = _contrast_data_for_hex(card_bg)["best"]["text"]
+	card_fg = "#FFFFFF" if card_fg_choice == "white" else "#000000"
+	# Secondary card background adapted to theme for visibility
+	dark_mode = st.session_state.get("dark_mode", False)
+	sec_bg = "#111111" if dark_mode else "#ffffff"
+	sec_fg = "#ffffff" if dark_mode else "#111111"
+	btn_bg = hexes[min(3, len(hexes)-1)]
+	btn_fg_choice = _contrast_data_for_hex(btn_bg)["best"]["text"]
+	btn_fg = "#FFFFFF" if btn_fg_choice == "white" else "#000000"
+	title_fg_choice = _contrast_data_for_hex(hexes[0])["best"]["text"]
+	title_fg = "#FFFFFF" if title_fg_choice == "white" else "#000000"
+	html = f"""
+	<div style="border:1px solid rgba(0,0,0,0.1);border-radius:14px;overflow:hidden;">
+	  <div style="padding:30px;color:{title_fg};background:{bg_grad};">
+	    <div style="font-size:28px;font-weight:700;">Moodboard Hero</div>
+	    <div style="opacity:0.9;margin-top:6px;">Gradient hero composed from your first two swatches.</div>
+	    <button style="margin-top:12px;padding:10px 14px;border-radius:8px;background:{btn_bg};color:{btn_fg};border:none;">Primary Action</button>
+	  </div>
+	  <div style="display:flex;gap:12px;padding:16px;background:rgba(0,0,0,0.02);">
+	    <div style="flex:1;padding:14px;border-radius:10px;background:{card_bg};color:{card_fg};">
+	      <div style="font-weight:700;">Accent Card</div>
+	      <div style="opacity:0.9;">Card content on accent surface</div>
+	    </div>
+	    <div style="flex:1;padding:14px;border-radius:10px;background:{sec_bg};color:{sec_fg};border:1px solid rgba(0,0,0,0.08);">
+	      <div style="font-weight:700;">Secondary Card</div>
+	      <div style="opacity:0.9;">Neutral surface with proper contrast</div>
+	    </div>
+	  </div>
+	</div>
+	"""
+	# st.markdown(html, unsafe_allow_html=True)
+	components.html(html, height=340, scrolling=False)  # NEW: render inside iframe
+
+def render_live_preview(flat_colors, section_key: str):
+	hexes = _hex_only(flat_colors)
+	if not hexes:
+		st.info("Generate a palette to preview.")
+		return
+	# Controls for live mapping
+	n = len(hexes)
+	colc = st.columns(4)
+	with colc[0]:
+		bg_idx = st.selectbox("Hero background", [f"{i+1}: {hexes[i]}" for i in range(n)], index=0, key=f"lp_bg_{section_key}")
+	with colc[1]:
+		accent_idx = st.selectbox("Accent color", [f"{i+1}: {hexes[i]}" for i in range(n)], index=min(1, n-1), key=f"lp_ac_{section_key}")
+	with colc[2]:
+		btn_idx = st.selectbox("Button color", [f"{i+1}: {hexes[i]}" for i in range(n)], index=min(2, n-1), key=f"lp_btn_{section_key}")
+	with colc[3]:
+		text_mode = st.selectbox("Text color", ["Auto (best)", "Black", "White"], index=0, key=f"lp_txt_{section_key}")
+
+	def _parse_choice(choice: str) -> int:
+		try:
+			return max(0, int(choice.split(":")[0]) - 1)
+		except Exception:
+			return 0
+
+	bg = hexes[_parse_choice(bg_idx)]
+	accent = hexes[_parse_choice(accent_idx)]
+	btn = hexes[_parse_choice(btn_idx)]
+
+	# Determine hero text color with explicit mapping
+	_map = {"Auto (best)": None, "Black": "#000000", "White": "#FFFFFF"}
+	chosen = _map.get(text_mode)
+	if chosen is None:
+		hero_choice = _contrast_data_for_hex(bg)["best"]["text"]
+		hero_fg = "#FFFFFF" if hero_choice == "white" else "#000000"
+	else:
+		hero_fg = chosen
+
+	# Accent foreground for chips/links; ensure readable on accent
+	acc_fg_choice = _contrast_data_for_hex(accent)["best"]["text"]
+	acc_fg = "#FFFFFF" if acc_fg_choice == "white" else "#000000"
+
+	# Button text color follows selection unless Auto, then best for button bg
+	if chosen is None:
+		btn_choice = _contrast_data_for_hex(btn)["best"]["text"]
+		btn_fg = "#FFFFFF" if btn_choice == "white" else "#000000"
+	else:
+		btn_fg = chosen
+
+	# Use !important to override dark-mode CSS rules for headings/paragraphs
+	html = f"""
+	<div class="lp" style="border:1px solid rgba(0,0,0,0.1);border-radius:14px;overflow:hidden;">
+		<section style="padding:28px;background:{bg};color:{hero_fg} !important;">
+			<!-- Accent bar makes accent choice visible -->
+			<div style="height:6px;background:{accent};border-radius:999px;margin-bottom:12px;"></div>
+
+			<h2 style="margin:0 0 8px 0;color:{hero_fg} !important;">Hero Section</h2>
+			<p style="margin:0 0 12px 0;opacity:0.92;color:{hero_fg} !important;">Sample landing page preview using your palette mapping.</p>
+
+			<!-- Accent pill + link show accent clearly -->
+			<span style="display:inline-block;background:{accent};color:{acc_fg} !important;padding:4px 10px;border-radius:999px;font-size:12px;margin-right:10px;">New</span>
+			<a href="#" style="color:{accent} !important;text-decoration:underline;margin-right:14px;">Learn more</a>
+
+			<div style="margin-top:12px;">
+				<button style="padding:10px 14px;border-radius:8px;background:{btn};color:{btn_fg} !important;border:none;margin-right:8px;">Primary</button>
+				<button style="padding:10px 14px;border-radius:8px;background:transparent;color:{btn} !important;border:1px solid {btn};">Secondary</button>
+			</div>
+		</section>
+
+		<section style="padding:16px;background:#fff;">
+			<div style="display:flex;gap:12px;">
+				<div style="flex:1;border:1px solid rgba(0,0,0,0.08);border-left:4px solid {accent};padding:12px;border-radius:8px;">
+					<div style="font-weight:700;color:#111111 !important;">Card Title</div>
+					<div style="opacity:0.9;color:#111111 !important;">Card copy with neutral contrast</div>
+				</div>
+				<div style="flex:1;border:1px solid rgba(0,0,0,0.08);border-left:4px solid {accent};padding:12px;border-radius:8px;">
+					<div style="font-weight:700;color:#111111 !important;">Card Title</div>
+					<div style="opacity:0.9;color:#111111 !important;">Another card using different accent</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	"""
+	# st.markdown(html, unsafe_allow_html=True)
+	components.html(html, height=520, scrolling=False)  # NEW: render inside iframe
+
+def render_extras(structured, section_key: str):
+	flat = flatten_structured(structured)
+	# Tabs (removed Localization & Harmony)
+	t1, t2, t3, t4, t5 = st.tabs(["Contrast", "Dyslexia", "Exports", "Storyboard", "Live Preview"])
+	with t1:
+		st.subheader("Dynamic Contrast Previews")
+		render_contrast_previews(flat, section_key)
+	with t2:
+		st.subheader("Dyslexia-friendly Previews")
+		render_dyslexia_previews(flat, section_key)
+	with t3:
+		st.subheader("Exports")
+		render_export_tools(structured, section_key)
+	with t4:
+		st.subheader("Palette Storyboard")
+		render_moodboard(flat, section_key)
+	with t5:
+		st.subheader("Live Preview")
+		render_live_preview(flat, section_key)
 
 # ------------------ IMAGE TO PALETTE ------------------
 if mode == "Image to Palette":
@@ -301,6 +636,9 @@ if mode == "Image to Palette":
                         width="stretch",
                     )
 
+            # NEW: Extras (Image current)
+            render_extras(structured_img, "image_current")
+
             # Multiple options
             st.subheader("More options")
             img_obj = Image.open(uploaded_file).convert("RGB")
@@ -375,6 +713,9 @@ if mode == "Image to Palette":
                             width="stretch",
                         )
 
+                # NEW: Extras (Image)
+                render_extras(structured_sel, "image_selected")
+
         except Exception as e:
             st.error(f"Error: {str(e)}")
 
@@ -382,7 +723,7 @@ if mode == "Image to Palette":
 elif mode == "Text to Palette":
     st.header("📝 Generate Palette from Text Prompt")
 
-    prompt = st.text_input("Describe your palette (e.g., 'barbie', 'sunset pastel', 'forest earthy')")
+    prompt = st.text_input("Describe your palette ")
     generate = st.button("Generate Palette", type="primary")
 
     if generate:
@@ -446,8 +787,10 @@ elif mode == "Text to Palette":
                             width="stretch",
                         )
 
+                # NEW: Extras (Text current)
+                render_extras(structured, "text_current")
+
                 # More options (same pattern as image mode)
-                st.subheader("More options")
                 opts = text_to_palette_options_structured(prompt, n_colors=6, n_options=4)
                 cols = st.columns(2)
                 for i, sp in enumerate(opts):
