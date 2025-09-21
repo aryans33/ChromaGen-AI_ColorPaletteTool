@@ -4,6 +4,8 @@ import pandas as pd
 from PIL import Image, ImageColor
 from sklearn.cluster import KMeans
 import colorsys
+import json
+from typing import List, Dict
 
 # Set environment variable to suppress joblib warning
 os.environ['LOKY_MAX_CPU_COUNT'] = '4'
@@ -108,3 +110,64 @@ def create_palette_image(colors, width=400, height=100):
                 pixels[x, y] = rgb
     
     return palette_img
+
+def _structure_palette(colors: List[dict]) -> dict:
+	"""
+	Group a flat list into primary, secondary, and accent using the same heuristic as text.
+	"""
+	n = len(colors)
+	if n >= 6:
+		p, s = 2, 2
+	elif n == 5:
+		p, s = 2, 2
+	elif n == 4:
+		p, s = 1, 2
+	else:
+		p, s = 1, max(0, n - 2)
+
+	primary = colors[:p]
+	secondary = colors[p:p + s]
+	accent = colors[p + s:]
+	return {"primary": primary, "secondary": secondary, "accent": accent}
+
+def _codes_strings(colors: List[dict]) -> dict:
+	"""
+	Newline-separated strings for easy copy (HEX/RGB/HSL).
+	"""
+	hex_str = "\n".join(c["hex"].upper() for c in colors)
+	rgb_str = "\n".join(f"rgb{c['rgb']}" for c in colors)
+	hsl_str = "\n".join(f"hsl({c['hsl'][0]}, {c['hsl'][1]}%, {c['hsl'][2]}%)" for c in colors)
+	return {"hex": hex_str, "rgb": rgb_str, "hsl": hsl_str}
+
+def build_copy_blocks(structured: dict) -> dict:
+	"""
+	Copy-friendly strings for each group and for the entire palette.
+	"""
+	primary = structured.get("primary", [])
+	secondary = structured.get("secondary", [])
+	accent = structured.get("accent", [])
+	all_colors = primary + secondary + accent
+	return {
+		"primary": _codes_strings(primary),
+		"secondary": _codes_strings(secondary),
+		"accent": _codes_strings(accent),
+		"all": _codes_strings(all_colors),
+	}
+
+def palette_payload_from_colors(colors: List[dict]) -> dict:
+	"""
+	Build a payload with grouped palette, copy blocks, and pretty JSON from a flat colors list.
+	"""
+	structured = _structure_palette(colors)
+	return {
+		"palette": structured,
+		"copy": build_copy_blocks(structured),
+		"json": json.dumps(structured, indent=2),
+	}
+
+def extract_palette_from_image_structured_payload(file_like, n_colors: int = 6) -> dict:
+	"""
+	Run extraction, then return the structured payload (primary/secondary/accent + copy + json).
+	"""
+	res = extract_palette_from_image(file_like, n_colors=n_colors)
+	return palette_payload_from_colors(res["colors"])
