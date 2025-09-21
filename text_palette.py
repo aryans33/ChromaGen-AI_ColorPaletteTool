@@ -414,3 +414,121 @@ def build_copy_blocks(structured: dict) -> dict:
         "accent": _codes_strings(accent),
         "all": _codes_strings(all_colors),
     }
+
+def _srgb_to_linear(c: float) -> float:
+    return c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4
+
+def _linear_to_srgb(c: float) -> float:
+    return c * 12.92 if c <= 0.0031308 else 1.055 * (c ** (1 / 2.4)) - 0.055
+
+def _rel_luminance(rgb: Tuple[int, int, int]) -> float:
+    r, g, b = [x / 255.0 for x in rgb]
+    R = _srgb_to_linear(r)
+    G = _srgb_to_linear(g)
+    B = _srgb_to_linear(b)
+    return 0.2126 * R + 0.7152 * G + 0.0722 * B
+
+def _contrast_ratio(fg_hex: str, bg_hex: str) -> float:
+    L1 = _rel_luminance(hex_to_rgb(fg_hex))
+    L2 = _rel_luminance(hex_to_rgb(bg_hex))
+    L_light, L_dark = (L1, L2) if L1 >= L2 else (L2, L1)
+    return (L_light + 0.05) / (L_dark + 0.05)
+
+def _wcag_flags(ratio: float) -> dict:
+    # Normal text thresholds
+    return {
+        "AA": ratio >= 4.5,
+        "AAA": ratio >= 7.0,
+        "AA_large": ratio >= 3.0,  # large text (>= 18pt/14pt bold)
+    }
+
+def _best_text_for_bg(bg_hex: str) -> dict:
+    r_white = _contrast_ratio("#FFFFFF", bg_hex)
+    r_black = _contrast_ratio("#000000", bg_hex)
+    if r_white >= r_black:
+        return {"text": "white", "ratio": r_white, **_wcag_flags(r_white)}
+    else:
+        return {"text": "black", "ratio": r_black, **_wcag_flags(r_black)}
+
+# Matrices adapted from common simulation models (linear RGB domain)
+_SIM_MATS = {
+    "protanopia": (
+        (0.152286, 1.052583, -0.204868),
+        (0.114503, 0.786281, 0.099216),
+        (-0.003882, -0.048116, 1.051998),
+    ),
+    "deuteranopia": (
+        (0.367322, 0.860646, -0.227968),
+        (0.280085, 0.672501, 0.047413),
+        (-0.011820, 0.042940, 0.968881),
+    ),
+    "tritanopia": (
+        (1.255528, -0.076749, -0.178779),
+        (-0.078411, 0.930809, 0.147602),
+        (0.004733, 0.691367, 0.303900),
+    ),
+}
+
+def _simulate_rgb(rgb: Tuple[int, int, int], mode: str) -> Tuple[int, int, int]:
+    mode = mode.lower()
+    if mode not in _SIM_MATS:
+        return rgb
+    M = _SIM_MATS[mode]
+    r, g, b = [x / 255.0 for x in rgb]
+    # to linear
+    rl, gl, bl = _srgb_to_linear(r), _srgb_to_linear(g), _srgb_to_linear(b)
+    rl2 = M[0][0] * rl + M[0][1] * gl + M[0][2] * bl
+    gl2 = M[1][0] * rl + M[1][1] * gl + M[1][2] * bl
+    bl2 = M[2][0] * rl + M[2][1] * gl + M[2][2] * bl
+    # back to sRGB
+    ro = max(0.0, min(1.0, _linear_to_srgb(max(0.0, min(1.0, rl2)))))
+    go = max(0.0, min(1.0, _linear_to_srgb(max(0.0, min(1.0, gl2)))))
+    bo = max(0.0, min(1.0, _linear_to_srgb(max(0.0, min(1.0, bl2)))))
+    return (int(round(ro * 255)), int(round(go * 255)), int(round(bo * 255)))
+
+def simulate_palette_colors(colors: List[dict], mode: str) -> List[dict]:
+    """
+    Simulate a palette under a color-vision deficiency mode.
+    mode: 'protanopia' | 'deuteranopia' | 'tritanopia'
+    """
+    out: List[dict] = []
+    for c in colors:
+        rgb = c["rgb"]
+        rgb2 = _simulate_rgb(rgb, mode)
+        out.append({
+            "hex": rgb_to_hex(rgb2),
+            "rgb": rgb2,
+            "hsl": rgb_to_hsl(rgb2),
+        })
+    return out
+
+def build_accessibility_report(colors: List[dict]) -> dict:
+    """
+    Compute WCAG contrast vs black/white text and recommend best text color per swatch.
+    Returns:
+      {
+        'per_color': [{hex, best: {text, ratio, AA, AAA, AA_large}, white: {...}, black: {...}}, ...],
+        'summary': { 'AA_pass': int, 'AAA_pass': int }
+      }
+    """
+    per = []
+    aa_pass = 0
+    aaa_pass = 0
+    for c in colors:
+        hex_bg = c["hex"].upper()
+        w_ratio = _contrast_ratio("#FFFFFF", hex_bg)
+        b_ratio = _contrast_ratio("#000000", hex_bg)
+        white_info = {"ratio": round(w_ratio, 2), **_wcag_flags(w_ratio)}
+        black_info = {"ratio": round(b_ratio, 2), **_wcag_flags(b_ratio)}
+        best = _best_text_for_bg(hex_bg)
+        if best["AA"]:
+            aa_pass += 1
+        if best["AAA"]:
+            aaa_pass += 1
+        per.append({
+            "hex": hex_bg,
+            "best": best,
+            "white": white_info,
+            "black": black_info,
+        })
+    return {"per_color": per, "summary": {"AA_pass": aa_pass, "AAA_pass": aaa_pass}}

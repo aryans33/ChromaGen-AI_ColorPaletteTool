@@ -3,22 +3,216 @@ from dotenv import load_dotenv
 import os
 from io import BytesIO
 from PIL import Image, ImageEnhance
+import base64
 
 # Local imports
 from image_palette import extract_palette_from_image, create_palette_image, palette_payload_from_colors
 from text_palette import (
     text_to_palette_structured_payload,
     text_to_palette_options_structured,
+    build_accessibility_report,
+    simulate_palette_colors,
 )
 
 # Load environment variables
 load_dotenv()
 
+# Add readable labels for simulation modes
+CB_LABELS = {
+    "protanopia": "Protanopia (red-blindness)",
+    "deuteranopia": "Deuteranopia (green-blindness)",
+    "tritanopia": "Tritanopia (blue-blindness)",
+}
+
 # ---- Streamlit UI ----
 st.set_page_config(page_title="ChromaGen – AI Color Palette Generator", layout="wide")
 st.title("ChromaGen – AI Color Palette Generator")
 
+def _light_css() -> str:
+	return """
+	<style>
+	/* App + main containers */
+	html, body, [data-testid="stAppViewContainer"], .stApp, .block-container {
+		background-color: #ffffff !important;
+		color: #111111 !important;
+	}
+	/* Header (top bar) */
+	[data-testid="stHeader"],
+	[data-testid="stHeader"] > div {
+		background: #ffffff !important;
+		border-bottom: 1px solid #e5e7eb !important;
+	}
+	/* Sidebar */
+	[data-testid="stSidebar"] > div {
+		background-color: #ffffff !important;
+		border-right: 1px solid #e5e7eb !important;
+	}
+	h1, h2, h3, h4, h5, h6, p, label, span, .stMarkdown {
+		color: #111111 !important;
+	}
+	/* Inputs */
+	input, textarea, select,
+	.stTextInput input, .stTextArea textarea,
+	.stSelectbox div[role="combobox"],
+	.stNumberInput input {
+		background-color: #ffffff !important;
+		color: #111111 !important;
+		border-color: #e5e7eb !important;
+	}
+
+	/* File uploader dropzone + button */
+	[data-testid="stFileUploaderDropzone"] {
+		background-color: #ffffff !important;
+		border: 1px dashed #d1d5db !important;
+		color: #111111 !important;
+	}
+	[data-testid="stFileUploaderDropzone"] * { color: #111111 !important; }
+
+	/* Browse files button (light) */
+	[data-testid="stFileUploader"] button {
+		background-color: #2563eb !important;
+		color: #ffffff !important;
+		border: 1px solid #1d4ed8 !important;
+		border-radius: 6px !important;
+	}
+	/* Ensure nested elements are white too */
+	[data-testid="stFileUploader"] button * { color: #ffffff !important; }
+	[data-testid="stFileUploader"] button:hover { background-color: #1d4ed8 !important; }
+	[data-testid="stFileUploader"] button:active { background-color: #1e40af !important; }
+
+	/* Light mode buttons (fix "Use Option" and all blue buttons) */
+	.stButton > button {
+		background-color: #2563eb !important;
+		color: #ffffff !important;
+		border: 1px solid #1d4ed8 !important;
+		border-radius: 8px !important;
+	}
+	/* Ensure nested spans/icons stay white */
+	.stButton > button * { color: #ffffff !important; }
+	.stButton > button:hover { background-color: #1d4ed8 !important; }
+	.stButton > button:active { background-color: #1e40af !important; }
+
+	/* CODE BLOCKS (force light backgrounds) */
+	[data-testid="stCodeBlock"],
+	[data-testid="stCodeBlock"] > div { background-color: #ffffff !important; }
+	[data-testid="stCodeBlock"] pre, pre, code, .stMarkdown code {
+		background-color: #f7f7f7 !important;
+		color: #111111 !important;
+		border: 1px solid #e5e7eb !important;
+		border-radius: 8px !important;
+	}
+	[data-testid="stCodeBlock"] pre { padding: 12px 14px !important; }
+	</style>
+	"""
+
+def _dark_css() -> str:
+	return """
+	<style>
+	:root { --bg:#0e1117; --text:#e6e6e6; --card:#161b22; --code:#0f172a; --border:#30363d; --primary:#3b82f6; }
+	html, body, [data-testid="stAppViewContainer"], .stApp, .block-container {
+		background-color: var(--bg) !important; color: var(--text) !important;
+	}
+	[data-testid="stHeader"], [data-testid="stHeader"] > div {
+		background: var(--bg) !important; border-bottom: 1px solid var(--border) !important;
+	}
+	[data-testid="stSidebar"] > div {
+		background-color: var(--card) !important; border-right: 1px solid var(--border) !important;
+	}
+	h1, h2, h3, h4, h5, h6, p, label, span, .stMarkdown { color: var(--text) !important; }
+	.stButton > button {
+		background: var(--primary) !important;
+		color: #ffffff !important;
+		border: 1px solid transparent !important;
+		border-radius: 6px !important;
+	}
+	/* Ensure nested spans/icons stay white */
+	.stButton > button * { color: #ffffff !important; }
+
+	/* File uploader button (dark) */
+	[data-testid="stFileUploader"] button {
+		background-color: var(--primary) !important;
+		color: #ffffff !important;
+		border: 1px solid transparent !important;
+		border-radius: 6px !important;
+	}
+	/* Ensure nested elements are white too */
+	[data-testid="stFileUploader"] button * { color: #ffffff !important; }
+	[data-testid="stFileUploader"] button:hover { filter: brightness(0.9); }
+
+	/* CODE BLOCKS (dark) */
+	[data-testid="stCodeBlock"],
+	[data-testid="stCodeBlock"] > div {
+		background-color: var(--bg) !important;
+	}
+	[data-testid="stCodeBlock"] pre, pre, code, .stMarkdown code {
+		background-color: var(--code) !important;
+		color: var(--text) !important;
+		border: 1px solid var(--border) !important;
+		border-radius: 8px !important;
+	}
+	[data-testid="stCodeBlock"] pre {
+		padding: 12px 14px !important;
+	}
+
+	/* Inputs */
+	input, textarea, select, .stTextInput input, .stTextArea textarea, .stSelectbox div[role="combobox"] {
+		background-color: var(--card) !important; color: var(--text) !important; border-color: var(--border) !important;
+	}
+	/* File uploader */
+	[data-testid="stFileUploaderDropzone"] {
+		background-color: var(--card) !important; border: 1px dashed var(--border) !important; color: var(--text) !important;
+	}
+	[data-testid="stFileUploader"] button {
+		background-color: var(--primary) !important; color: #ffffff !important; border: 1px solid transparent !important; border-radius: 6px !important;
+	}
+	[data-testid="stFileUploader"] button:hover { filter: brightness(0.9); }
+	</style>
+	"""
+
+# Use a placeholder so CSS is fully replaced on toggle
+_theme_css_slot = st.empty()
+dark_mode = st.sidebar.toggle("Dark mode", value=st.session_state.get("dark_mode", False))
+st.session_state["dark_mode"] = dark_mode
+_theme_css_slot.markdown(_dark_css() if dark_mode else _light_css(), unsafe_allow_html=True)
+
 mode = st.sidebar.radio("Mode", ["Image to Palette", "Text to Palette"])
+
+def _rgba_str(rgb, alpha=0.12):
+	(r, g, b) = rgb
+	return f"rgba({int(r)}, {int(g)}, {int(b)}, {alpha})"
+
+def _option_bg_from_palette(palette_colors):
+	# Use the lightest swatch for background (soft tint)
+	def lum(c):
+		r, g, b = c["rgb"]
+		return 0.2126*r + 0.7152*g + 0.0722*b
+	lightest = max(palette_colors, key=lum)
+	return _rgba_str(lightest["rgb"], 0.12)
+
+def _palette_to_base64_image(colors, width=800, height=120):
+	img = create_palette_image(colors, width=width, height=height)
+	buf = BytesIO()
+	img.save(buf, format="PNG")
+	return base64.b64encode(buf.getvalue()).decode("utf-8")
+
+def render_option_card(palette_colors, caption: str, use_key: str):
+	bg = _option_bg_from_palette(palette_colors)
+	img_b64 = _palette_to_base64_image(palette_colors, width=800, height=120)
+	st.markdown(
+		f"""
+		<div style="
+			background:{bg};
+			border: 1px solid rgba(0,0,0,0.08);
+			border-radius:16px;
+			padding:16px 16px 8px 16px;
+			margin-bottom:12px;">
+			<img src="data:image/png;base64,{img_b64}" style="width:100%;border-radius:12px;" />
+			<div style="text-align:center;opacity:0.8;margin-top:8px;">{caption}</div>
+		</div>
+		""",
+		unsafe_allow_html=True,
+	)
+	return st.button(f"Use {caption}", key=use_key)
 
 # ------------------ IMAGE TO PALETTE ------------------
 if mode == "Image to Palette":
@@ -77,6 +271,36 @@ if mode == "Image to Palette":
             with st.expander("Structured JSON"):
                 st.code(payload_img["json"], language="json")
 
+            # NEW: Accessibility (Image)
+            st.subheader("Accessibility")
+            flat_img = structured_img["primary"] + structured_img["secondary"] + structured_img["accent"]
+            report = build_accessibility_report(flat_img)
+            # concise lines per color
+            lines = []
+            for r in report["per_color"]:
+                lines.append(
+                    f"{r['hex']} | best text: {r['best']['text']} (ratio {r['best']['ratio']:.2f}) | "
+                    f"AA: {'pass' if r['best']['AA'] else 'fail'} | "
+                    f"AAA: {'pass' if r['best']['AAA'] else 'fail'}"
+                )
+            st.code("\n".join(lines), language="text")
+
+            st.markdown("Color‑blindness simulation")
+            st.caption(
+                "- Protanopia: reduced sensitivity to red (L-cone)\n"
+                "- Deuteranopia: reduced sensitivity to green (M-cone)\n"
+                "- Tritanopia: reduced sensitivity to blue (S-cone)"
+            )
+            sim_cols = st.columns(3)
+            for col, mode in zip(sim_cols, ["protanopia", "deuteranopia", "tritanopia"]):
+                pal_sim = simulate_palette_colors(flat_img, mode)
+                with col:
+                    st.image(
+                        create_palette_image(pal_sim, width=800, height=80),
+                        caption=CB_LABELS.get(mode, mode.capitalize()),
+                        width="stretch",
+                    )
+
             # Multiple options
             st.subheader("More options")
             img_obj = Image.open(uploaded_file).convert("RGB")
@@ -87,8 +311,8 @@ if mode == "Image to Palette":
                 opt = extract_palette_from_image(var, n_colors=n_colors_img)
                 option_palettes.append(opt["colors"])
                 with cols[i % 2]:
-                    st.image(create_palette_image(opt["colors"], width=800, height=120), caption=f"Option {i+1}", width="stretch")
-                    if st.button(f"Use Option {i+1}", key=f"use_img_opt_{i+1}"):
+                    # Use option background card
+                    if render_option_card(opt["colors"], f"Option {i+1}", use_key=f"use_img_opt_{i+1}"):
                         st.session_state["selected_palette_image"] = opt["colors"]
 
             if "selected_palette_image" in st.session_state:
@@ -121,6 +345,36 @@ if mode == "Image to Palette":
 
                 with st.expander("Structured JSON (Selected)"):
                     st.code(payload_sel["json"], language="json")
+
+                # NEW: Accessibility for selected (Image)
+                st.subheader("Accessibility (Selected)")
+                flat_sel_img = structured_sel["primary"] + structured_sel["secondary"] + structured_sel["accent"]
+                rep_sel = build_accessibility_report(flat_sel_img)
+                lines_sel = []
+                for r in rep_sel["per_color"]:
+                    lines_sel.append(
+                        f"{r['hex']} | best text: {r['best']['text']} (ratio {r['best']['ratio']:.2f}) | "
+                        f"AA: {'pass' if r['best']['AA'] else 'fail'} | "
+                        f"AAA: {'pass' if r['best']['AAA'] else 'fail'}"
+                    )
+                st.code("\n".join(lines_sel), language="text")
+
+                st.markdown("Color‑blindness simulation (Selected)")
+                st.caption(
+                    "- Protanopia: reduced sensitivity to red (L-cone)\n"
+                    "- Deuteranopia: reduced sensitivity to green (M-cone)\n"
+                    "- Tritanopia: reduced sensitivity to blue (S-cone)"
+                )
+                sim_cols2 = st.columns(3)
+                for col, mode in zip(sim_cols2, ["protanopia", "deuteranopia", "tritanopia"]):
+                    pal_sim = simulate_palette_colors(flat_sel_img, mode)
+                    with col:
+                        st.image(
+                            create_palette_image(pal_sim, width=800, height=80),
+                            caption=CB_LABELS.get(mode, mode.capitalize()),
+                            width="stretch",
+                        )
+
         except Exception as e:
             st.error(f"Error: {str(e)}")
 
@@ -163,6 +417,35 @@ elif mode == "Text to Palette":
                 with st.expander("Structured JSON"):
                     st.code(payload["json"], language="json")
 
+                # NEW: Accessibility (Text)
+                st.subheader("Accessibility")
+                flat_txt = structured["primary"] + structured["secondary"] + structured["accent"]
+                report_txt = build_accessibility_report(flat_txt)
+                lines_txt = []
+                for r in report_txt["per_color"]:
+                    lines_txt.append(
+                        f"{r['hex']} | best text: {r['best']['text']} (ratio {r['best']['ratio']:.2f}) | "
+                        f"AA: {'pass' if r['best']['AA'] else 'fail'} | "
+                        f"AAA: {'pass' if r['best']['AAA'] else 'fail'}"
+                    )
+                st.code("\n".join(lines_txt), language="text")
+
+                st.markdown("Color‑blindness simulation")
+                st.caption(
+                    "- Protanopia: reduced sensitivity to red (L-cone)\n"
+                    "- Deuteranopia: reduced sensitivity to green (M-cone)\n"
+                    "- Tritanopia: reduced sensitivity to blue (S-cone)"
+                )
+                sim_cols_t = st.columns(3)
+                for col, mode in zip(sim_cols_t, ["protanopia", "deuteranopia", "tritanopia"]):
+                    pal_sim = simulate_palette_colors(flat_txt, mode)
+                    with col:
+                        st.image(
+                            create_palette_image(pal_sim, width=800, height=80),
+                            caption=CB_LABELS.get(mode, mode.capitalize()),
+                            width="stretch",
+                        )
+
                 # More options (same pattern as image mode)
                 st.subheader("More options")
                 opts = text_to_palette_options_structured(prompt, n_colors=6, n_options=4)
@@ -170,8 +453,7 @@ elif mode == "Text to Palette":
                 for i, sp in enumerate(opts):
                     flat_opt = sp["primary"] + sp["secondary"] + sp["accent"]
                     with cols[i % 2]:
-                        st.image(create_palette_image(flat_opt, width=800, height=120), caption=f"Option {i+1}", width="stretch")
-                        if st.button(f"Use Option {i+1}", key=f"use_txt_opt_{i+1}"):
+                        if render_option_card(flat_opt, f"Option {i+1}", use_key=f"use_txt_opt_{i+1}"):
                             st.session_state["selected_palette_text"] = sp
 
                 if "selected_palette_text" in st.session_state:
@@ -179,6 +461,35 @@ elif mode == "Text to Palette":
                     st.subheader("✅ Selected Palette (Text)")
                     flat_sel = sel["primary"] + sel["secondary"] + sel["accent"]
                     st.image(create_palette_image(flat_sel, width=800, height=120), caption="Your selection", width="stretch")
+
+                    # NEW: Accessibility for selected (Text)
+                    st.subheader("Accessibility (Selected)")
+                    flat_sel_txt = sel["primary"] + sel["secondary"] + sel["accent"]
+                    rep_sel_t = build_accessibility_report(flat_sel_txt)
+                    lines_sel_t = []
+                    for r in rep_sel_t["per_color"]:
+                        lines_sel_t.append(
+                            f"{r['hex']} | best text: {r['best']['text']} (ratio {r['best']['ratio']:.2f}) | "
+                            f"AA: {'pass' if r['best']['AA'] else 'fail'} | "
+                            f"AAA: {'pass' if r['best']['AAA'] else 'fail'}"
+                        )
+                    st.code("\n".join(lines_sel_t), language="text")
+
+                    st.markdown("Color‑blindness simulation (Selected)")
+                    st.caption(
+                        "- Protanopia: reduced sensitivity to red (L-cone)\n"
+                        "- Deuteranopia: reduced sensitivity to green (M-cone)\n"
+                        "- Tritanopia: reduced sensitivity to blue (S-cone)"
+                    )
+                    sim_cols_ts = st.columns(3)
+                    for col, mode in zip(sim_cols_ts, ["protanopia", "deuteranopia", "tritanopia"]):
+                        pal_sim = simulate_palette_colors(flat_sel_txt, mode)
+                        with col:
+                            st.image(
+                                create_palette_image(pal_sim, width=800, height=80),
+                                caption=CB_LABELS.get(mode, mode.capitalize()),
+                                width="stretch",
+                            )
             except Exception as e:
                 st.error(f"Error generating palette: {str(e)}")
         else:
