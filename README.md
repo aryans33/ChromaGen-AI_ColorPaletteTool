@@ -123,10 +123,6 @@ Response:
 - Fonts API suggestions do nothing: set `GOOGLE_FONTS_API_KEY` or proceed without (fallback works).
 - Avoid committing `.env` with real keys.
 
-## License
-
-Add a license file (e.g., MIT) appropriate for your use.
-
 ## Acknowledgements
 
 Built with Streamlit, Pillow, and Google Fonts.
